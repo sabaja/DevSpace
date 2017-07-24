@@ -1,0 +1,16 @@
+/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/a1com/mvc/spittr/DAO/SpitterRepository.java
+/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/a1com/mvc/spittr/web/config/ServletDispatcherConfigInitializer.java
+/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/a1com/mvc/spittr/log/LogExample.java
+/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/a1com/mvc/spittr/web/SpittleController.java
+/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/a1com/mvc/spittr/pojo/Spittle.java
+/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/a1com/mvc/spittr/web/WelcomeController.java
+/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/a1com/mvc/spittr/DAO/SpitterRepositoryImpl.java
+/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/a1com/mvc/spittr/web/config/AppRootConfig.java
+/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/a1com/mvc/spittr/constants/SpittlesViews.java
+/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/a1com/mvc/spittr/web/HomeController.java
+/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/a1com/mvc/spittr/web/util/RequestUtilFacade.java
+/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/a1com/mvc/spittr/pojo/Spitter.java
+/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/a1com/mvc/spittr/web/SpitterController.java
+/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/a1com/mvc/spittr/DAO/SpittleRepository.java
+/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/a1com/mvc/spittr/DAO/SpittleRepositoryImpl.java
+/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/a1com/mvc/spittr/web/config/AppWebConfig.java

@@ -1,0 +1,16 @@
+a1com/mvc/spittr/web/config/ServletDispatcherConfigInitializer.class
+a1com/mvc/spittr/DAO/SpittleRepository.class
+a1com/mvc/spittr/web/SpittleController.class
+a1com/mvc/spittr/web/HomeController.class
+a1com/mvc/spittr/log/LogExample.class
+a1com/mvc/spittr/DAO/SpitterRepositoryImpl.class
+a1com/mvc/spittr/web/SpitterController.class
+a1com/mvc/spittr/constants/SpittlesViews.class
+a1com/mvc/spittr/pojo/Spittle.class
+a1com/mvc/spittr/web/config/AppRootConfig.class
+a1com/mvc/spittr/pojo/Spitter.class
+a1com/mvc/spittr/DAO/SpittleRepositoryImpl.class
+a1com/mvc/spittr/web/config/AppWebConfig.class
+a1com/mvc/spittr/web/WelcomeController.class
+a1com/mvc/spittr/web/util/RequestUtilFacade.class
+a1com/mvc/spittr/DAO/SpitterRepository.class

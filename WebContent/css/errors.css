@@ -1,0 +1,13 @@
+span.error {
+color: red;
+}
+div.errors {
+background-color: #ffcccc;
+border: 2px solid red;
+}
+label.errors {
+color: red;
+}
+input.errors {
+background-color: #ffcccc;
+}
