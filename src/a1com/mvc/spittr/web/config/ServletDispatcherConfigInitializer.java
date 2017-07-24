@@ -38,7 +38,7 @@ public class ServletDispatcherConfigInitializer extends AbstractAnnotationConfig
 	
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
-		logger.info("getRootConfigClasses()::AppRootConfig.class");
+		logger.info("[{}] getRootConfigClasses()::AppRootConfig.class", this.DEFAULT_SERVLET_NAME);
 		return new Class<?>[] {AppRootConfig.class}; // RootConfig.class root configuration is defined in RootConfig
 		// the @Configuration class’s returned getRootConfigClasses() will be
 		// used to configure the application context created by
@@ -47,7 +47,7 @@ public class ServletDispatcherConfigInitializer extends AbstractAnnotationConfig
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
-		logger.info("getServletConfigClasses()::AppWebConfig.class");
+		logger.info("[{}] getServletConfigClasses()::AppWebConfig.class", this.DEFAULT_SERVLET_NAME);
 		return new Class<?>[] {AppWebConfig.class };// DispatcherServlet’s configuration is declared in WebConfig
 		// The @Configuration
 		// classes returned from getServletConfigClasses() will define beans for
