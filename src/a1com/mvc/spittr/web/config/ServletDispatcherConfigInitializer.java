@@ -2,6 +2,9 @@ package a1com.mvc.spittr.web.config;
 
 import java.lang.invoke.MethodHandles;
 
+import javax.servlet.MultipartConfigElement;
+import javax.servlet.ServletRegistration;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
@@ -41,8 +44,9 @@ public class ServletDispatcherConfigInitializer extends AbstractAnnotationConfig
 		logger.info("[{}] getRootConfigClasses()::AppRootConfig.class", this.DEFAULT_SERVLET_NAME);
 		return new Class<?>[] {AppRootConfig.class}; // RootConfig.class root configuration is defined in RootConfig
 		// the @Configuration class’s returned getRootConfigClasses() will be
-		// used to configure the application context created by
-		// ContextLoaderListener.
+		// used to configure the application context created by ContextLoaderListener.
+		// ContextLoaderListener is expected to load beans are typically the
+		// middle-tier and data-tier components that drive the back end of the application.
 	}
 
 	@Override
@@ -53,8 +57,8 @@ public class ServletDispatcherConfigInitializer extends AbstractAnnotationConfig
 		// classes returned from getServletConfigClasses() will define beans for
 		// Dispatcher-
 		// Servlet’s application context.
-		// These beans are typically the middle-tier and data-tier components
-		// that drive the back end of the application.
+		// DispatcherServlet is expected to load beans containing web components
+		// such as controllers, view resolvers, and handler mappings.
 
 	}
 
@@ -66,5 +70,21 @@ public class ServletDispatcherConfigInitializer extends AbstractAnnotationConfig
 									// application’s default servlet. It will
 									// handle all requests coming into the
 									// application.
+	}
+	
+//	With the ServletRegistration.Dynamic that’s given to customizeRegistration() ,
+//	you can do several things, including set the load-on-startup priority by calling set 
+//	LoadOnStartup() , set an initialization parameter by calling setInitParameter() , and
+//	call setMultipartConfig() to configure Servlet 3.0 multipart support. In the preceding 
+//	example, you’re setting up multipart support to temporarily store uploaded files
+//	at /tmp/spittr/uploads.
+	@Override
+	protected void customizeRegistration(ServletRegistration.Dynamic registration){
+		registration.setInitParameter("Author", "Jacopo Sabatini");
+		logger.info("[{}] customizeRegistration() Init parameter is set", this.DEFAULT_SERVLET_NAME);
+		//https://docs.oracle.com/javaee/7/api/javax/servlet/MultipartConfigElement.html
+		registration.setMultipartConfig(new MultipartConfigElement("/tmp/spittr/uploads"));
+		registration.setLoadOnStartup(1);
+		logger.info("[{}] customizeRegistration() temporarily store uploaded files at /tmp/spittr/uploads", this.DEFAULT_SERVLET_NAME);
 	}
 }

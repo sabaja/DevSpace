@@ -45,25 +45,25 @@ public class AppWebConfig extends WebMvcConfigurerAdapter implements Application
 	// CONFIG--------------------------------------------
 	// Configure a JSP view resolver ViewResolver, Interface to be implemented
 	// by objects that can resolve views by name.
-	// @Bean
-	// public ViewResolver viewResolver() {
-	// InternalResourceViewResolver resolver = new
-	// InternalResourceViewResolver();
-	// logger.info("InternalResourceViewResolver instantiated");
-	// // it’s configured to look for JSP /WEB-INF/views/ files by wrapping
-	// // view names with a specific prefix and suffix (for example, a view
-	// // name of home will be resolved / WEB-INF /views/home.jsp).
-	// resolver.setPrefix("/WEB-INF/views/");
-	// logger.info("resolver setting prefix /WEB-INF/views/");
-	// resolver.setSuffix(".jsp");
-	// logger.info("resolver setting suffix .jsp");
-	// resolver.setExposeContextBeansAsAttributes(true);
-	// resolver.setViewClass(org.springframework.web.servlet.view.JstlView.class);
-	// logger.info("org.springframework.web.servlet.view.JstlView.class set as
-	// view class");
-	// return resolver;
-	// }
+	@Bean
+	public ViewResolver viewResolver() {
+		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
+		logger.info("InternalResourceViewResolver instantiated");
+		// it’s configured to look for JSP /WEB-INF/views/ files by wrapping
+		// view names with a specific prefix and suffix (for example, a view
+		// name of home will be resolved / WEB-INF /views/home.jsp).
+		resolver.setPrefix("/WEB-INF/views/");
+		logger.info("resolver setting prefix /WEB-INF/views/");
+		resolver.setSuffix(".jsp");
+		logger.info("resolver setting suffix .jsp");
+		resolver.setExposeContextBeansAsAttributes(true);
+		resolver.setViewClass(org.springframework.web.servlet.view.JstlView.class);
+		logger.info("org.springframework.web.servlet.view.JstlView.class set as view class");
+		return resolver;
+	}
 
+	
+	
 	// -----------------------------------TILES
 	// CONFIG----------------------------------------------------
 	/**
@@ -96,50 +96,56 @@ public class AppWebConfig extends WebMvcConfigurerAdapter implements Application
 	// return tiles;
 	// }
 
+	
+	
 	// -------------------------Thymeleaf------------------------
-	@Bean
-	public SpringResourceTemplateResolver templateResolver() {
-		// SpringResourceTemplateResolver automatically integrates with Spring's
-		// own
-		// resource resolution infrastructure, which is highly recommended.
-		SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
-		templateResolver.setApplicationContext(this.applicationContext);
-		// templateResolver.setPrefix("/WEB-INF/thymeleaftemplates/");
-		templateResolver.setPrefix("/WEB-INF/thymeleafviews/");
-		templateResolver.setSuffix(".html");
-		// HTML is the default value, added here for the sake of clarity.
-		templateResolver.setTemplateMode(TemplateMode.HTML);
-		// Template cache is true by default. Set to false if you want
-		// templates to be automatically updated when modified.
-		templateResolver.setCacheable(true);
-		logger.info("SpringResourceTemplateResolver instatiated");
-		return templateResolver;
-	}
+	// @Bean
+	// public SpringResourceTemplateResolver templateResolver() {
+	// // SpringResourceTemplateResolver automatically integrates with Spring's
+	// // own
+	// // resource resolution infrastructure, which is highly recommended.
+	// SpringResourceTemplateResolver templateResolver = new
+	// SpringResourceTemplateResolver();
+	// templateResolver.setApplicationContext(this.applicationContext);
+	// // templateResolver.setPrefix("/WEB-INF/thymeleaftemplates/");
+	// templateResolver.setPrefix("/WEB-INF/thymeleafviews/");
+	// templateResolver.setSuffix(".html");
+	// // HTML is the default value, added here for the sake of clarity.
+	// templateResolver.setTemplateMode(TemplateMode.HTML);
+	// // Template cache is true by default. Set to false if you want
+	// // templates to be automatically updated when modified.
+	// templateResolver.setCacheable(true);
+	// logger.info("SpringResourceTemplateResolver instatiated");
+	// return templateResolver;
+	// }
+	//
+	// @Bean
+	// public SpringTemplateEngine templateEngine() {
+	// // SpringTemplateEngine automatically applies SpringStandardDialect and
+	// // enables Spring's own MessageSource message resolution mechanisms.
+	// SpringTemplateEngine templateEngine = new SpringTemplateEngine();
+	// templateEngine.setTemplateResolver(templateResolver());
+	// // Enabling the SpringEL compiler with Spring 4.2.4 or newer can
+	// // speed up execution in most scenarios, but might be incompatible
+	// // with specific cases when expressions in one template are reused
+	// // across different data types, so this flag is "false" by default
+	// // for safer backwards compatibility.
+	// templateEngine.setEnableSpringELCompiler(true);
+	// logger.info("SpringTemplateEngine instatiated");
+	// return templateEngine;
+	// }
+	//
+	// @Bean
+	// public ThymeleafViewResolver viewResolver() {
+	// ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
+	// viewResolver.setTemplateEngine(templateEngine());
+	// logger.info("ThymeleafViewResolver instatiated");
+	// return viewResolver;
+	// }
 
-	@Bean
-	public SpringTemplateEngine templateEngine() {
-		// SpringTemplateEngine automatically applies SpringStandardDialect and
-		// enables Spring's own MessageSource message resolution mechanisms.
-		SpringTemplateEngine templateEngine = new SpringTemplateEngine();
-		templateEngine.setTemplateResolver(templateResolver());
-		// Enabling the SpringEL compiler with Spring 4.2.4 or newer can
-		// speed up execution in most scenarios, but might be incompatible
-		// with specific cases when expressions in one template are reused
-		// across different data types, so this flag is "false" by default
-		// for safer backwards compatibility.
-		templateEngine.setEnableSpringELCompiler(true);
-		logger.info("SpringTemplateEngine instatiated");
-		return templateEngine;
-	}
-
-	@Bean
-	public ThymeleafViewResolver viewResolver() {
-		ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
-		viewResolver.setTemplateEngine(templateEngine());
-		logger.info("ThymeleafViewResolver instatiated");
-		return viewResolver;
-	}
-
+	
+	
+	// -------------------------Static Resource------------------------
 	// Configures a request handler for serving static resources by forwarding
 	// the request to the Servlet container's "default" Servlet
 	// you’re asking DispatcherServlet to forward requests for static resources
