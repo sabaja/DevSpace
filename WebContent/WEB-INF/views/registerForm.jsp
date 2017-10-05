@@ -9,7 +9,7 @@
 <body>
 	<h1>Register</h1>
 
-	<form method="POST" action="spitter/registration">
+	<form method="POST" action="registration">
 		First Name: <input type="text" name="firstName" /><br/>
 		Last Name: <input type="text" name="lastName" /><br/>
 		Username: <input type="text" name="username" /><br/>

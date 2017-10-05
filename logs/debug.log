@@ -1,44 +1,38 @@
-2017-07-12 21:42:39 [localhost-startStop-1] INFO  a1com.mvc.spittr.web.HomeController.<init>(51) - 2017-07-12T21:42:39.259 Constructor call
-2017-07-12 21:42:39 [localhost-startStop-1] DEBUG a.mvc.spittr.web.SpittleController.<init>(45) - 2017-07-12T21:42:39.308 Constructor call
-2017-07-12 21:43:08 [http-nio-8080-exec-5] INFO  a1com.mvc.spittr.web.HomeController.home(62) - http://localhost:8080/Spring-In-Action_WEBApp/homepage request called 
-2017-07-12 21:43:08 [http-nio-8080-exec-5] INFO  a1com.mvc.spittr.web.HomeController.home(63) - 2017-07-12T21:43:08.553 /Home called
-2017-07-12 21:43:11 [http-nio-8080-exec-7] INFO  a.mvc.spittr.web.SpitterController.showRegistration(58) - http://localhost:8080/Spring-In-Action_WEBApp/spitter/registration request called 
-2017-07-12 21:43:11 [http-nio-8080-exec-7] INFO  a.mvc.spittr.web.SpitterController.showRegistration(59) - 2017-07-12T21:43:11.212 showRegistration() called view=registerForm
-2017-07-12 21:44:03 [http-nio-8080-exec-1] INFO  a.mvc.spittr.web.SpitterController.processRegistration(74) - http://localhost:8080/Spring-In-Action_WEBApp/spitter/registration request called 
-2017-07-12 21:44:03 [http-nio-8080-exec-1] INFO  a.mvc.spittr.web.SpitterController.processRegistration(75) - spitter was registered value= Spitter [id=0, firstName=, lastName=, username=2, password=]
-2017-07-12 21:44:03 [http-nio-8080-exec-2] INFO  a.mvc.spittr.web.SpitterController.showSpitterProfile(85) - http://localhost:8080/Spring-In-Action_WEBApp/spitter/2 request called 
-2017-07-12 21:44:03 [http-nio-8080-exec-2] INFO  a.mvc.spittr.web.SpitterController.showSpitterProfile(86) - spitter username value= 2
-2017-07-12 21:48:57 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  a1com.mvc.spittr.web.HomeController.<init>(51) - 2017-07-12T21:48:57.538 Constructor call
-2017-07-12 21:48:57 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] DEBUG a.mvc.spittr.web.SpittleController.<init>(45) - 2017-07-12T21:48:57.566 Constructor call
-2017-07-12 21:50:44 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  a1com.mvc.spittr.web.HomeController.<init>(51) - 2017-07-12T21:50:44.953 Constructor call
-2017-07-12 21:50:45 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] DEBUG a.mvc.spittr.web.SpittleController.<init>(45) - 2017-07-12T21:50:45.002 Constructor call
-2017-07-12 21:54:14 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  a1com.mvc.spittr.web.HomeController.<init>(51) - 2017-07-12T21:54:14.658 Constructor call
-2017-07-12 21:54:14 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] DEBUG a.mvc.spittr.web.SpittleController.<init>(45) - 2017-07-12T21:54:14.677 Constructor call
-2017-07-12 21:55:40 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  a1com.mvc.spittr.web.HomeController.<init>(51) - 2017-07-12T21:55:40.006 Constructor call
-2017-07-12 21:55:40 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] DEBUG a.mvc.spittr.web.SpittleController.<init>(45) - 2017-07-12T21:55:40.023 Constructor call
-2017-07-12 21:56:03 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  a1com.mvc.spittr.web.HomeController.<init>(51) - 2017-07-12T21:56:03.804 Constructor call
-2017-07-12 21:56:03 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] DEBUG a.mvc.spittr.web.SpittleController.<init>(45) - 2017-07-12T21:56:03.830 Constructor call
-2017-07-12 21:56:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  a1com.mvc.spittr.web.HomeController.<init>(51) - 2017-07-12T21:56:16.850 Constructor call
-2017-07-12 21:56:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] DEBUG a.mvc.spittr.web.SpittleController.<init>(45) - 2017-07-12T21:56:16.872 Constructor call
-2017-07-12 21:57:01 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  a1com.mvc.spittr.web.HomeController.<init>(51) - 2017-07-12T21:57:01.009 Constructor call
-2017-07-12 21:57:01 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] DEBUG a.mvc.spittr.web.SpittleController.<init>(45) - 2017-07-12T21:57:01.031 Constructor call
-2017-07-12 21:58:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  a1com.mvc.spittr.web.HomeController.<init>(51) - 2017-07-12T21:58:16.076 Constructor call
-2017-07-12 21:58:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] DEBUG a.mvc.spittr.web.SpittleController.<init>(45) - 2017-07-12T21:58:16.092 Constructor call
-2017-07-12 21:58:58 [http-nio-8080-exec-16] INFO  a.mvc.spittr.web.SpitterController.showRegistration(58) - http://localhost:8080/Spring-In-Action_WEBApp/spitter/registration request called 
-2017-07-12 21:58:58 [http-nio-8080-exec-16] INFO  a.mvc.spittr.web.SpitterController.showRegistration(59) - 2017-07-12T21:58:58.842 showRegistration() called view=registerForm
-2017-07-12 21:59:01 [http-nio-8080-exec-9] INFO  a1com.mvc.spittr.web.HomeController.home(62) - http://localhost:8080/Spring-In-Action_WEBApp/homepage request called 
-2017-07-12 21:59:01 [http-nio-8080-exec-9] INFO  a1com.mvc.spittr.web.HomeController.home(63) - 2017-07-12T21:59:01.301 /Home called
-2017-07-12 21:59:03 [http-nio-8080-exec-6] INFO  a.mvc.spittr.web.SpitterController.showRegistration(58) - http://localhost:8080/Spring-In-Action_WEBApp/spitter/registration request called 
-2017-07-12 21:59:03 [http-nio-8080-exec-6] INFO  a.mvc.spittr.web.SpitterController.showRegistration(59) - 2017-07-12T21:59:03.684 showRegistration() called view=registerForm
-2017-07-12 21:59:16 [http-nio-8080-exec-19] INFO  a.mvc.spittr.web.SpitterController.processRegistration(74) - http://localhost:8080/Spring-In-Action_WEBApp/spitter/registration request called 
-2017-07-12 21:59:16 [http-nio-8080-exec-19] INFO  a.mvc.spittr.web.SpitterController.processRegistration(75) - spitter was registered value= Spitter [id=0, firstName=q, lastName=, username=, password=]
-2017-07-12 22:00:59 [http-nio-8080-exec-20] INFO  a.mvc.spittr.web.SpitterController.showRegistration(58) - http://localhost:8080/Spring-In-Action_WEBApp/spitter/registration request called 
-2017-07-12 22:00:59 [http-nio-8080-exec-20] INFO  a.mvc.spittr.web.SpitterController.showRegistration(59) - 2017-07-12T22:00:59.155 showRegistration() called view=registerForm
-2017-07-12 22:01:14 [http-nio-8080-exec-19] INFO  a.mvc.spittr.web.SpitterController.processRegistration(74) - http://localhost:8080/Spring-In-Action_WEBApp/spitter/registration request called 
-2017-07-12 22:01:14 [http-nio-8080-exec-19] INFO  a.mvc.spittr.web.SpitterController.processRegistration(75) - spitter was registered value= Spitter [id=0, firstName=, lastName=, username=a, password=]
-2017-07-12 22:01:14 [http-nio-8080-exec-21] INFO  a.mvc.spittr.web.SpitterController.showSpitterProfile(85) - http://localhost:8080/Spring-In-Action_WEBApp/spitter/a request called 
-2017-07-12 22:01:14 [http-nio-8080-exec-21] INFO  a.mvc.spittr.web.SpitterController.showSpitterProfile(86) - spitter username value= a
-2017-07-12 22:01:45 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  a1com.mvc.spittr.web.HomeController.<init>(51) - 2017-07-12T22:01:45.604 Constructor call
-2017-07-12 22:01:45 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] DEBUG a.mvc.spittr.web.SpittleController.<init>(45) - 2017-07-12T22:01:45.625 Constructor call
-2017-07-12 22:02:41 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  a1com.mvc.spittr.web.HomeController.<init>(51) - 2017-07-12T22:02:41.075 Constructor call
-2017-07-12 22:02:41 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] DEBUG a.mvc.spittr.web.SpittleController.<init>(45) - 2017-07-12T22:02:41.095 Constructor call
+2017-10-05 22:43:07 [localhost-startStop-1] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(34) - WebApplicationInitializer@ServletApacheInitializer instantiated
+2017-10-05 22:43:07 [localhost-startStop-1] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(49) - Servlet [com.mvc.spittr.web.servlet.GenericServletDemoServlet] was added
+2017-10-05 22:43:07 [localhost-startStop-1] INFO  c.m.s.w.c.ConfigInitializerFORServletDispatcherMultipartConfig.getRootConfigClasses(61) - [dispatcher] AppRootConfig.class config
+2017-10-05 22:43:07 [localhost-startStop-1] INFO  c.m.s.w.c.ConfigInitializerFORServletDispatcherMultipartConfig.getServletConfigClasses(75) - [dispatcher] AppWebConfig.class config
+2017-10-05 22:43:07 [localhost-startStop-1] INFO  c.m.s.w.c.ConfigInitializerFORServletDispatcherMultipartConfig.customizeRegistration(112) - [dispatcher] customizeRegistration() Init parameter is set
+2017-10-05 22:43:07 [localhost-startStop-1] INFO  c.m.s.w.c.ConfigInitializerFORServletDispatcherMultipartConfig.customizeRegistration(122) - new File(/tmp)
+2017-10-05 22:43:07 [localhost-startStop-1] INFO  c.m.s.w.c.ConfigInitializerFORServletDispatcherMultipartConfig.customizeRegistration(130) - [dispatcher] multipart uploads files at /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/Downloads, maxFileSize=2097152, maxRequestSize=4194304, fileSizeThreshold=0
+2017-10-05 22:43:11 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.messageSource(78) - MessageSource config
+2017-10-05 22:43:12 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getDataSource(139) - DB DataSource config - HIBERNATE - 
+2017-10-05 22:43:12 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(147) - LocalSessionFactoryBean config - HIBERNATE -
+2017-10-05 22:43:12 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(150) - HibernateProperties config - HIBERNATE -
+2017-10-05 22:43:19 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.multipartResolver(96) - MultipartResolver config
+2017-10-05 22:43:19 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getTransactionManager(161) - HibernateTransactionManager config - HIBERNATE -
+2017-10-05 22:43:21 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.messageSource(78) - MessageSource config
+2017-10-05 22:43:21 [localhost-startStop-1] INFO  com.mvc.spittr.web.HomeController.<init>(52) - 2017-10-05T22:43:21.572 Constructor call
+2017-10-05 22:43:21 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getDataSource(139) - DB DataSource config - HIBERNATE - 
+2017-10-05 22:43:21 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(147) - LocalSessionFactoryBean config - HIBERNATE -
+2017-10-05 22:43:21 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(150) - HibernateProperties config - HIBERNATE -
+2017-10-05 22:43:22 [localhost-startStop-1] DEBUG c.m.s.w.s.SpittleController.<init>(54) - 2017-10-05T22:43:22.188 Constructor call
+2017-10-05 22:43:22 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.multipartResolver(96) - MultipartResolver config
+2017-10-05 22:43:22 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getTransactionManager(161) - HibernateTransactionManager config - HIBERNATE -
+2017-10-05 22:43:22 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowRegistry(37) - flowRegistry config - WEB-FLOW -
+2017-10-05 22:43:22 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowRegistry(38) - BasePath: /WEB-INF	FlowLocation: /**/*-flow.xml
+2017-10-05 22:43:22 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowExecutor(54) - flowExecutor config - WEB-FLOW -
+2017-10-05 22:43:22 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowBuilderServices(92) - FlowBuilderServices config - WEB-FLOW -
+2017-10-05 22:43:22 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowHandlerMapping(109) - FlowHandlerMapping config - WEB-FLOW -
+2017-10-05 22:43:22 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowHandlerAdapter(129) - FlowHandlerAdapter config - WEB-FLOW -
+2017-10-05 22:43:24 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.configureDefaultServletHandling(168) - DefaultServletHandlerConfigurer config
+2017-10-05 22:43:25 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(51) - InternalResourceViewResolver config
+2017-10-05 22:43:25 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(56) - resolver setting prefix /WEB-INF/views/
+2017-10-05 22:43:25 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(58) - resolver setting suffix .jsp
+2017-10-05 22:43:25 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(61) - org.springframework.web.servlet.view.JstlView.class set as view class
+2017-10-05 22:43:25 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(68) - InternalResourceViewResolver for html config
+2017-10-05 22:43:25 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(73) - resolver setting prefix /WEB-INF/views/
+2017-10-05 22:43:25 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(75) - resolver setting suffix .html
+2017-10-05 22:43:25 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(78) - org.springframework.web.servlet.view.JstlView.class set as view class
+2017-10-05 22:43:30 [http-nio-8080-exec-2] INFO  c.m.s.w.f.LoggingUrlRequestFilter.doFilter(34) - [com.mvc.spittr.web.filters.LoggingUrlRequestFilter]: 2017-10-05T22:43:30.533 - /Spring-In-Action_WEBApp/
+2017-10-05 22:43:35 [http-nio-8080-exec-3] INFO  c.m.s.w.f.LoggingUrlRequestFilter.doFilter(34) - [com.mvc.spittr.web.filters.LoggingUrlRequestFilter]: 2017-10-05T22:43:35.243 - /Spring-In-Action_WEBApp/homepage

@@ -15,8 +15,10 @@
 	(and you ll get JSP errors). That means you need to make a small change to Spitter-
 	Controller to ensure that a Spitter object is in the model under the spitter key:
 	-->
-	<sf:form method="POST" commandName="spitter">
 
+	<!-- sf:form method="POST" commandName="spitter"-->
+	<sf:form method="POST" modelAttribute="spitter"
+		enctype="multipart/form-data">
 
 		<div>
 			First Name:
@@ -27,19 +29,27 @@
 		<div>
 			Last Name:
 			<sf:input path="lastName" />
-			<sf:errors path="lastName" cssClass="errors" />
+			<sf:errors path="lastName" cssErrorClass="errors" />
 		</div>
 		<br />
+
+		<div>Profile Pitcure</div>
+		<!-- "*.png", "*.jpg", "*.gif", "*.jpg", "*.bmp", "*.tiff",	"*.svg", "*.ico", "*.webp" }) -->
+		<input type="file" name="profilePicture"
+			accept="image/jpeg,image/png,image/gif,image/bmp,
+			image/tiff,image/svg,image/ico,image/webp" />
+		<br />
+
 		<div>
 			Username:
 			<sf:input path="username" />
-			<sf:errors path="username" cssClass="errors" />
+			<sf:errors path="username" cssErrorClass="errors" />
 		</div>
 		<br />
 		<div>
 			Password:
 			<sf:password path="password" />
-			<sf:errors path="password" cssClass="errors" />
+			<sf:errors path="password" cssErrorClass="errors" />
 		</div>
 		<br />
 		<input type="submit" value="Register" />
