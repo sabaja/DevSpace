@@ -1,1 +1,0 @@
-Copyright &copy; Jacopo Sabatini 
