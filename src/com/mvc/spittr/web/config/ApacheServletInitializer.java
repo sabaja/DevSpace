@@ -21,6 +21,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.WebApplicationContext;
 
+import com.be.spittr.config.AppRootConfig;
 import com.mvc.spittr.web.servlet.GenericServletDemoServlet;
 
 public class ApacheServletInitializer implements WebApplicationInitializer, ServletContextListener{

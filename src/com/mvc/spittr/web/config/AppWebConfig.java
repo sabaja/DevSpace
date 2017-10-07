@@ -25,6 +25,7 @@ import org.thymeleaf.templatemode.TemplateMode;
 import org.thymeleaf.templateresolver.ITemplateResolver;
 import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
 
+@SuppressWarnings("deprecation")
 @Configuration
 @EnableWebMvc // Enable Spring MVC
 @ComponentScan(basePackages = { "com.mvc.spittr.web" })

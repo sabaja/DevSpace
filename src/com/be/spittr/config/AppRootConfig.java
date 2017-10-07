@@ -1,4 +1,4 @@
-package com.mvc.spittr.web.config;
+package com.be.spittr.config;
 
 import java.io.IOException;
 import java.lang.invoke.MethodHandles;
@@ -51,13 +51,14 @@ import com.mvc.spittr.entity.Spittle;
 
 @Configuration
 @PropertySource("classpath:hibernate-mysql.properties")
-@ComponentScans(value = {
-		@ComponentScan(basePackages = { "com.mvc.spittr.dao" }, excludeFilters = {
-				@Filter(type = FilterType.ANNOTATION, value = EnableWebMvc.class) }),
-		@ComponentScan(basePackages = { "com.mvc.spittr.service" }, excludeFilters = {
-				@Filter(type = FilterType.ANNOTATION, value = EnableWebMvc.class) }),
-		@ComponentScan(basePackages = { "com.mvc.spittr.service.backup" }, excludeFilters = {
-				@Filter(type = FilterType.ANNOTATION, value = EnableWebMvc.class) }) })
+@ComponentScans(
+		value = {
+		@ComponentScan(
+				basePackages = { "com.mvc.spittr.dao", "com.mvc.spittr.service", "com.mvc.spittr.service.backup" }, 
+				excludeFilters = { @Filter(type = FilterType.ANNOTATION, value = EnableWebMvc.class)}
+				)
+			}
+		)
 @EnableTransactionManagement
 public class AppRootConfig{
 

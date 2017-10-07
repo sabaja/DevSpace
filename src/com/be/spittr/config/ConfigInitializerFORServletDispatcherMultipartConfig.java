@@ -1,4 +1,4 @@
-package com.mvc.spittr.web.config;
+package com.be.spittr.config;
 
 import java.io.File;
 import java.lang.invoke.MethodHandles;
@@ -16,6 +16,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 import com.mvc.spittr.constants.SpitterConsts;
+import com.mvc.spittr.web.config.AppWebConfig;
 import com.mvc.spittr.web.filters.LoggingUrlRequestFilter;
 
 /**
