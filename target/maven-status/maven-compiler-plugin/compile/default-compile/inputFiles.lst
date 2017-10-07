@@ -1,5 +1,6 @@
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/exceptions/DuplicateSpittleException.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/web/spitterspittle/SpittleController.java
+/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/be/spittr/mailservice/Mail.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/dao/SpittleDAOImpl.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/web/util/RequestUtilFacade.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/service/backup/SpittleRepository.java
@@ -17,6 +18,7 @@
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/service/backup/SpitterRepository.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/web/config/AppWebConfig.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/service/SpitterService.java
+/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/web/config/SecurityWebInitializer.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/exceptions/ClassForAllExceptionHandler.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/service/SpittleServiceImpl.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/service/SpittleService.java

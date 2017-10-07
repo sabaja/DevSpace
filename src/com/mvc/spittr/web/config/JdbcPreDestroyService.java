@@ -1,4 +1,4 @@
-package com.be.spittr.config;
+package com.mvc.spittr.web.config;
 
 import java.lang.invoke.MethodHandles;
 import java.sql.Driver;
