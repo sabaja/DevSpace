@@ -21,9 +21,11 @@ import org.springframework.context.annotation.ComponentScans;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.PropertySources;
 import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.core.env.Environment;
 import org.springframework.core.io.FileSystemResource;
+import org.springframework.mail.SimpleMailMessage;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
@@ -50,7 +52,9 @@ import com.mvc.spittr.entity.Spittle;
  */
 
 @Configuration
-@PropertySource("classpath:hibernate-mysql.properties")
+@PropertySources({
+	@PropertySource("classpath:hibernate-mysql.properties"),
+	@PropertySource("classpath:mail.properties")})
 @ComponentScans(
 		value = {
 		@ComponentScan(
@@ -172,5 +176,16 @@ public class AppRootConfig{
 		props.put(AvailableSettings.CURRENT_SESSION_CONTEXT_CLASS, env.getProperty("hb.current.session.context.class"));
 		return props;
 	}
+	
+	
+	//http://www.baeldung.com/spring-email
+	//https://github.com/eugenp/tutorials/tree/master/spring-mvc-email
+    @Bean
+    public SimpleMailMessage templateSimpleMessage() {
+        SimpleMailMessage message = new SimpleMailMessage();
+        message.setText("This is the test email template for your email:\n%s\n");
+        return message;
+    }
+
 
 }

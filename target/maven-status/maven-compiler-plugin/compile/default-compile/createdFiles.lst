@@ -15,7 +15,6 @@ com/mvc/spittr/dao/SpittleDAOImpl.class
 com/mvc/spittr/web/servlet/GenericServletDemoServlet.class
 com/mvc/spittr/constants/SpitterConsts.class
 com/mvc/spittr/web/spitterspittle/SpitterController.class
-com/mvc/spittr/web/config/ConfigInitializerFORServletDispatcherMultipartConfig.class
 com/mvc/spittr/dao/SpitterDAOImpl.class
 com/be/spittr/mailservice/Mail.class
 com/mvc/spittr/service/backup/SpitterRepository.class
@@ -27,8 +26,6 @@ com/mvc/spittr/web/HomeController.class
 com/mvc/spittr/web/spitterspittle/SpittleController.class
 com/mvc/spittr/dao/SpittleDao.class
 com/mvc/spittr/entity/Spitter.class
-com/mvc/spittr/web/config/JdbcPreDestroyService.class
 com/mvc/spittr/service/SpittleServiceImpl.class
 com/mvc/spittr/service/SpitterService.class
 com/mvc/spittr/web/util/RequestUtilFacade.class
-com/mvc/spittr/web/config/AppRootConfig.class

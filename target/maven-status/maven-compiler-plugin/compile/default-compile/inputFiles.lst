@@ -2,6 +2,7 @@
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/web/spitterspittle/SpittleController.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/be/spittr/mailservice/Mail.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/dao/SpittleDAOImpl.java
+/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/be/spittr/config/ConfigInitializerFORServletDispatcherMultipartConfig.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/web/util/RequestUtilFacade.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/service/backup/SpittleRepository.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/service/SpitterServiceImpl.java
@@ -9,11 +10,11 @@
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/entity/Spittle.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/web/WelcomeController.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/log/LogExample.java
-/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/web/config/ConfigInitializerFORServletDispatcherMultipartConfig.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/constants/SpitterConsts.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/web/config/WebFlowConfig.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/service/backup/SpittleRepositoryImpl.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/web/spitterspittle/SpitterController.java
+/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/be/spittr/config/JdbcPreDestroyService.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/web/config/ApacheServletInitializer.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/service/backup/SpitterRepository.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/web/config/AppWebConfig.java
@@ -23,12 +24,11 @@
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/service/SpittleServiceImpl.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/service/SpittleService.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/web/HomeController.java
+/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/be/spittr/config/AppRootConfig.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/web/servlet/GenericServletDemoServlet.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/dao/SpittleDao.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/service/backup/SpitterRepositoryImpl.java
-/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/web/config/JdbcPreDestroyService.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/entity/Spitter.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/exceptions/SpittleNotFoundException.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/dao/SpitterDao.java
 /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/dao/SpitterDAOImpl.java
-/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/src/com/mvc/spittr/web/config/AppRootConfig.java

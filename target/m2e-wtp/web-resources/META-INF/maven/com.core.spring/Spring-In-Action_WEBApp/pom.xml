@@ -40,6 +40,7 @@
 		<!-- spring.version>4.3.8.RELEASE</spring.version -->
 		<spring.version>5.0.0.RELEASE</spring.version>
 		<spring.security.version>4.2.3.RELEASE</spring.security.version>
+		<spring.starter.mail>1.5.7.RELEASE</spring.starter.mail>
 		<aspectj.version>1.8.10</aspectj.version>
 		<logback.version>1.2.3</logback.version>
 		<tiles.version>3.0.7</tiles.version>
@@ -47,6 +48,7 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<thymeleaf.version>3.0.6.RELEASE</thymeleaf.version>
 		<hibernate.version>5.2.10.Final</hibernate.version>
+
 	</properties>
 
 	<dependencies>
@@ -92,12 +94,12 @@
 			<version>${spring.version}</version>
 		</dependency>
 
-<!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.springframework</groupId> -->
-<!-- 			<artifactId>spring-context-support</artifactId> -->
-<!-- 			<version>${spring.version}</version> -->
-<!-- 		</dependency> -->
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.springframework</groupId> -->
+		<!-- <artifactId>spring-context-support</artifactId> -->
+		<!-- <version>${spring.version}</version> -->
+		<!-- </dependency> -->
 
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -127,7 +129,15 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-mail</artifactId>
-			<version>1.5.7.RELEASE</version>
+			<version>${spring.starter.mail}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-tomcat -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<version>${spring.starter.mail}</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->

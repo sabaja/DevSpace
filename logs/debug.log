@@ -1,72 +1,85 @@
-2017-10-07 19:36:36 [localhost-startStop-1] INFO  c.m.s.w.c.ConfigInitializerFORServletDispatcherMultipartConfig.getRootConfigClasses(61) - [dispatcher] AppRootConfig.class config
-2017-10-07 19:36:36 [localhost-startStop-1] INFO  c.m.s.w.c.ConfigInitializerFORServletDispatcherMultipartConfig.getServletConfigClasses(75) - [dispatcher] AppWebConfig.class config
-2017-10-07 19:36:36 [localhost-startStop-1] INFO  c.m.s.w.c.ConfigInitializerFORServletDispatcherMultipartConfig.customizeRegistration(112) - [dispatcher] customizeRegistration() Init parameter is set
-2017-10-07 19:36:36 [localhost-startStop-1] INFO  c.m.s.w.c.ConfigInitializerFORServletDispatcherMultipartConfig.customizeRegistration(122) - new File(/tmp)
-2017-10-07 19:36:36 [localhost-startStop-1] INFO  c.m.s.w.c.ConfigInitializerFORServletDispatcherMultipartConfig.customizeRegistration(130) - [dispatcher] multipart uploads files at /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/Downloads, maxFileSize=2097152, maxRequestSize=4194304, fileSizeThreshold=0
-2017-10-07 19:36:36 [localhost-startStop-1] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(34) - WebApplicationInitializer@ServletApacheInitializer instantiated
-2017-10-07 19:36:36 [localhost-startStop-1] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(49) - Servlet [com.mvc.spittr.web.servlet.GenericServletDemoServlet] was added
-2017-10-07 19:36:38 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.messageSource(79) - MessageSource config
-2017-10-07 19:36:38 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getDataSource(140) - DB DataSource config - HIBERNATE - 
-2017-10-07 19:36:38 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(148) - LocalSessionFactoryBean config - HIBERNATE -
-2017-10-07 19:36:38 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(151) - HibernateProperties config - HIBERNATE -
-2017-10-07 19:36:41 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.multipartResolver(97) - MultipartResolver config
-2017-10-07 19:36:41 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getTransactionManager(162) - HibernateTransactionManager config - HIBERNATE -
-2017-10-07 19:36:42 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.messageSource(79) - MessageSource config
-2017-10-07 19:36:42 [localhost-startStop-1] INFO  com.mvc.spittr.web.HomeController.<init>(52) - 2017-10-07T19:36:42.791 Constructor call
-2017-10-07 19:36:42 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getDataSource(140) - DB DataSource config - HIBERNATE - 
-2017-10-07 19:36:42 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(148) - LocalSessionFactoryBean config - HIBERNATE -
-2017-10-07 19:36:42 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(151) - HibernateProperties config - HIBERNATE -
-2017-10-07 19:36:43 [localhost-startStop-1] DEBUG c.m.s.w.s.SpittleController.<init>(54) - 2017-10-07T19:36:43.252 Constructor call
-2017-10-07 19:36:43 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.multipartResolver(97) - MultipartResolver config
-2017-10-07 19:36:43 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getTransactionManager(162) - HibernateTransactionManager config - HIBERNATE -
-2017-10-07 19:36:43 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowRegistry(37) - flowRegistry config - WEB-FLOW -
-2017-10-07 19:36:43 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowRegistry(38) - BasePath: /WEB-INF	FlowLocation: /**/*-flow.xml
-2017-10-07 19:36:43 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowExecutor(54) - flowExecutor config - WEB-FLOW -
-2017-10-07 19:36:43 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowBuilderServices(92) - FlowBuilderServices config - WEB-FLOW -
-2017-10-07 19:36:43 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowHandlerMapping(109) - FlowHandlerMapping config - WEB-FLOW -
-2017-10-07 19:36:43 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowHandlerAdapter(129) - FlowHandlerAdapter config - WEB-FLOW -
-2017-10-07 19:36:44 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.configureDefaultServletHandling(169) - DefaultServletHandlerConfigurer config
-2017-10-07 19:36:44 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(52) - InternalResourceViewResolver config
-2017-10-07 19:36:44 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(57) - resolver setting prefix /WEB-INF/views/
-2017-10-07 19:36:44 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(59) - resolver setting suffix .jsp
-2017-10-07 19:36:44 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(62) - org.springframework.web.servlet.view.JstlView.class set as view class
-2017-10-07 19:36:44 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(69) - InternalResourceViewResolver for html config
-2017-10-07 19:36:44 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(74) - resolver setting prefix /WEB-INF/views/
-2017-10-07 19:36:44 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(76) - resolver setting suffix .html
-2017-10-07 19:36:44 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(79) - org.springframework.web.servlet.view.JstlView.class set as view class
-2017-10-07 19:56:05 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ConfigInitializerFORServletDispatcherMultipartConfig.getRootConfigClasses(61) - [dispatcher] AppRootConfig.class config
-2017-10-07 19:56:05 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ConfigInitializerFORServletDispatcherMultipartConfig.getServletConfigClasses(75) - [dispatcher] AppWebConfig.class config
-2017-10-07 19:56:05 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ConfigInitializerFORServletDispatcherMultipartConfig.customizeRegistration(112) - [dispatcher] customizeRegistration() Init parameter is set
-2017-10-07 19:56:05 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ConfigInitializerFORServletDispatcherMultipartConfig.customizeRegistration(122) - new File(/tmp)
-2017-10-07 19:56:05 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ConfigInitializerFORServletDispatcherMultipartConfig.customizeRegistration(130) - [dispatcher] multipart uploads files at /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/Downloads, maxFileSize=2097152, maxRequestSize=4194304, fileSizeThreshold=0
-2017-10-07 19:56:05 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(34) - WebApplicationInitializer@ServletApacheInitializer instantiated
-2017-10-07 19:56:05 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(49) - Servlet [com.mvc.spittr.web.servlet.GenericServletDemoServlet] was added
-2017-10-07 19:56:07 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.messageSource(79) - MessageSource config
-2017-10-07 19:56:07 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getDataSource(140) - DB DataSource config - HIBERNATE - 
-2017-10-07 19:56:07 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(148) - LocalSessionFactoryBean config - HIBERNATE -
-2017-10-07 19:56:07 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(151) - HibernateProperties config - HIBERNATE -
-2017-10-07 19:56:10 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.multipartResolver(97) - MultipartResolver config
-2017-10-07 19:56:10 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getTransactionManager(162) - HibernateTransactionManager config - HIBERNATE -
-2017-10-07 19:56:11 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.messageSource(79) - MessageSource config
-2017-10-07 19:56:11 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  com.mvc.spittr.web.HomeController.<init>(52) - 2017-10-07T19:56:11.111 Constructor call
-2017-10-07 19:56:11 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getDataSource(140) - DB DataSource config - HIBERNATE - 
-2017-10-07 19:56:11 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(148) - LocalSessionFactoryBean config - HIBERNATE -
-2017-10-07 19:56:11 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(151) - HibernateProperties config - HIBERNATE -
-2017-10-07 19:56:11 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] DEBUG c.m.s.w.s.SpittleController.<init>(54) - 2017-10-07T19:56:11.552 Constructor call
-2017-10-07 19:56:11 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.multipartResolver(97) - MultipartResolver config
-2017-10-07 19:56:11 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getTransactionManager(162) - HibernateTransactionManager config - HIBERNATE -
-2017-10-07 19:56:11 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.WebFlowConfig.flowRegistry(37) - flowRegistry config - WEB-FLOW -
-2017-10-07 19:56:11 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.WebFlowConfig.flowRegistry(38) - BasePath: /WEB-INF	FlowLocation: /**/*-flow.xml
-2017-10-07 19:56:11 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.WebFlowConfig.flowExecutor(54) - flowExecutor config - WEB-FLOW -
-2017-10-07 19:56:12 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.WebFlowConfig.flowBuilderServices(92) - FlowBuilderServices config - WEB-FLOW -
-2017-10-07 19:56:12 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.WebFlowConfig.flowHandlerMapping(109) - FlowHandlerMapping config - WEB-FLOW -
-2017-10-07 19:56:12 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.WebFlowConfig.flowHandlerAdapter(129) - FlowHandlerAdapter config - WEB-FLOW -
-2017-10-07 19:56:12 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.configureDefaultServletHandling(169) - DefaultServletHandlerConfigurer config
-2017-10-07 19:56:12 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(52) - InternalResourceViewResolver config
-2017-10-07 19:56:12 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(57) - resolver setting prefix /WEB-INF/views/
-2017-10-07 19:56:12 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(59) - resolver setting suffix .jsp
-2017-10-07 19:56:12 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(62) - org.springframework.web.servlet.view.JstlView.class set as view class
-2017-10-07 19:56:12 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(69) - InternalResourceViewResolver for html config
-2017-10-07 19:56:12 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(74) - resolver setting prefix /WEB-INF/views/
-2017-10-07 19:56:12 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(76) - resolver setting suffix .html
-2017-10-07 19:56:12 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(79) - org.springframework.web.servlet.view.JstlView.class set as view class
+2017-10-08 12:02:42 [localhost-startStop-1] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(35) - WebApplicationInitializer@ServletApacheInitializer instantiated
+2017-10-08 12:02:42 [localhost-startStop-1] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(50) - Servlet [com.mvc.spittr.web.servlet.GenericServletDemoServlet] was added
+2017-10-08 12:02:48 [localhost-startStop-1] INFO  com.mvc.spittr.web.HomeController.<init>(52) - 2017-10-08T12:02:48.656 Constructor call
+2017-10-08 12:02:48 [localhost-startStop-1] DEBUG c.m.s.w.s.SpittleController.<init>(54) - 2017-10-08T12:02:48.724 Constructor call
+2017-10-08 12:02:48 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowRegistry(37) - flowRegistry config - WEB-FLOW -
+2017-10-08 12:02:48 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowRegistry(38) - BasePath: /WEB-INF	FlowLocation: /**/*-flow.xml
+2017-10-08 12:02:49 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowExecutor(54) - flowExecutor config - WEB-FLOW -
+2017-10-08 12:02:49 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowBuilderServices(92) - FlowBuilderServices config - WEB-FLOW -
+2017-10-08 12:02:49 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowHandlerMapping(109) - FlowHandlerMapping config - WEB-FLOW -
+2017-10-08 12:02:49 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowHandlerAdapter(129) - FlowHandlerAdapter config - WEB-FLOW -
+2017-10-08 12:02:49 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.configureDefaultServletHandling(169) - DefaultServletHandlerConfigurer config
+2017-10-08 12:02:50 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(52) - InternalResourceViewResolver config
+2017-10-08 12:02:50 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(57) - resolver setting prefix /WEB-INF/views/
+2017-10-08 12:02:50 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(59) - resolver setting suffix .jsp
+2017-10-08 12:02:50 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(62) - org.springframework.web.servlet.view.JstlView.class set as view class
+2017-10-08 12:02:50 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(69) - InternalResourceViewResolver for html config
+2017-10-08 12:02:50 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(74) - resolver setting prefix /WEB-INF/views/
+2017-10-08 12:02:50 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(76) - resolver setting suffix .html
+2017-10-08 12:02:50 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(79) - org.springframework.web.servlet.view.JstlView.class set as view class
+2017-10-08 12:02:51 [http-nio-8080-exec-2] INFO  c.m.s.w.f.LoggingUrlRequestFilter.doFilter(34) - [com.mvc.spittr.web.filters.LoggingUrlRequestFilter]: 2017-10-08T12:02:51.696 - /Spring-In-Action_WEBApp/
+2017-10-08 12:18:39 [localhost-startStop-1] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(35) - WebApplicationInitializer@ServletApacheInitializer instantiated
+2017-10-08 12:18:39 [localhost-startStop-1] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(50) - Servlet [com.mvc.spittr.web.servlet.GenericServletDemoServlet] was added
+2017-10-08 12:18:46 [localhost-startStop-1] INFO  com.mvc.spittr.web.HomeController.<init>(52) - 2017-10-08T12:18:46.108 Constructor call
+2017-10-08 12:18:46 [localhost-startStop-1] DEBUG c.m.s.w.s.SpittleController.<init>(54) - 2017-10-08T12:18:46.194 Constructor call
+2017-10-08 12:18:46 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowRegistry(37) - flowRegistry config - WEB-FLOW -
+2017-10-08 12:18:46 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowRegistry(38) - BasePath: /WEB-INF	FlowLocation: /**/*-flow.xml
+2017-10-08 12:18:46 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowExecutor(54) - flowExecutor config - WEB-FLOW -
+2017-10-08 12:18:46 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowBuilderServices(92) - FlowBuilderServices config - WEB-FLOW -
+2017-10-08 12:18:46 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowHandlerMapping(109) - FlowHandlerMapping config - WEB-FLOW -
+2017-10-08 12:18:46 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowHandlerAdapter(129) - FlowHandlerAdapter config - WEB-FLOW -
+2017-10-08 12:18:47 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.configureDefaultServletHandling(169) - DefaultServletHandlerConfigurer config
+2017-10-08 12:18:47 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(52) - InternalResourceViewResolver config
+2017-10-08 12:18:47 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(57) - resolver setting prefix /WEB-INF/views/
+2017-10-08 12:18:47 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(59) - resolver setting suffix .jsp
+2017-10-08 12:18:47 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(62) - org.springframework.web.servlet.view.JstlView.class set as view class
+2017-10-08 12:18:48 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(69) - InternalResourceViewResolver for html config
+2017-10-08 12:18:48 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(74) - resolver setting prefix /WEB-INF/views/
+2017-10-08 12:18:48 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(76) - resolver setting suffix .html
+2017-10-08 12:18:48 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(79) - org.springframework.web.servlet.view.JstlView.class set as view class
+2017-10-08 12:18:50 [http-nio-8080-exec-2] INFO  c.m.s.w.f.LoggingUrlRequestFilter.doFilter(34) - [com.mvc.spittr.web.filters.LoggingUrlRequestFilter]: 2017-10-08T12:18:50.272 - /Spring-In-Action_WEBApp/
+2017-10-08 12:20:05 [localhost-startStop-1] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(35) - WebApplicationInitializer@ServletApacheInitializer instantiated
+2017-10-08 12:20:05 [localhost-startStop-1] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(50) - Servlet [com.mvc.spittr.web.servlet.GenericServletDemoServlet] was added
+2017-10-08 12:20:11 [localhost-startStop-1] INFO  com.mvc.spittr.web.HomeController.<init>(52) - 2017-10-08T12:20:11.666 Constructor call
+2017-10-08 12:20:11 [localhost-startStop-1] DEBUG c.m.s.w.s.SpittleController.<init>(54) - 2017-10-08T12:20:11.764 Constructor call
+2017-10-08 12:20:11 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowRegistry(37) - flowRegistry config - WEB-FLOW -
+2017-10-08 12:20:11 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowRegistry(38) - BasePath: /WEB-INF	FlowLocation: /**/*-flow.xml
+2017-10-08 12:20:12 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowExecutor(54) - flowExecutor config - WEB-FLOW -
+2017-10-08 12:20:12 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowBuilderServices(92) - FlowBuilderServices config - WEB-FLOW -
+2017-10-08 12:20:12 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowHandlerMapping(109) - FlowHandlerMapping config - WEB-FLOW -
+2017-10-08 12:20:12 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowHandlerAdapter(129) - FlowHandlerAdapter config - WEB-FLOW -
+2017-10-08 12:20:38 [http-nio-8080-exec-4] INFO  com.mvc.spittr.web.HomeController.<init>(52) - 2017-10-08T12:20:38.174 Constructor call
+2017-10-08 12:20:38 [http-nio-8080-exec-4] DEBUG c.m.s.w.s.SpittleController.<init>(54) - 2017-10-08T12:20:38.194 Constructor call
+2017-10-08 12:20:38 [http-nio-8080-exec-4] INFO  c.m.spittr.web.config.WebFlowConfig.flowRegistry(37) - flowRegistry config - WEB-FLOW -
+2017-10-08 12:20:38 [http-nio-8080-exec-4] INFO  c.m.spittr.web.config.WebFlowConfig.flowRegistry(38) - BasePath: /WEB-INF	FlowLocation: /**/*-flow.xml
+2017-10-08 12:20:38 [http-nio-8080-exec-4] INFO  c.m.spittr.web.config.WebFlowConfig.flowExecutor(54) - flowExecutor config - WEB-FLOW -
+2017-10-08 12:20:38 [http-nio-8080-exec-4] INFO  c.m.spittr.web.config.WebFlowConfig.flowBuilderServices(92) - FlowBuilderServices config - WEB-FLOW -
+2017-10-08 12:20:38 [http-nio-8080-exec-4] INFO  c.m.spittr.web.config.WebFlowConfig.flowHandlerMapping(109) - FlowHandlerMapping config - WEB-FLOW -
+2017-10-08 12:20:38 [http-nio-8080-exec-4] INFO  c.m.spittr.web.config.WebFlowConfig.flowHandlerAdapter(129) - FlowHandlerAdapter config - WEB-FLOW -
+2017-10-08 12:24:01 [localhost-startStop-1] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(35) - WebApplicationInitializer@ServletApacheInitializer instantiated
+2017-10-08 12:24:01 [localhost-startStop-1] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(50) - Servlet [com.mvc.spittr.web.servlet.GenericServletDemoServlet] was added
+2017-10-08 12:24:07 [localhost-startStop-1] INFO  com.mvc.spittr.web.HomeController.<init>(52) - 2017-10-08T12:24:07.076 Constructor call
+2017-10-08 12:24:07 [localhost-startStop-1] DEBUG c.m.s.w.s.SpittleController.<init>(54) - 2017-10-08T12:24:07.136 Constructor call
+2017-10-08 12:24:07 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowRegistry(37) - flowRegistry config - WEB-FLOW -
+2017-10-08 12:24:07 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowRegistry(38) - BasePath: /WEB-INF	FlowLocation: /**/*-flow.xml
+2017-10-08 12:24:07 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowExecutor(54) - flowExecutor config - WEB-FLOW -
+2017-10-08 12:24:07 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowBuilderServices(92) - FlowBuilderServices config - WEB-FLOW -
+2017-10-08 12:24:07 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowHandlerMapping(109) - FlowHandlerMapping config - WEB-FLOW -
+2017-10-08 12:24:07 [localhost-startStop-1] INFO  c.m.spittr.web.config.WebFlowConfig.flowHandlerAdapter(129) - FlowHandlerAdapter config - WEB-FLOW -
+2017-10-08 12:24:08 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.configureDefaultServletHandling(169) - DefaultServletHandlerConfigurer config
+2017-10-08 12:24:08 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(52) - InternalResourceViewResolver config
+2017-10-08 12:24:08 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(57) - resolver setting prefix /WEB-INF/views/
+2017-10-08 12:24:08 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(59) - resolver setting suffix .jsp
+2017-10-08 12:24:08 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(62) - org.springframework.web.servlet.view.JstlView.class set as view class
+2017-10-08 12:24:08 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(69) - InternalResourceViewResolver for html config
+2017-10-08 12:24:08 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(74) - resolver setting prefix /WEB-INF/views/
+2017-10-08 12:24:08 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(76) - resolver setting suffix .html
+2017-10-08 12:24:08 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(79) - org.springframework.web.servlet.view.JstlView.class set as view class
+2017-10-08 12:24:10 [http-nio-8080-exec-2] INFO  c.m.s.w.f.LoggingUrlRequestFilter.doFilter(34) - [com.mvc.spittr.web.filters.LoggingUrlRequestFilter]: 2017-10-08T12:24:10.093 - /Spring-In-Action_WEBApp/
+2017-10-08 12:24:11 [http-nio-8080-exec-3] INFO  c.m.s.w.f.LoggingUrlRequestFilter.doFilter(34) - [com.mvc.spittr.web.filters.LoggingUrlRequestFilter]: 2017-10-08T12:24:11.540 - /Spring-In-Action_WEBApp/homepage
+2017-10-08 12:24:13 [http-nio-8080-exec-4] INFO  c.m.s.w.f.LoggingUrlRequestFilter.doFilter(34) - [com.mvc.spittr.web.filters.LoggingUrlRequestFilter]: 2017-10-08T12:24:13.668 - /Spring-In-Action_WEBApp/spitter/registration
+2017-10-08 12:24:13 [http-nio-8080-exec-4] INFO  c.m.s.w.s.SpitterController.showRegistration(91) - http://localhost:8080/Spring-In-Action_WEBApp/spitter/registration request called 
+2017-10-08 12:24:13 [http-nio-8080-exec-4] INFO  c.m.s.w.s.SpitterController.showRegistration(92) - showRegistration() called view=registerForm_sf_2
+2017-10-08 12:33:14 [http-nio-8080-exec-7] INFO  c.m.s.w.f.LoggingUrlRequestFilter.doFilter(34) - [com.mvc.spittr.web.filters.LoggingUrlRequestFilter]: 2017-10-08T12:33:14.112 - /Spring-In-Action_WEBApp/
+2017-10-08 12:35:00 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(35) - WebApplicationInitializer@ServletApacheInitializer instantiated
+2017-10-08 12:35:00 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(50) - Servlet [com.mvc.spittr.web.servlet.GenericServletDemoServlet] was added
