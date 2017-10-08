@@ -1,4 +1,4 @@
-package com.mvc.spittr.web.config;
+package com.be.spittr.config;
 
 import java.io.IOException;
 import java.lang.invoke.MethodHandles;
