@@ -15,7 +15,7 @@ import org.springframework.stereotype.Repository;
 import com.mvc.spittr.entity.Spitter;
 import com.mvc.spittr.entity.Spittle;
 
-@Repository
+@Repository("spittleDAOImpl")
 public class SpittleDAOImpl implements SpittleDao{
 	
 	private static final Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());

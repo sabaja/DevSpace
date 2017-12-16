@@ -5,9 +5,12 @@ import java.util.List;
 
 import javax.persistence.TypedQuery;
 
+import org.hibernate.Criteria;
+import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +25,7 @@ import com.mvc.spittr.entity.Spittle;
  *         https://www.boraji.com/spring-4-hibernate-5-integration-example-with-zero-xml
  *
  */
-@Repository
+@Repository("spitterDAOImpl")
 public class SpitterDAOImpl implements SpitterDao {
 
 	private static final Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
@@ -41,7 +44,8 @@ public class SpitterDAOImpl implements SpitterDao {
 		 * **UserDetails** "); You do not give your table name on the Db. give
 		 * you bean class name.
 		 */
-		TypedQuery<Spitter> query = (TypedQuery<Spitter>) session.createQuery("FROM Spitter WHERE USERNAME = :username");
+		TypedQuery<Spitter> query = (TypedQuery<Spitter>) session
+				.createQuery("FROM Spitter WHERE USERNAME = :username");
 		query.setParameter("username", username);
 		Spitter spitter = query.getSingleResult();
 		logger.info("Spitter found successfully, Spitter details=" + spitter);
@@ -58,11 +62,27 @@ public class SpitterDAOImpl implements SpitterDao {
 
 	@Override
 	public void save(Spitter spitter) {
+		//Da togliere
+//		spitter.setSsoId("ssoId");
+		logger.info("employee before saved: {}", spitter.toString());
 		sessionFactory.getCurrentSession().save(spitter);
-		logger.info("employee saved: {}", spitter.toString());
+		logger.info("employee after saved: {}", spitter.toString());
 		// session.getTransaction().commit();
 		// logger.info("tx commit");
 
+	}
+
+	@Override
+	public Spitter findBySsoId(String ssoId) {
+		logger.info("SSO : {}", ssoId);
+		Session session = sessionFactory.openSession();
+		Criteria crit = session.createCriteria(Spitter.class);
+		crit.add(Restrictions.eq("ssoId", ssoId));
+		Spitter spitter = (Spitter) crit.uniqueResult();
+		if (spitter != null) {
+			Hibernate.initialize(spitter.getRoles());
+		}
+		return spitter;
 	}
 
 	@Override
@@ -87,7 +107,7 @@ public class SpitterDAOImpl implements SpitterDao {
 	@Override
 	public void insertSpittle(Spittle spittle) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }

@@ -21,15 +21,17 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.WebApplicationContext;
 
-import com.be.spittr.config.AppRootConfig;
 import com.mvc.spittr.web.servlet.GenericServletDemoServlet;
 
 public class ApacheServletInitializer implements WebApplicationInitializer, ServletContextListener{
 	private static final Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
+	static{
+		logger.info("************************Start AppWebConfig************************");
+	}
+
 	
-	/**
-	 * Servlet Apache initializer
-	 */
+//	  Servlet Apache initializer
+	 
 	@Override
 	public void onStartup(ServletContext context) throws ServletException {
 		logger.info("WebApplicationInitializer@ServletApacheInitializer instantiated");
@@ -40,8 +42,8 @@ public class ApacheServletInitializer implements WebApplicationInitializer, Serv
 	     * {
 	            @WebInitParam(name="admin", value="Harry Taciak"),
 	            @WebInitParam(name="email", value="admin@example.com")
-	        }
-	     */
+	        }*/
+	     
 	    
 	    initParams.put("admin", "Jacopo Sabatini");
 	    initParams.put("email", "jacoposabtini76@gmail.com");
@@ -76,6 +78,9 @@ public class ApacheServletInitializer implements WebApplicationInitializer, Serv
 	public void contextInitialized(ServletContextEvent arg0) {
 		// TODO Auto-generated method stub
 		
+	}
+	static{
+		logger.info("************************End AppWebConfig************************");
 	}
 
 		

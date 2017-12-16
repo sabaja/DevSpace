@@ -11,20 +11,18 @@ import com.mvc.spittr.dao.SpitterDAOImpl;
 import com.mvc.spittr.dao.SpitterDao;
 import com.mvc.spittr.entity.Spitter;
 
-@Service
+@Service("spitterServiceImpl")
+@Transactional
 public class SpitterServiceImpl implements SpitterService {
 	
 	@Autowired
 	SpitterDao spitterDao;
 	
-	@Transactional(readOnly = true)
 	@Override
 	public Spitter findByUserName(String username) {
 		return spitterDao.findByUserName(username);
 	}
 
-	
-	@Transactional
 	@Override
 	public void save(Spitter spitter) {
 		spitterDao.save(spitter);
@@ -32,8 +30,7 @@ public class SpitterServiceImpl implements SpitterService {
 
 	@Override
 	public Spitter getPersonById(Long id) {
-		spitterDao.getPersonById(id);
-		return null;
+		return spitterDao.getPersonById(id);
 	}
 
 	@Override
@@ -52,6 +49,12 @@ public class SpitterServiceImpl implements SpitterService {
 	public void removePerson(Long id) {
 		// TODO Auto-generated method stub
 		
+	}
+
+	@Override
+	public Spitter findBySsoId(String ssoId) {
+		spitterDao.findBySsoId(ssoId);
+		return null;
 	}
 
 }

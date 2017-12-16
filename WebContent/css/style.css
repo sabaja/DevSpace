@@ -39,3 +39,7 @@ body {
     background: #fed7a0;
     text-align: center;
 }
+
+em { 
+    font-style: italic;
+}

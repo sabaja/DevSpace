@@ -6,14 +6,20 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Welcome</title>
-<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 </head>
 <body>
+	<s:escapeBody htmlEscape="true">
+		Please press link below to register to your Spitter Profile
+	</s:escapeBody>
 	<h1>
-		<a href="homepage"><s:message code="spittr.welcome" /></a>
+		<a href="homepage"><s:message code="spittr.register" /></a>
 	</h1>
 	<s:escapeBody htmlEscape="true">
-		This page will replace with login page
+		Please press link below to login to your Spitter Profile
 	</s:escapeBody>
+	<h1>
+		<a href="login"><s:message code="spittr.login" /></a>
+	</h1>
 </body>
 </html>

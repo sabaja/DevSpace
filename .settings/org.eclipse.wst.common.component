@@ -6,7 +6,7 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/test"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/spark"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/source"/>
+        <property name="java-output-path" value="/Spring-In-Action_WebApp/build/classes"/>
         <property name="context-root" value="Spring-In-Action_WEBApp"/>
-        <property name="java-output-path" value="/Spring-In-Action_WEBApp/build/classes"/>
     </wb-module>
 </project-modules>

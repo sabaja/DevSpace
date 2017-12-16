@@ -23,6 +23,9 @@
 		<br /> LastName:
 		<c:out value="${spitter.lastName}" />
 		<br />
+		<br /> Email:
+		<c:out value="${spitter.email}" />
+		<br />
 		<div>
 			<input type="submit" value="Home" />
 		</div>

@@ -5,51 +5,64 @@ import java.lang.invoke.MethodHandles;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.format.FormatterRegistry;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
-import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
-import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
-import org.thymeleaf.TemplateEngine;
-import org.thymeleaf.spring4.SpringTemplateEngine;
-import org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver;
-import org.thymeleaf.spring4.view.ThymeleafViewResolver;
-import org.thymeleaf.templatemode.TemplateMode;
-import org.thymeleaf.templateresolver.ITemplateResolver;
-import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
+
+import com.mvc.spittr.web.converter.RoleToUserProfileConverter;
+import com.mvc.spittr.web.logFiltersInterceptors.HttpRequestLogInterceptor;
+
+/**
+ * For Security and converter
+ * http://websystique.com/springmvc/spring-mvc-4-and-spring-security-4-integration-example/
+ * @author sabaja
+ *
+ */
 
 @SuppressWarnings("deprecation")
 @Configuration
 @EnableWebMvc // Enable Spring MVC
-@ComponentScan(basePackages = { "com.mvc.spittr.web" })
+@ComponentScan(basePackages = { "com.mvc.spittr.web", "com.mvc.spittr.web.util", "com.mvc.spittr.web.logFiltersInterceptors"})
 // Packages will be scanned for components, the controllers you write will be
 // annotated with @Controller, which will make them candidates for
 // component-scanning.
 public class AppWebConfig extends WebMvcConfigurerAdapter implements ApplicationContextAware {
 
+	@SuppressWarnings("unused")
 	private ApplicationContext applicationContext;
+	@Autowired
+    RoleToUserProfileConverter roleToUserProfileConverter;
+	@Autowired
+	HttpRequestLogInterceptor httpRequestLogInterceptor;
 	private static final Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
+	static{
+		logger.info("************************Start AppWebConfig************************");
+	}
 
 	@Override
 	public void setApplicationContext(final ApplicationContext applicationContext) throws BeansException {
 		this.applicationContext = applicationContext;
+		logger.info("InternalResourceViewResolver inizialized");
 	}
 
 	// ----------------------------JSP
-	// CONFIG--------------------------------------------
+	// inizialized--------------------------------------------
 	// Configure a JSP view resolver ViewResolver, Interface to be implemented
 	// by objects that can resolve views by name.
 	@Bean
 	public ViewResolver viewResolver() {
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-		logger.info("InternalResourceViewResolver config");
+		logger.info("InternalResourceViewResolver inizialized");
 		// it’s configured to look for JSP /WEB-INF/views/ files by wrapping
 		// view names with a specific prefix and suffix (for example, a view
 		// name of home will be resolved / WEB-INF /views/home.jsp).
@@ -66,7 +79,7 @@ public class AppWebConfig extends WebMvcConfigurerAdapter implements Application
 	@Bean
 	public ViewResolver viewResolver2() {
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-		logger.info("InternalResourceViewResolver for html config");
+		logger.info("InternalResourceViewResolver for html inizialized");
 		// it’s configured to look for JSP /WEB-INF/views/ files by wrapping
 		// view names with a specific prefix and suffix (for example, a view
 		// name of home will be resolved / WEB-INF /views/home.jsp).
@@ -78,7 +91,36 @@ public class AppWebConfig extends WebMvcConfigurerAdapter implements Application
 		resolver.setViewClass(org.springframework.web.servlet.view.JstlView.class);
 		logger.info("org.springframework.web.servlet.view.JstlView.class set as view class");
 		return resolver;
-	}	
+	}
+
+	
+	/**
+     * Configure Converter to be used.
+     * In our example, we need a converter to convert string values[Roles] to UserProfiles in newUser.jsp
+     */
+    @Override
+    public void addFormatters(FormatterRegistry registry) {
+        registry.addConverter(roleToUserProfileConverter);
+        logger.info("Converter initialized, it converts string values[Roles] to UserProfiles");
+    }
+	
+	@Override
+	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
+		configurer.enable();
+		logger.info("DefaultServletHandlerConfigurer inizialized");
+	}
+
+	
+	/**
+	 * http://www.baeldung.com/spring-http-logging
+	 * to intercept all request 
+	 */
+	@Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(httpRequestLogInterceptor)
+          .addPathPatterns("/*","/**");
+        logger.info("Interceptor added urls: /* /**");
+    }
 	
 	// -----------------------------------TILES
 	// CONFIG----------------------------------------------------
@@ -163,11 +205,8 @@ public class AppWebConfig extends WebMvcConfigurerAdapter implements Application
 	// you’re asking DispatcherServlet to forward requests for static resources
 	// to the servlet container’s default servlet and not to try to handle them
 	// itself.
-	@Override
-	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
-		configurer.enable();
-		logger.info("DefaultServletHandlerConfigurer config");
+	static{
+		logger.info("************************End AppWebConfig************************");
 	}
-
 
 }

@@ -4,13 +4,13 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import com.mvc.spittr.web.HomeController;
+import com.mvc.spittr.web.LoginController;
 
 public class ControllerHomeTest {
 	
 	@Test
 	public void homeTest(){
-		HomeController home = new HomeController();
+		LoginController home = new LoginController();
 		assertEquals("home", home.home(null,null));
 	}
 

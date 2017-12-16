@@ -50,25 +50,12 @@ public class Spittle implements Serializable {
 	private Long id;
 
 
-//	@Column(name = "SPITTER_ID")
-//	@JoinColumn(name = "SPITTER_ID")
-//////	@Formula("select ss.SPITTER_ID "
-//////			+ "from SPITTER_SPITTLE ss "
-//////			+ "where ss.SPITTLE_ID = SPITTLE_ID")
-//////	private Long spitter_id;
-////	@OneToMany
-////	@JoinColumn(name ="SPITTER_ID")
-//	private Spitter spitter;
 	
 	@Column(name = "SPITTLE_MESSAGE", nullable = true)
 	private String message;
 
-	// Instant instant = Instant.now(); // get The current time in instant
-	// object
-	// Timestamp t=java.sql.Timestamp.from(instant); // Convert instant to
-	// Timestamp
-	// Instant anotherInstant=t.toInstant(); // Convert Timestamp to Instant
-	@Column(name = "SPITTLE_DATE", nullable = false)
+	// Automatic conversion type
+	@Column(name = "DATE_TIME", nullable = false)
 	private Instant time;
 	@Column(name = "LONGITUDE", nullable = true)
 	private Long longitude;

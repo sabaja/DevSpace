@@ -13,6 +13,7 @@ import com.mvc.spittr.entity.Spittle;
  */
 public interface SpitterDao {
 	public Spitter findByUserName(String username);
+	public Spitter findBySsoId(String ssoId);
 	public Spitter getPersonById(Long id);
 	public void save(Spitter spitter);
 	public void updateSpitter(Spitter spitter);

@@ -3,8 +3,9 @@
 <%@ page session="false"%>
 <html>
 <head>
-<title>Spittr</title>
-<style type="text/css">@import url(css/style.css);</style>
+<title>Spitter Home</title>
+<!-- style type="text/css">@import url(css/style.css);</style -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
 </head>
 <body>

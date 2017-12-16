@@ -17,7 +17,7 @@ import org.springframework.web.servlet.view.InternalResourceView;
 import com.mvc.spittr.constants.SpitterConsts;
 import com.mvc.spittr.entity.Spittle;
 import com.mvc.spittr.service.backup.SpittleRepository;
-import com.mvc.spittr.web.spitterspittle.SpittleController;
+import com.mvc.spittr.web.SpittleController;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;

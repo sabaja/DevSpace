@@ -9,13 +9,13 @@ import org.springframework.transaction.annotation.Transactional;
 import com.mvc.spittr.dao.SpittleDao;
 import com.mvc.spittr.entity.Spittle;
 
-@Service
+@Service("spittleServiceImpl")
+@Transactional
 public class SpittleServiceImpl implements SpittleService {
 
 	@Autowired
 	private SpittleDao spittleDao;
 	
-	@Transactional(readOnly = true)
 	@Override
 	public List<Spittle> findSpittles() {
 		return spittleDao.findSpittles();
@@ -27,7 +27,6 @@ public class SpittleServiceImpl implements SpittleService {
 		return null;
 	}
 
-	@Transactional(readOnly = true)
 	@Override
 	public Spittle findSpittleById(long id) {
 		return spittleDao.findSpittleById(id);

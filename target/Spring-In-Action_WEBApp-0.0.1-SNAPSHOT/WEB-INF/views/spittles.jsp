@@ -1,5 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE HTML>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 <c:forEach items="${spittleList}" var="spittle" >
 <li id="spittle_<c:out value="spittle.id"/>">
 <div class="spittleMessage">
