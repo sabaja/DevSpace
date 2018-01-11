@@ -12,7 +12,7 @@
 </style>
 </head>
 <body>
-	<form method="GET" action="../homepage">
+	<form method="GET" action="../spitter">
 		<h1>Your Profile</h1>
 		User:
 		<c:out value="${spitter.username}" />
@@ -22,7 +22,6 @@
 		<c:out value="${spitter.firstName}" />
 		<br /> LastName:
 		<c:out value="${spitter.lastName}" />
-		<br />
 		<br /> Email:
 		<c:out value="${spitter.email}" />
 		<br />

@@ -10,6 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.mvc.spittr.dao.SpitterDAOImpl;
 import com.mvc.spittr.dao.SpitterDao;
 import com.mvc.spittr.entity.Spitter;
+import com.mvc.spittr.entity.Spittle;
 
 @Service("spitterServiceImpl")
 @Transactional
@@ -54,6 +55,12 @@ public class SpitterServiceImpl implements SpitterService {
 	@Override
 	public Spitter findBySsoId(String ssoId) {
 		spitterDao.findBySsoId(ssoId);
+		return null;
+	}
+
+	@Override
+	public List<Spittle> listSpittles(Long id) {
+		spitterDao.listSpittles(id);
 		return null;
 	}
 

@@ -10,10 +10,10 @@
 </head>
 <body>
 	<s:escapeBody htmlEscape="true">
-		Please press link below to register to your Spitter Profile
+		Please press link below to enter into Spitter's home 
 	</s:escapeBody>
 	<h1>
-		<a href="homepage"><s:message code="spittr.register" /></a>
+		<a href="spitter"><s:message code="spittr.home" /></a>
 	</h1>
 	<s:escapeBody htmlEscape="true">
 		Please press link below to login to your Spitter Profile

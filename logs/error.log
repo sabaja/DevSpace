@@ -1,10 +1,13 @@
-2017-11-11 17:43:14 [localhost-startStop-1] ERROR o.s.web.servlet.DispatcherServlet.initServletBean(507) - Context initialization failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appWebConfig': Unsatisfied dependency expressed through field 'roleToUserProfileConverter'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mvc.spittr.web.converter.RoleToUserProfileConverter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:581) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:367) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1340) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
+2018-02-01 22:25:42 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] ERROR o.s.web.context.ContextLoader.initWebApplicationContext(316) - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController' defined in file [/home/sabaja/Scrivania/Dev-space/TomCat_8_5_4/apache-tomcat-8.5.4/wtpwebapps/Spring-In-Action_WebApp/WEB-INF/classes/com/mvc/spittr/web/LoginController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mvc.spittr.web.LoginController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	PersistentTokenBasedRememberMeServices cannot be resolved to a type
+	Syntax error, insert ";" to complete FieldDeclaration
+	PersistentTokenBasedRememberMeServices cannot be resolved to a type
+	Syntax error, insert "}" to complete ClassBody
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1231) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1130) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
@@ -13,115 +16,40 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:756) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868) ~[spring-context-5.0.0.RELEASE.jar:5.0.0.RELEASE]
 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:676) ~[spring-webmvc-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:545) ~[spring-webmvc-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:499) ~[spring-webmvc-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:172) [spring-webmvc-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at javax.servlet.GenericServlet.init(GenericServlet.java:158) [servlet-api.jar:3.1.FR]
-	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1194) [catalina.jar:8.5.4]
-	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1003) [catalina.jar:8.5.4]
-	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4902) [catalina.jar:8.5.4]
-	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5212) [catalina.jar:8.5.4]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409) ~[spring-web-5.0.0.RELEASE.jar:5.0.0.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291) ~[spring-web-5.0.0.RELEASE.jar:5.0.0.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103) [spring-web-5.0.0.RELEASE.jar:5.0.0.RELEASE]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4714) [catalina.jar:8.5.4]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5178) [catalina.jar:8.5.4]
 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:152) [catalina.jar:8.5.4]
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1403) [catalina.jar:8.5.4]
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1393) [catalina.jar:8.5.4]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_151]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
-Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mvc.spittr.web.converter.RoleToUserProfileConverter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1501) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1099) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1060) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:578) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	... 28 common frames omitted
-2017-11-11 17:43:16 [http-nio-8080-exec-2] ERROR o.s.web.servlet.DispatcherServlet.initServletBean(507) - Context initialization failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appWebConfig': Unsatisfied dependency expressed through field 'roleToUserProfileConverter'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mvc.spittr.web.converter.RoleToUserProfileConverter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:581) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:367) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1340) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:756) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868) ~[spring-context-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:676) ~[spring-webmvc-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:545) ~[spring-webmvc-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:499) ~[spring-webmvc-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:172) [spring-webmvc-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at javax.servlet.GenericServlet.init(GenericServlet.java:158) [servlet-api.jar:3.1.FR]
-	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1194) [catalina.jar:8.5.4]
-	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:806) [catalina.jar:8.5.4]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:133) [catalina.jar:8.5.4]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.4]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522) [catalina.jar:8.5.4]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.4]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.4]
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.4]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.4]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.4]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110) [tomcat-coyote.jar:8.5.4]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.4]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785) [tomcat-coyote.jar:8.5.4]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425) [tomcat-coyote.jar:8.5.4]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.4]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.4]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
-Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mvc.spittr.web.converter.RoleToUserProfileConverter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1501) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1099) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1060) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:578) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	... 36 common frames omitted
-2017-11-11 17:43:17 [http-nio-8080-exec-3] ERROR o.s.web.servlet.DispatcherServlet.initServletBean(507) - Context initialization failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'appWebConfig': Unsatisfied dependency expressed through field 'roleToUserProfileConverter'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mvc.spittr.web.converter.RoleToUserProfileConverter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:581) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:367) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1340) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:756) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868) ~[spring-context-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:676) ~[spring-webmvc-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:545) ~[spring-webmvc-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:499) ~[spring-webmvc-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:172) [spring-webmvc-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at javax.servlet.GenericServlet.init(GenericServlet.java:158) [servlet-api.jar:3.1.FR]
-	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1194) [catalina.jar:8.5.4]
-	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:806) [catalina.jar:8.5.4]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:133) [catalina.jar:8.5.4]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.4]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522) [catalina.jar:8.5.4]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.4]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.4]
-	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.4]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.4]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.4]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110) [tomcat-coyote.jar:8.5.4]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.4]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785) [tomcat-coyote.jar:8.5.4]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425) [tomcat-coyote.jar:8.5.4]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.4]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.4]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
-Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mvc.spittr.web.converter.RoleToUserProfileConverter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1501) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1099) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1060) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:578) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
-	... 36 common frames omitted
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3771) [catalina.jar:8.5.4]
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:292) [catalina.jar:8.5.4]
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5534) [catalina.jar:8.5.4]
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1372) [catalina.jar:8.5.4]
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1376) [catalina.jar:8.5.4]
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1376) [catalina.jar:8.5.4]
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1344) [catalina.jar:8.5.4]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mvc.spittr.web.LoginController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	PersistentTokenBasedRememberMeServices cannot be resolved to a type
+	Syntax error, insert ";" to complete FieldDeclaration
+	PersistentTokenBasedRememberMeServices cannot be resolved to a type
+	Syntax error, insert "}" to complete ClassBody
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:175) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:88) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1223) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
+	... 24 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	PersistentTokenBasedRememberMeServices cannot be resolved to a type
+	Syntax error, insert ";" to complete FieldDeclaration
+	PersistentTokenBasedRememberMeServices cannot be resolved to a type
+	Syntax error, insert "}" to complete ClassBody
+
+	at com.mvc.spittr.web.LoginController.<init>(LoginController.java:61) ~[classes/:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_161]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_161]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_161]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_161]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:163) ~[spring-beans-5.0.0.RELEASE.jar:5.0.0.RELEASE]
+	... 26 common frames omitted

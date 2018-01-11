@@ -32,7 +32,9 @@ import org.hibernate.annotations.Formula;
 
 @Entity
 @Table(name = "SPITTLE", schema = "HIBERNATE")
-//@SecondaryTable(name = "SPITTER_SPITTLE", pkJoinColumns = @PrimaryKeyJoinColumn(name = "SPITTER_ID", referencedColumnName="SPITTER_ID"))
+// @SecondaryTable(name = "SPITTER_SPITTLE", pkJoinColumns =
+// @PrimaryKeyJoinColumn(name = "SPITTER_ID",
+// referencedColumnName="SPITTER_ID"))
 public class Spittle implements Serializable {
 	/**
 	 * 
@@ -49,16 +51,20 @@ public class Spittle implements Serializable {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
-
-	
 	@Column(name = "SPITTLE_MESSAGE", nullable = true)
 	private String message;
+
+	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@JoinColumn(name = "SPITTER_ID")
+	private Spitter spitter;
 
 	// Automatic conversion type
 	@Column(name = "DATE_TIME", nullable = false)
 	private Instant time;
+
 	@Column(name = "LONGITUDE", nullable = true)
 	private Long longitude;
+
 	@Column(name = "LATITUDE", nullable = true)
 	private Long latitude;
 
@@ -70,8 +76,8 @@ public class Spittle implements Serializable {
 		this(message, Instant.now(), null, null);
 	}
 
-	public Spittle(String message, Instant date) {
-		this(message, date, null, null);
+	public Spittle(String message, Instant time) {
+		this(message, time, null, null);
 	}
 
 	public Spittle(String message, Instant time, Long longitude, Long latitude) {
@@ -80,6 +86,12 @@ public class Spittle implements Serializable {
 		this.time = time;
 		this.longitude = longitude;
 		this.latitude = latitude;
+	}
+
+	public Spittle(String message, Instant time, Long longitude, Long latitude, Spitter spitter) {
+
+		this(message, time, longitude, latitude);
+		this.spitter = spitter;
 	}
 
 	public Long getId() {
@@ -122,6 +134,14 @@ public class Spittle implements Serializable {
 		this.latitude = latitude;
 	}
 
+	public Spitter getSpitter() {
+		return spitter;
+	}
+
+	public void setSpitter(Spitter spitter) {
+		this.spitter = spitter;
+	}
+
 	/**
 	 * he only thing to note is that you’re using Apache Commons Lang for easy
 	 * implementa- tion of the equals() and hashCode() methods. Aside from the
@@ -145,22 +165,21 @@ public class Spittle implements Serializable {
 
 	@Override
 	public int hashCode() {
-		return HashCodeBuilder.reflectionHashCode(this, "id", "time","longitude", "latitude");
+		return HashCodeBuilder.reflectionHashCode(this, "id", "time", "longitude", "latitude", "spitter");
 	}
 
 	@Override
 	public String toString() {
 		return "Spittle [id=" + id + ", message=" + message + ", time=" + time + ", longitude=" + longitude
-				+ ", latitude=" + latitude + "]";
+				+ ", latitude=" + latitude + " spitterId=" + spitter.getId() + "]";
 	}
 
-//	public Spitter getSpitter() {
-//		return this.spitter;
-//	}
-//
-//	public void setSpitter(Spitter spitter) {
-//		this.spitter = spitter;
-//	}
-
+	// public Spitter getSpitter() {
+	// return this.spitter;
+	// }
+	//
+	// public void setSpitter(Spitter spitter) {
+	// this.spitter = spitter;
+	// }
 
 }

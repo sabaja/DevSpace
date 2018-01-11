@@ -34,11 +34,6 @@ public class Spitter implements Serializable {
 
 	@Id
 	@Column(name = "SPITTER_ID", nullable = false, unique = true)
-
-	// GenerationType.AUTO
-	// This is the default strategy and is portable across different databases.
-	// Hibernate chooses the appropriate ID based on the database.
-	// schema resource at runtime.
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 
@@ -69,14 +64,13 @@ public class Spitter implements Serializable {
 	@NotNull
 	@Column(name="EMAIL", nullable=false)
 	private String email;
+	
+	@Column(name="ENABLED")
+	private boolean enable = true;
 
-	// @OneToMany(cascade = CascadeType.ALL)
-	// @Column(name = "SPITTER_ID", nullable = true)
-	// @JoinTable(name = "SPITTER_SPITTLE", joinColumns = @JoinColumn(name =
-	// "SPITTER_ID"), inverseJoinColumns = @JoinColumn(name = "SPITTLE_ID"))
-	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "spitter")
 	@Column(name = "SPITTER_ID", nullable = true)
-	@JoinColumn(name = "SPITTER_ID")
+//	@JoinColumn(name = "SPITTER_ID")
 	private List<Spittle> spittles = new LinkedList<>();
 
 	@ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
@@ -196,6 +190,14 @@ public class Spitter implements Serializable {
 		this.roles = roles;
 	}
 
+	public boolean isEnable() {
+		return enable;
+	}
+
+	public void setEnable(boolean enable) {
+		this.enable = enable;
+	}
+
 	public String getEmail() {
 		return email;
 	}
@@ -204,12 +206,17 @@ public class Spitter implements Serializable {
 		this.email = email;
 	}
 
+	/* (non-Javadoc)
+	 * @see java.lang.Object#hashCode()
+	 */
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((email == null) ? 0 : email.hashCode());
+		result = prime * result + (enable ? 1231 : 1237);
 		result = prime * result + ((firstName == null) ? 0 : firstName.hashCode());
+		result = prime * result + (int) (id ^ (id >>> 32));
 		result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
 		result = prime * result + ((roles == null) ? 0 : roles.hashCode());
@@ -219,6 +226,9 @@ public class Spitter implements Serializable {
 		return result;
 	}
 
+	/* (non-Javadoc)
+	 * @see java.lang.Object#equals(java.lang.Object)
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -233,10 +243,14 @@ public class Spitter implements Serializable {
 				return false;
 		} else if (!email.equals(other.email))
 			return false;
+		if (enable != other.enable)
+			return false;
 		if (firstName == null) {
 			if (other.firstName != null)
 				return false;
 		} else if (!firstName.equals(other.firstName))
+			return false;
+		if (id != other.id)
 			return false;
 		if (lastName == null) {
 			if (other.lastName != null)
@@ -271,12 +285,16 @@ public class Spitter implements Serializable {
 		return true;
 	}
 
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
 	@Override
 	public String toString() {
 		return "Spitter [id=" + id + ", ssoId=" + ssoId + ", firstName=" + firstName + ", lastName=" + lastName
-				+ ", username=" + username + ", password=" + password + ", email=" + email + ", spittles=" + spittles
-				+ ", roles=" + roles + "]";
+				+ ", username=" + username + ", password=" + password + ", email=" + email + ", enable=" + enable
+				+ ", spittles=" + spittles + ", roles=" + roles + "]";
 	}
+
 
 
 }

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration scan="true" scanPeriod="30 seconds" packagingData="true">
-
-	<property name="DEV_HOME" value="/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/logs" />
+<!DOCTYPE xml>
+<configuration scan="true" scanPeriod="30 seconds"
+	packagingData="true">
+	<property name="DEV_HOME"
+		value="/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WebApp/logs" />
 
 	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
 		<layout class="ch.qos.logback.classic.PatternLayout">

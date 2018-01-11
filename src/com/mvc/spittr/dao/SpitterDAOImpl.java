@@ -9,7 +9,6 @@ import org.hibernate.Criteria;
 import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
 import org.hibernate.criterion.Restrictions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -44,6 +43,7 @@ public class SpitterDAOImpl implements SpitterDao {
 		 * **UserDetails** "); You do not give your table name on the Db. give
 		 * you bean class name.
 		 */
+		@SuppressWarnings("unchecked")
 		TypedQuery<Spitter> query = (TypedQuery<Spitter>) session
 				.createQuery("FROM Spitter WHERE USERNAME = :username");
 		query.setParameter("username", username);
@@ -76,6 +76,7 @@ public class SpitterDAOImpl implements SpitterDao {
 	public Spitter findBySsoId(String ssoId) {
 		logger.info("SSO : {}", ssoId);
 		Session session = sessionFactory.openSession();
+		@SuppressWarnings("deprecation")
 		Criteria crit = session.createCriteria(Spitter.class);
 		crit.add(Restrictions.eq("ssoId", ssoId));
 		Spitter spitter = (Spitter) crit.uniqueResult();
@@ -93,6 +94,7 @@ public class SpitterDAOImpl implements SpitterDao {
 	@Override
 	public List<Spitter> listSpitters() {
 		Session session = sessionFactory.getCurrentSession();
+		@SuppressWarnings("unchecked")
 		List<Spitter> spitters = (List<Spitter>) session.createQuery("from Spitter").list();
 		logger.info("Listed spitters");
 		return spitters;
@@ -108,6 +110,16 @@ public class SpitterDAOImpl implements SpitterDao {
 	public void insertSpittle(Spittle spittle) {
 		// TODO Auto-generated method stub
 
+	}
+
+	@Override
+	public List<Spittle> listSpittles(Long id) {
+		String sql = "from Spittle where spitter_id = :id";
+		Session session = sessionFactory.getCurrentSession();
+		@SuppressWarnings("unchecked")
+		List<Spittle> spittles = (List<Spittle>)session.createQuery(sql).setParameter("id", id).list();
+		logger.info("Listed spitters by id");
+		return spittles;
 	}
 
 }

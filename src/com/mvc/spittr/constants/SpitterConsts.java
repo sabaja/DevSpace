@@ -2,7 +2,7 @@ package com.mvc.spittr.constants;
 
 public enum SpitterConsts {
 	NUM_OF_SPITTLES_PER_PAGE(20), 
-	DOWNLOAD_PATH("/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/Downloads"),
+	DOWNLOAD_PATH("/home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WebApp/Downloads"),
 	TEMPDIR(System.getProperty("java.io.tmpdir")),
 	MAX_FILE_SIZE(2_097_152L), MAX_REQUEST_SIZE(4_194_304L), FILE_SIZE_THRESHOLD(0),
 	E (Math.PI),
