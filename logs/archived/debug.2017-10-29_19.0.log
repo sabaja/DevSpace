@@ -1,0 +1,37 @@
+2017-10-29 19:54:56 [localhost-startStop-1] INFO  c.m.s.w.c.ConfigInitializerFORServletDispatcherMultipartConfig.getRootConfigClasses(61) - [dispatcher] AppRootConfig.class config
+2017-10-29 19:54:56 [localhost-startStop-1] INFO  c.m.s.w.c.ConfigInitializerFORServletDispatcherMultipartConfig.getServletConfigClasses(75) - [dispatcher] AppWebConfig.class config
+2017-10-29 19:54:56 [localhost-startStop-1] INFO  c.m.s.w.c.ConfigInitializerFORServletDispatcherMultipartConfig.customizeRegistration(112) - [dispatcher] customizeRegistration() Init parameter is set
+2017-10-29 19:54:56 [localhost-startStop-1] INFO  c.m.s.w.c.ConfigInitializerFORServletDispatcherMultipartConfig.customizeRegistration(122) - new File(/tmp)
+2017-10-29 19:54:56 [localhost-startStop-1] INFO  c.m.s.w.c.ConfigInitializerFORServletDispatcherMultipartConfig.customizeRegistration(130) - [dispatcher] multipart uploads files at /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WEBApp/Downloads, maxFileSize=2097152, maxRequestSize=4194304, fileSizeThreshold=0
+2017-10-29 19:54:56 [localhost-startStop-1] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(34) - WebApplicationInitializer@ServletApacheInitializer instantiated
+2017-10-29 19:54:56 [localhost-startStop-1] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(49) - Servlet [com.mvc.spittr.web.servlet.GenericServletDemoServlet] was added
+2017-10-29 19:54:58 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.messageSource(80) - MessageSource config
+2017-10-29 19:54:58 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getDataSource(141) - DB DataSource config - HIBERNATE - 
+2017-10-29 19:54:58 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(149) - LocalSessionFactoryBean config - HIBERNATE -
+2017-10-29 19:54:58 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(152) - HibernateProperties config - HIBERNATE -
+2017-10-29 19:55:03 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.multipartResolver(98) - MultipartResolver config
+2017-10-29 19:55:03 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getTransactionManager(163) - HibernateTransactionManager config - HIBERNATE -
+2017-10-29 19:55:04 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getSimpleMessage(182) - SimpleMailMessage config
+2017-10-29 19:55:04 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getJavaMailSender(205) - JavaMailMessage config
+2017-10-29 19:55:05 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.messageSource(80) - MessageSource config
+2017-10-29 19:55:05 [localhost-startStop-1] INFO  com.mvc.spittr.web.LoginController.<init>(52) - 2017-10-29T19:55:05.176 Constructor call
+2017-10-29 19:55:05 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getDataSource(141) - DB DataSource config - HIBERNATE - 
+2017-10-29 19:55:05 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(149) - LocalSessionFactoryBean config - HIBERNATE -
+2017-10-29 19:55:05 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(152) - HibernateProperties config - HIBERNATE -
+2017-10-29 19:55:05 [localhost-startStop-1] DEBUG com.mvc.spittr.web.SpittleController.<init>(54) - 2017-10-29T19:55:05.611 Constructor call
+2017-10-29 19:55:06 [localhost-startStop-1] INFO  c.m.s.web.config.WebSecurityConfig.configureGlobal(54) - WebSecurityConfig$$EnhancerBySpringCGLIB$$cd666e61::configureGlobal user permit
+2017-10-29 19:55:06 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.multipartResolver(98) - MultipartResolver config
+2017-10-29 19:55:06 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getTransactionManager(163) - HibernateTransactionManager config - HIBERNATE -
+2017-10-29 19:55:06 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getSimpleMessage(182) - SimpleMailMessage config
+2017-10-29 19:55:06 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getJavaMailSender(205) - JavaMailMessage config
+2017-10-29 19:55:06 [localhost-startStop-1] INFO  c.m.s.web.config.WebSecurityConfig.configure(48) - WebSecurityConfig$$EnhancerBySpringCGLIB$$cd666e61::configure view permit
+2017-10-29 19:55:07 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.configureDefaultServletHandling(83) - DefaultServletHandlerConfigurer config
+2017-10-29 19:55:08 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(47) - InternalResourceViewResolver config
+2017-10-29 19:55:08 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(52) - resolver setting prefix /WEB-INF/views/
+2017-10-29 19:55:08 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(54) - resolver setting suffix .jsp
+2017-10-29 19:55:08 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(57) - org.springframework.web.servlet.view.JstlView.class set as view class
+2017-10-29 19:55:08 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(64) - InternalResourceViewResolver for html config
+2017-10-29 19:55:08 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(69) - resolver setting prefix /WEB-INF/views/
+2017-10-29 19:55:08 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(71) - resolver setting suffix .html
+2017-10-29 19:55:08 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(74) - org.springframework.web.servlet.view.JstlView.class set as view class
+2017-10-29 19:55:10 [http-nio-8080-exec-2] INFO  c.m.s.w.f.LoggingUrlRequestFilter.doFilter(34) - [com.mvc.spittr.web.filters.LoggingUrlRequestFilter]: 2017-10-29T19:55:10.089 - /Spring-In-Action_WEBApp/

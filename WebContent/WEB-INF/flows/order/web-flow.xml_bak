@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow xmlns="http://www.springframework.org/schema/webflow"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/webflow
+http://www.springframework.org/schema/webflow/spring-webflow-2.3.xsd">
+
+	<!-- Here, a new instance of a Customer object is created and placed into 
+		the variable whose name is customer . This variable is available to all states 
+		in a flow. -->
+	<var name="order" class="com.springinaction.pizza.domain.Order" />
+	
+	<!--Call order -->
+	<subflow-state id="identifyCustomer" subflow="pizza/customer">
+		<output name="customer" value="order.customer" />
+		<transition on="customerReady" to="buildOrder" />
+	</subflow-state>
+	
+	<!--subflow -->
+	<subflow-state id="buildOrder" subflow="pizza/order">
+		<input name="order" value="order" />
+		<transition on="orderCreated" to="takePayment" />
+
+	</subflow-state>
+	<!--subflow -->		<!--Call payment -->
+	<subflow-state id="takePayment" subflow="pizza/payment">
+		<input name="order" value="order" />
+		<transition on="paymentTaken" to="saveOrder" />
+	</subflow-state>
+	<!--Save order -->
+	<action-state id="saveOrder">
+		<evaluate expression="pizzaFlowActions.saveOrder(order)" />
+		<transition to="thankCustomer" />
+	</action-state>
+
+	<!-- Thank customer -->
+	<view-state id="thankCustomer">
+		<transition to="endState" />
+	</view-state>
+	<end-state id="endState" />
+	<global-transitions>
+		<transition on="cancel" to="endState" />
+		<!--Global cancel transition -->
+	</global-transitions>
+</flow>

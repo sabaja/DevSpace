@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Spittr</title>
+<!-- <style type="text/css"> @import url(css/style.css);</style> -->
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+</head>
+<body>
+	<h1>Register</h1>
+	<!--	
+	In the preceding code, you set commandName to spitter . Therefore, there must be
+	an object in the model whose key is spitter , or else the form won t be able to render
+	(and you ll get JSP errors). That means you need to make a small change to Spitter-
+	Controller to ensure that a Spitter object is in the model under the spitter key:
+	-->
+	<form method="POST" th:object="${spitter}" enctype="multipart/form-data">
+		<div class="errors" th:if="${#fields.hasErrors('*')}">
+			<ul>
+				<li th:each="err : ${#fields.errors('*')}" th:text="${err}">Input
+					is incorrect</li>
+			</ul>
+		</div>
+			<label th:class="${#fields.hasErrors('firstName')}? 'error'">
+			First Name</label>: 
+			<input type="text" th:field="*{firstName}"
+			th:class="${#fields.hasErrors('firstName')}? 'error'" />
+			<br /> 
+			
+			<label th:class="${#fields.hasErrors('lastName')}? 'error'"> Last
+			Name</label>: 
+			<input type="text" th:field="*{lastName}" th:class="${#fields.hasErrors('lastName')}? 'error'" />
+			<br /> 
+			
+			<label>Profile Pitcure</label>
+			<!-- "*.png", "*.jpg", "*.gif", "*.jpg", "*.bmp", "*.tiff",	"*.svg", "*.ico", "*.webp" }) -->
+			<input type="file" name="profilePicture" accept="image/jpeg,image/png,image/gif,image/bmp,
+			image/tiff,image/svg,image/ico,image/webp" /><br/>
+			
+			<label th:class="${#fields.hasErrors('username')}? 'error'">
+			Username</label>: 
+			<input type="text" th:field="*{username}" th:class="${#fields.hasErrors('username')}? 'error'" /><br /> <label
+			th:class="${#fields.hasErrors('password')}? 'error'">
+			Password</label>: 
+			
+			<input type="password" th:field="*{password}"
+			th:class="${#fields.hasErrors('password')}? 'error'" /><br /> <input
+			type="submit" value="Register" />
+	</form>
+</body>
+</html>
