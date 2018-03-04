@@ -1,16 +1,14 @@
-package com.mvc.spittr.web.config;
+package com.mvc.spittr.config;
 
 import java.lang.invoke.MethodHandles;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationTrustResolver;
 import org.springframework.security.authentication.AuthenticationTrustResolverImpl;
@@ -19,16 +17,12 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.web.authentication.rememberme.InMemoryTokenRepositoryImpl;
 import org.springframework.security.web.authentication.rememberme.PersistentTokenBasedRememberMeServices;
-import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
-import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
-import org.springframework.web.bind.annotation.SessionAttributes;
 
 import com.mvc.spittr.dao.HibernateTokenRepositoryImpl;
+import com.mvc.spittr.entity.Spitter;
 import com.mvc.spittr.service.SpitterDetailService;
 
 /**
@@ -114,54 +108,48 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
+
 		/*
-		 * Original: http.authorizeRequests().antMatchers("/",
-		 * "/homepage").permitAll().anyRequest().authenticated().and().formLogin
-		 * ().loginPage("/login").permitAll().and().logout().permitAll();
-		 * 
+		 * http.requiresChannel().antMatchers("/login").requiresSecure().and().
+		 * formLogin().loginPage("/login")
+		 * .loginProcessingUrl("/login").usernameParameter("username").
+		 * passwordParameter("password").and()
+		 * .rememberMe().rememberMeParameter("remember-me").tokenRepository(
+		 * tokenRepository)
+		 * .tokenValiditySeconds(60).and().csrf().and().exceptionHandling().
+		 * accessDeniedPage("/Access_Denied")
+		 * .and().logout().logoutSuccessUrl("/");
 		 */
 
-		// The web app permits "/", "/homepage" requests to all.
-		// http.authorizeRequests().antMatchers("/", "/homepage").permitAll();
+		http.authorizeRequests().anyRequest().permitAll().and().formLogin().loginPage("/login")
+				.loginProcessingUrl("/login").usernameParameter("username").passwordParameter("password").and()
+				.rememberMe().rememberMeParameter("remember-me").tokenRepository(tokenRepository)
+				.tokenValiditySeconds(60*2).key("Spitter-RememberMe").and().csrf().and().exceptionHandling().accessDeniedPage("/Access_Denied")
+				.and().logout().logoutSuccessUrl("/");
+		
+		//Autorization for all Spitter
+		http.authorizeRequests().and().formLogin().and().httpBasic().realmName(Spitter.class.getName());
 
-		// https://docs.spring.io/spring-security/site/docs/current/reference/html/jc.html
-		// The web app permits form.
-		// http.authorizeRequests().anyRequest().authenticated().and().formLogin().loginPage("/login").permitAll().and()
-		// .logout().permitAll();
-
-		// Spring in Action
-
-		// Https for login
-/*		
-        http.requiresChannel().antMatchers("/login*").requiresSecure().and().formLogin().loginPage("/login")
-		.loginProcessingUrl("/login").usernameParameter("ssoId").passwordParameter("password").and()
-		.rememberMe().rememberMeParameter("remember-me").tokenRepository(tokenRepository)
-		.tokenValiditySeconds(60).and().csrf().and().exceptionHandling().accessDeniedPage("/Access_Denied");
-*/
-
-        http.requiresChannel().antMatchers("/login*").requiresSecure();
-        http.authorizeRequests().and().formLogin().loginPage("/login")
-		.loginProcessingUrl("/login").usernameParameter("ssoId").passwordParameter("password").and()
-		.rememberMe().rememberMeParameter("remember-me").tokenRepository(tokenRepository)
-		.tokenValiditySeconds(60).and().csrf().and().exceptionHandling().accessDeniedPage("/Access_Denied");
+		// After a successful Login process, the user is redirected to a page –
+		// which by default is the root of the web application.
+		http.formLogin().defaultSuccessUrl("/spitter");
 
 		http.requiresChannel().anyRequest().requiresInsecure();
 
+		// http.requiresChannel().antMatchers("/").requiresInsecure();
+
+//		http.authorizeRequests().antMatchers("/list").access("hasRole('DB') or hasRole('ADMIN')");
+		
+		// DA RIVEDERE
 		http.authorizeRequests().antMatchers("/spitters/{username}").authenticated();
 		http.authorizeRequests().antMatchers("/spitters")
 				.access("hasRole('USER') or hasRole('ADMIN') or hasRole('DB')");
 		http.authorizeRequests().antMatchers(HttpMethod.POST, "/spittle").access("hasRole('ADMIN')");
-/*
-		http.authorizeRequests().anyRequest().permitAll().and().formLogin().loginPage("/login")
-				.loginProcessingUrl("/login").usernameParameter("ssoId").passwordParameter("password").and()
-				.rememberMe().rememberMeParameter("remember-me").tokenRepository(tokenRepository)
-				.tokenValiditySeconds(86400).and().csrf().and().exceptionHandling().accessDeniedPage("/Access_Denied");
-*/
-	
-		//http://www.baeldung.com/spring-channel-security-https
+
+		// http://www.baeldung.com/spring-channel-security-https
 		http.sessionManagement().sessionFixation().none();
-		
-		http.csrf().disable();
+
+		// http.csrf().disable();
 
 		// http.authorizeRequests().antMatchers("/**").hasRole("USER").and().formLogin();
 		// http.authorizeRequests().antMatchers("/**").hasRole("USER");

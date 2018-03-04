@@ -23,6 +23,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -32,13 +33,13 @@ import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-
 import com.mvc.spittr.constants.SpitterConsts;
 import com.mvc.spittr.entity.Spitter;
 import com.mvc.spittr.entity.Spittle;
 import com.mvc.spittr.service.SpitterService;
 import com.mvc.spittr.service.backup.SpitterRepository;
 import com.mvc.spittr.web.util.RequestUtilFacade;
+import com.mvc.spittr.web.util.WebFacilities;
 
 @Controller
 @RequestMapping("/spitter")
@@ -51,15 +52,23 @@ public class SpitterController {
 
 	@Autowired
 	private SpitterService service;
-//	@Autowired
-//	private EmailServiceImpl email;
+	// @Autowired
+	// private EmailServiceImpl email;
 
 	public SpitterController() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-
+	// Given the way you configured InternalResourceViewResolver , the view name
+		// “home” will be resolved as a JSP at / WEB-INF /views/home.jsp. For now,
+		// you’ll keep the Spittr application’s home page rather basic, as shown
+		// next.
+		@RequestMapping(method = RequestMethod.GET)
+		public String home(HttpServletRequest request, HttpServletResponse response, ModelMap model) {
+			model.addAttribute("loggedinuser", WebFacilities.getPrincipal());
+			return "home";
+		}
 	// The showRegistrationForm() method’s @RequestMapping annotation, along
 	// with the
 	// class-level @RequestMapping annotation, declares that it will handle HTTP
@@ -85,25 +94,28 @@ public class SpitterController {
 	 * @return
 	 */
 	@RequestMapping(value = "/registration", method = RequestMethod.GET)
-	public String showRegistration(HttpServletRequest request, HttpServletResponse response, Model model) {
+	public String showRegistration(HttpServletRequest request, HttpServletResponse response, ModelMap model) {
 		// https://stackoverflow.com/questions/8504258/spring-3-mvc-accessing-httprequest-from-controller
 		logger.info("showRegistration() called view={}", registerForm);
 		model.addAttribute(new Spitter());
+		model.addAttribute("loggedinuser", WebFacilities.getPrincipal());
 		return registerForm;
 	}
 
+	
+	
 	// Multipart picture download @RequestPart example:
 	// http://www.journaldev.com/2573/spring-mvc-file-upload-example-single-multiple-files
 	@RequestMapping(value = "/registration", method = RequestMethod.POST)
 	public String processRegistration(
-//			@RequestPart("profilePicture") MultipartFile file,
-			@RequestParam("profilePicture") MultipartFile file,
-			@Valid Spitter spitter,
-			Errors errors, RedirectAttributes redirectAttributes, Model model, HttpServletRequest request,
+			// @RequestPart("profilePicture") MultipartFile file,
+			@RequestParam("profilePicture") MultipartFile file, @Valid Spitter spitter, Errors errors,
+			RedirectAttributes redirectAttributes, Model model, HttpServletRequest request,
 			HttpServletResponse response) {
 		if (errors.hasErrors() || file.isEmpty()) {
 			logger.info("errors: {}", errors.getAllErrors());
-			// flash attribute https://stackoverflow.com/questions/39190436/post-request-with-multipart-data-in-spring-mvc
+			// flash attribute
+			// https://stackoverflow.com/questions/39190436/post-request-with-multipart-data-in-spring-mvc
 			redirectAttributes.addFlashAttribute("message", "Missing field");
 			logger.info("errors: {}", "No file selected");
 			return registerForm;
@@ -111,7 +123,7 @@ public class SpitterController {
 
 		service.save(spitter);
 		// spitterRepository.save(spitter);
- 
+
 		logger.info("spitter was registered value= {}", spitter.toString());
 
 		// saving multipartFile
@@ -132,13 +144,14 @@ public class SpitterController {
 	}
 
 	@RequestMapping(value = "/{username}", method = RequestMethod.GET)
-	public String showSpitterProfile(@PathVariable String username, Model model, HttpServletRequest request,
+	public String showSpitterProfile(@PathVariable String username, ModelMap model, HttpServletRequest request,
 			HttpServletResponse response) {
 
 		// model.addAttribute("spitter",spitterRepository.findByUserName(username));
 		Spitter spitter = service.findByUserName(username);
 		model.addAttribute("spitter", spitter);
-//		email.sendSimpleMessage("jacoposabatini76@gmail.com", spitter.getUsername() + " REGISTERED", spitter.toString());
+		// email.sendSimpleMessage("jacoposabatini76@gmail.com",
+		// spitter.getUsername() + " REGISTERED", spitter.toString());
 		logger.info("spitter username value= {}", username);
 
 		return profile;

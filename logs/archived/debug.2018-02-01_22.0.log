@@ -1,0 +1,483 @@
+2018-02-01 22:00:01 [http-nio-8080-exec-6] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-01T22:00:01.915 - called url:/Spring-In-Action_WEBApp/login
+2018-02-01 22:00:01 [http-nio-8080-exec-6] INFO  com.mvc.spittr.web.LoginController.isCurrentAuthenticationAnonymous(163) - AuthenticationTrustResolver is not null value: true
+2018-02-01 22:00:01 [http-nio-8080-exec-6] INFO  com.mvc.spittr.web.LoginController.loginPage(112) - login ok
+2018-02-01 22:00:17 [http-nio-8080-exec-8] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-01T22:00:17.196 - called url:/Spring-In-Action_WEBApp/
+2018-02-01 22:02:06 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ApacheServletInitializer.<clinit>(29) - ************************Start AppWebConfig************************
+2018-02-01 22:02:06 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ApacheServletInitializer.<clinit>(83) - ************************End AppWebConfig************************
+2018-02-01 22:02:06 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.SecurityWebApplicationInitializer.<clinit>(16) - 1 ************************SecurityWebApplicationInitializer Intizialized************************
+2018-02-01 22:02:06 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.<clinit>(55) - ************************Start WebAppInitializer************************
+2018-02-01 22:02:06 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.<clinit>(161) - ************************End WebAppInitializer************************
+2018-02-01 22:02:06 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.getRootConfigClasses(66) - AppRootConfig configured
+2018-02-01 22:02:06 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.getServletConfigClasses(81) - AppWebConfig configured
+2018-02-01 22:02:06 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(118) - CustomizeRegistration initialized
+2018-02-01 22:02:06 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(128) - ***START*** Multipart initializing 
+2018-02-01 22:02:06 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(129) - Download Directory:/tmp
+2018-02-01 22:02:06 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(137) - Multipart uploads files at /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WebApp/Downloads, maxFileSize=2097152, maxRequestSize=4194304, fileSizeThreshold=0
+2018-02-01 22:02:06 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(140) - ***END*** Multipart initialized 
+2018-02-01 22:02:06 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(37) - WebApplicationInitializer@ServletApacheInitializer instantiated
+2018-02-01 22:02:06 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(52) - Servlet [com.mvc.spittr.web.servlet.GenericServletDemoServlet] was added
+2018-02-01 22:02:08 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.<clinit>(59) - ************************AppRootConfig************************
+2018-02-01 22:02:08 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.<clinit>(73) - ************************Start - WebSecurityConfig************************
+2018-02-01 22:02:08 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.<clinit>(207) - ************************End - WebSecurityConfig************************
+2018-02-01 22:02:08 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.<clinit>(49) - ************************Start AppWebConfig************************
+2018-02-01 22:02:08 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.<clinit>(209) - ************************End AppWebConfig************************
+2018-02-01 22:02:08 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.messageSource(74) - MessageSource initialized
+2018-02-01 22:02:08 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationTrustResolver(112) - AuthenticationTrustResolver  initialized
+2018-02-01 22:02:09 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-02-01 22:02:09 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************
+2018-02-01 22:02:09 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.dataSource(142) - ***HIBERNATE*** - DB DataSource initialized - HIBERNATE -
+2018-02-01 22:02:09 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(150) - ***HIBERNATE*** - LocalSessionFactoryBean initialized - HIBERNATE -
+2018-02-01 22:02:09 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(152) - ***HIBERNATE*** - HibernateProperties initialized - HIBERNATE -
+2018-02-01 22:02:12 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.l.HttpRequestLogInterceptor.<clinit>(28) - HttpRequestLogInterceptor initialized
+2018-02-01 22:02:12 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.setApplicationContext(55) - InternalResourceViewResolver inizialized
+2018-02-01 22:02:13 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getSpitterDetailService(99) - SpitterDetailService  initialized
+2018-02-01 22:02:13 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationProvider(200) - UserDetailsService initialized
+2018-02-01 22:02:13 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.passwordEncoder(212) - BCryptPasswordEncoder  initialized
+2018-02-01 22:02:13 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationProvider(202) - Password encriptinig
+2018-02-01 22:02:13 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configureGlobalSecurity(189) - ConfigureGlobalSecurity user permit initialized
+2018-02-01 22:02:13 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] DEBUG com.mvc.spittr.web.SpittleController.<init>(53) - 2018-02-01T22:02:13.739 Constructor call
+2018-02-01 22:02:13 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.multipartResolver(92) - MultipartResolver initialized
+2018-02-01 22:02:13 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getTransactionManager(165) - ***HIBERNATE*** - HibernateTransactionManager initialized - HIBERNATE -
+2018-02-01 22:02:13 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSimpleMessage(184) - SimpleMailMessage initialized
+2018-02-01 22:02:13 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getJavaMailSender(207) - JavaMailMessage initialized
+2018-02-01 22:02:13 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.addInterceptors(122) - Interceptor added urls: /* /**
+2018-02-01 22:02:14 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.addFormatters(104) - Converter initialized, it converts string values[Roles] to UserProfiles
+2018-02-01 22:02:14 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.configureDefaultServletHandling(110) - DefaultServletHandlerConfigurer inizialized
+2018-02-01 22:02:14 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(65) - InternalResourceViewResolver inizialized
+2018-02-01 22:02:14 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(70) - resolver setting prefix /WEB-INF/views/
+2018-02-01 22:02:14 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(72) - resolver setting suffix .jsp
+2018-02-01 22:02:14 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(75) - org.springframework.web.servlet.view.JstlView.class set as view class
+2018-02-01 22:02:14 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(82) - InternalResourceViewResolver for html inizialized
+2018-02-01 22:02:14 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(87) - resolver setting prefix /WEB-INF/views/
+2018-02-01 22:02:14 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(89) - resolver setting suffix .html
+2018-02-01 22:02:14 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(92) - org.springframework.web.servlet.view.JstlView.class set as view class
+2018-02-01 22:02:15 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configure(159) - WebSecurityConfig$$EnhancerBySpringCGLIB$$40149efa::configure view permit
+2018-02-01 22:02:15 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configure(160) - WebSecurityConfig$$EnhancerBySpringCGLIB$$40149efa initialized
+2018-02-01 22:02:15 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getTokenRepository(105) - HibernateTokenRepositoryImpl  initialized
+2018-02-01 22:02:15 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getPersistentTokenBasedRememberMeServices(222) - PersistentTokenService  initialized
+2018-02-01 22:02:15 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.messageSource(74) - MessageSource initialized
+2018-02-01 22:02:15 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.dataSource(142) - ***HIBERNATE*** - DB DataSource initialized - HIBERNATE -
+2018-02-01 22:02:15 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(150) - ***HIBERNATE*** - LocalSessionFactoryBean initialized - HIBERNATE -
+2018-02-01 22:02:15 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(152) - ***HIBERNATE*** - HibernateProperties initialized - HIBERNATE -
+2018-02-01 22:02:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.setApplicationContext(55) - InternalResourceViewResolver inizialized
+2018-02-01 22:02:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] DEBUG com.mvc.spittr.web.SpittleController.<init>(53) - 2018-02-01T22:02:16.353 Constructor call
+2018-02-01 22:02:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationTrustResolver(112) - AuthenticationTrustResolver  initialized
+2018-02-01 22:02:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getSpitterDetailService(99) - SpitterDetailService  initialized
+2018-02-01 22:02:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationProvider(200) - UserDetailsService initialized
+2018-02-01 22:02:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.passwordEncoder(212) - BCryptPasswordEncoder  initialized
+2018-02-01 22:02:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationProvider(202) - Password encriptinig
+2018-02-01 22:02:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configureGlobalSecurity(189) - ConfigureGlobalSecurity user permit initialized
+2018-02-01 22:02:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.multipartResolver(92) - MultipartResolver initialized
+2018-02-01 22:02:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getTransactionManager(165) - ***HIBERNATE*** - HibernateTransactionManager initialized - HIBERNATE -
+2018-02-01 22:02:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSimpleMessage(184) - SimpleMailMessage initialized
+2018-02-01 22:02:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getJavaMailSender(207) - JavaMailMessage initialized
+2018-02-01 22:02:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configure(159) - WebSecurityConfig$$EnhancerBySpringCGLIB$$40149efa::configure view permit
+2018-02-01 22:02:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configure(160) - WebSecurityConfig$$EnhancerBySpringCGLIB$$40149efa initialized
+2018-02-01 22:02:17 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getTokenRepository(105) - HibernateTokenRepositoryImpl  initialized
+2018-02-01 22:02:17 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getPersistentTokenBasedRememberMeServices(222) - PersistentTokenService  initialized
+2018-02-01 22:02:17 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.addInterceptors(122) - Interceptor added urls: /* /**
+2018-02-01 22:02:17 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.addFormatters(104) - Converter initialized, it converts string values[Roles] to UserProfiles
+2018-02-01 22:02:17 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.configureDefaultServletHandling(110) - DefaultServletHandlerConfigurer inizialized
+2018-02-01 22:02:17 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(65) - InternalResourceViewResolver inizialized
+2018-02-01 22:02:17 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(70) - resolver setting prefix /WEB-INF/views/
+2018-02-01 22:02:17 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(72) - resolver setting suffix .jsp
+2018-02-01 22:02:17 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(75) - org.springframework.web.servlet.view.JstlView.class set as view class
+2018-02-01 22:02:17 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(82) - InternalResourceViewResolver for html inizialized
+2018-02-01 22:02:17 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(87) - resolver setting prefix /WEB-INF/views/
+2018-02-01 22:02:17 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(89) - resolver setting suffix .html
+2018-02-01 22:02:17 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(92) - org.springframework.web.servlet.view.JstlView.class set as view class
+2018-02-01 22:02:17 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(29) - ************************Start - GenericServletDemoServlet************************
+2018-02-01 22:02:17 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(47) - ************************End - GenericServletDemoServlet************************
+2018-02-01 22:04:15 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.SecurityWebApplicationInitializer.<clinit>(16) - 1 ************************SecurityWebApplicationInitializer Intizialized************************
+2018-02-01 22:04:15 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.<clinit>(55) - ************************Start WebAppInitializer************************
+2018-02-01 22:04:15 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.<clinit>(161) - ************************End WebAppInitializer************************
+2018-02-01 22:04:15 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ApacheServletInitializer.<clinit>(29) - ************************Start AppWebConfig************************
+2018-02-01 22:04:15 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ApacheServletInitializer.<clinit>(83) - ************************End AppWebConfig************************
+2018-02-01 22:04:15 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.getRootConfigClasses(66) - AppRootConfig configured
+2018-02-01 22:04:15 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.getServletConfigClasses(81) - AppWebConfig configured
+2018-02-01 22:04:15 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(118) - CustomizeRegistration initialized
+2018-02-01 22:04:15 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(128) - ***START*** Multipart initializing 
+2018-02-01 22:04:15 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(129) - Download Directory:/tmp
+2018-02-01 22:04:15 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(137) - Multipart uploads files at /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WebApp/Downloads, maxFileSize=2097152, maxRequestSize=4194304, fileSizeThreshold=0
+2018-02-01 22:04:15 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(140) - ***END*** Multipart initialized 
+2018-02-01 22:04:15 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(37) - WebApplicationInitializer@ServletApacheInitializer instantiated
+2018-02-01 22:04:15 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(52) - Servlet [com.mvc.spittr.web.servlet.GenericServletDemoServlet] was added
+2018-02-01 22:04:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.<clinit>(59) - ************************AppRootConfig************************
+2018-02-01 22:04:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.<clinit>(73) - ************************Start - WebSecurityConfig************************
+2018-02-01 22:04:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.<clinit>(207) - ************************End - WebSecurityConfig************************
+2018-02-01 22:04:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.<clinit>(49) - ************************Start AppWebConfig************************
+2018-02-01 22:04:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.<clinit>(209) - ************************End AppWebConfig************************
+2018-02-01 22:04:17 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.messageSource(74) - MessageSource initialized
+2018-02-01 22:04:17 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationTrustResolver(112) - AuthenticationTrustResolver  initialized
+2018-02-01 22:04:17 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-02-01 22:04:17 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************
+2018-02-01 22:04:17 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.dataSource(142) - ***HIBERNATE*** - DB DataSource initialized - HIBERNATE -
+2018-02-01 22:04:17 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(150) - ***HIBERNATE*** - LocalSessionFactoryBean initialized - HIBERNATE -
+2018-02-01 22:04:17 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(152) - ***HIBERNATE*** - HibernateProperties initialized - HIBERNATE -
+2018-02-01 22:04:20 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.l.HttpRequestLogInterceptor.<clinit>(28) - HttpRequestLogInterceptor initialized
+2018-02-01 22:04:20 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.setApplicationContext(55) - InternalResourceViewResolver inizialized
+2018-02-01 22:04:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getSpitterDetailService(99) - SpitterDetailService  initialized
+2018-02-01 22:04:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationProvider(200) - UserDetailsService initialized
+2018-02-01 22:04:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.passwordEncoder(212) - BCryptPasswordEncoder  initialized
+2018-02-01 22:04:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationProvider(202) - Password encriptinig
+2018-02-01 22:04:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configureGlobalSecurity(189) - ConfigureGlobalSecurity user permit initialized
+2018-02-01 22:04:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] DEBUG com.mvc.spittr.web.SpittleController.<init>(53) - 2018-02-01T22:04:21.747 Constructor call
+2018-02-01 22:04:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.multipartResolver(92) - MultipartResolver initialized
+2018-02-01 22:04:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getTransactionManager(165) - ***HIBERNATE*** - HibernateTransactionManager initialized - HIBERNATE -
+2018-02-01 22:04:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSimpleMessage(184) - SimpleMailMessage initialized
+2018-02-01 22:04:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getJavaMailSender(207) - JavaMailMessage initialized
+2018-02-01 22:04:22 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.addInterceptors(122) - Interceptor added urls: /* /**
+2018-02-01 22:04:22 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.addFormatters(104) - Converter initialized, it converts string values[Roles] to UserProfiles
+2018-02-01 22:04:22 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.configureDefaultServletHandling(110) - DefaultServletHandlerConfigurer inizialized
+2018-02-01 22:04:22 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(65) - InternalResourceViewResolver inizialized
+2018-02-01 22:04:22 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(70) - resolver setting prefix /WEB-INF/views/
+2018-02-01 22:04:22 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(72) - resolver setting suffix .jsp
+2018-02-01 22:04:22 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(75) - org.springframework.web.servlet.view.JstlView.class set as view class
+2018-02-01 22:04:22 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(82) - InternalResourceViewResolver for html inizialized
+2018-02-01 22:04:22 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(87) - resolver setting prefix /WEB-INF/views/
+2018-02-01 22:04:22 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(89) - resolver setting suffix .html
+2018-02-01 22:04:22 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(92) - org.springframework.web.servlet.view.JstlView.class set as view class
+2018-02-01 22:04:23 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configure(159) - WebSecurityConfig$$EnhancerBySpringCGLIB$$3aea90d3::configure view permit
+2018-02-01 22:04:23 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configure(160) - WebSecurityConfig$$EnhancerBySpringCGLIB$$3aea90d3 initialized
+2018-02-01 22:04:23 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getTokenRepository(105) - HibernateTokenRepositoryImpl  initialized
+2018-02-01 22:04:23 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getPersistentTokenBasedRememberMeServices(222) - PersistentTokenService  initialized
+2018-02-01 22:04:24 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.messageSource(74) - MessageSource initialized
+2018-02-01 22:04:24 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.dataSource(142) - ***HIBERNATE*** - DB DataSource initialized - HIBERNATE -
+2018-02-01 22:04:24 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(150) - ***HIBERNATE*** - LocalSessionFactoryBean initialized - HIBERNATE -
+2018-02-01 22:04:24 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(152) - ***HIBERNATE*** - HibernateProperties initialized - HIBERNATE -
+2018-02-01 22:04:24 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.setApplicationContext(55) - InternalResourceViewResolver inizialized
+2018-02-01 22:04:24 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] DEBUG com.mvc.spittr.web.SpittleController.<init>(53) - 2018-02-01T22:04:24.635 Constructor call
+2018-02-01 22:04:24 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationTrustResolver(112) - AuthenticationTrustResolver  initialized
+2018-02-01 22:04:24 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getSpitterDetailService(99) - SpitterDetailService  initialized
+2018-02-01 22:04:24 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationProvider(200) - UserDetailsService initialized
+2018-02-01 22:04:24 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.passwordEncoder(212) - BCryptPasswordEncoder  initialized
+2018-02-01 22:04:24 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationProvider(202) - Password encriptinig
+2018-02-01 22:04:24 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configureGlobalSecurity(189) - ConfigureGlobalSecurity user permit initialized
+2018-02-01 22:04:24 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.multipartResolver(92) - MultipartResolver initialized
+2018-02-01 22:04:24 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getTransactionManager(165) - ***HIBERNATE*** - HibernateTransactionManager initialized - HIBERNATE -
+2018-02-01 22:04:24 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSimpleMessage(184) - SimpleMailMessage initialized
+2018-02-01 22:04:24 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getJavaMailSender(207) - JavaMailMessage initialized
+2018-02-01 22:04:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configure(159) - WebSecurityConfig$$EnhancerBySpringCGLIB$$3aea90d3::configure view permit
+2018-02-01 22:04:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configure(160) - WebSecurityConfig$$EnhancerBySpringCGLIB$$3aea90d3 initialized
+2018-02-01 22:04:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getTokenRepository(105) - HibernateTokenRepositoryImpl  initialized
+2018-02-01 22:04:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getPersistentTokenBasedRememberMeServices(222) - PersistentTokenService  initialized
+2018-02-01 22:04:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.addInterceptors(122) - Interceptor added urls: /* /**
+2018-02-01 22:04:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.addFormatters(104) - Converter initialized, it converts string values[Roles] to UserProfiles
+2018-02-01 22:04:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.configureDefaultServletHandling(110) - DefaultServletHandlerConfigurer inizialized
+2018-02-01 22:04:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(65) - InternalResourceViewResolver inizialized
+2018-02-01 22:04:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(70) - resolver setting prefix /WEB-INF/views/
+2018-02-01 22:04:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(72) - resolver setting suffix .jsp
+2018-02-01 22:04:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(75) - org.springframework.web.servlet.view.JstlView.class set as view class
+2018-02-01 22:04:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(82) - InternalResourceViewResolver for html inizialized
+2018-02-01 22:04:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(87) - resolver setting prefix /WEB-INF/views/
+2018-02-01 22:04:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(89) - resolver setting suffix .html
+2018-02-01 22:04:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(92) - org.springframework.web.servlet.view.JstlView.class set as view class
+2018-02-01 22:04:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(29) - ************************Start - GenericServletDemoServlet************************
+2018-02-01 22:04:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(47) - ************************End - GenericServletDemoServlet************************
+2018-02-01 22:18:51 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.<clinit>(55) - ************************Start WebAppInitializer************************
+2018-02-01 22:18:51 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.<clinit>(161) - ************************End WebAppInitializer************************
+2018-02-01 22:18:51 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.SecurityWebApplicationInitializer.<clinit>(16) - 1 ************************SecurityWebApplicationInitializer Intizialized************************
+2018-02-01 22:18:51 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ApacheServletInitializer.<clinit>(29) - ************************Start AppWebConfig************************
+2018-02-01 22:18:51 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ApacheServletInitializer.<clinit>(83) - ************************End AppWebConfig************************
+2018-02-01 22:18:51 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.getRootConfigClasses(66) - AppRootConfig configured
+2018-02-01 22:18:51 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.getServletConfigClasses(81) - AppWebConfig configured
+2018-02-01 22:18:51 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(118) - CustomizeRegistration initialized
+2018-02-01 22:18:51 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(128) - ***START*** Multipart initializing 
+2018-02-01 22:18:51 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(129) - Download Directory:/tmp
+2018-02-01 22:18:51 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(137) - Multipart uploads files at /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WebApp/Downloads, maxFileSize=2097152, maxRequestSize=4194304, fileSizeThreshold=0
+2018-02-01 22:18:51 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(140) - ***END*** Multipart initialized 
+2018-02-01 22:18:51 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(37) - WebApplicationInitializer@ServletApacheInitializer instantiated
+2018-02-01 22:18:51 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(52) - Servlet [com.mvc.spittr.web.servlet.GenericServletDemoServlet] was added
+2018-02-01 22:18:53 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.<clinit>(59) - ************************AppRootConfig************************
+2018-02-01 22:18:53 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.<clinit>(72) - ************************Start - WebSecurityConfig************************
+2018-02-01 22:18:53 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.<clinit>(206) - ************************End - WebSecurityConfig************************
+2018-02-01 22:18:53 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.<clinit>(49) - ************************Start AppWebConfig************************
+2018-02-01 22:18:53 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.<clinit>(209) - ************************End AppWebConfig************************
+2018-02-01 22:18:53 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.messageSource(74) - MessageSource initialized
+2018-02-01 22:18:53 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationTrustResolver(111) - AuthenticationTrustResolver  initialized
+2018-02-01 22:18:53 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-02-01 22:18:53 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************
+2018-02-01 22:18:53 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.dataSource(142) - ***HIBERNATE*** - DB DataSource initialized - HIBERNATE -
+2018-02-01 22:18:53 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(150) - ***HIBERNATE*** - LocalSessionFactoryBean initialized - HIBERNATE -
+2018-02-01 22:18:53 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(152) - ***HIBERNATE*** - HibernateProperties initialized - HIBERNATE -
+2018-02-01 22:18:56 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.l.HttpRequestLogInterceptor.<clinit>(28) - HttpRequestLogInterceptor initialized
+2018-02-01 22:18:56 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.setApplicationContext(55) - InternalResourceViewResolver inizialized
+2018-02-01 22:18:56 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getSpitterDetailService(98) - SpitterDetailService  initialized
+2018-02-01 22:18:56 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationProvider(199) - UserDetailsService initialized
+2018-02-01 22:18:56 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.passwordEncoder(211) - BCryptPasswordEncoder  initialized
+2018-02-01 22:18:57 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationProvider(201) - Password encriptinig
+2018-02-01 22:18:57 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configureGlobalSecurity(188) - ConfigureGlobalSecurity user permit initialized
+2018-02-01 22:18:57 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] DEBUG com.mvc.spittr.web.SpittleController.<init>(53) - 2018-02-01T22:18:57.128 Constructor call
+2018-02-01 22:18:57 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.multipartResolver(92) - MultipartResolver initialized
+2018-02-01 22:18:57 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getTransactionManager(165) - ***HIBERNATE*** - HibernateTransactionManager initialized - HIBERNATE -
+2018-02-01 22:18:57 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSimpleMessage(184) - SimpleMailMessage initialized
+2018-02-01 22:18:57 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getJavaMailSender(207) - JavaMailMessage initialized
+2018-02-01 22:18:57 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.addInterceptors(122) - Interceptor added urls: /* /**
+2018-02-01 22:18:57 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.addFormatters(104) - Converter initialized, it converts string values[Roles] to UserProfiles
+2018-02-01 22:18:57 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.configureDefaultServletHandling(110) - DefaultServletHandlerConfigurer inizialized
+2018-02-01 22:18:58 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(65) - InternalResourceViewResolver inizialized
+2018-02-01 22:18:58 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(70) - resolver setting prefix /WEB-INF/views/
+2018-02-01 22:18:58 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(72) - resolver setting suffix .jsp
+2018-02-01 22:18:58 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(75) - org.springframework.web.servlet.view.JstlView.class set as view class
+2018-02-01 22:18:58 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(82) - InternalResourceViewResolver for html inizialized
+2018-02-01 22:18:58 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(87) - resolver setting prefix /WEB-INF/views/
+2018-02-01 22:18:58 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(89) - resolver setting suffix .html
+2018-02-01 22:18:58 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(92) - org.springframework.web.servlet.view.JstlView.class set as view class
+2018-02-01 22:18:58 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configure(158) - WebSecurityConfig$$EnhancerBySpringCGLIB$$66c82724::configure view permit
+2018-02-01 22:18:58 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configure(159) - WebSecurityConfig$$EnhancerBySpringCGLIB$$66c82724 initialized
+2018-02-01 22:18:58 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getTokenRepository(104) - HibernateTokenRepositoryImpl  initialized
+2018-02-01 22:18:58 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getPersistentTokenBasedRememberMeServices(221) - PersistentTokenService  initialized
+2018-02-01 22:18:59 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.messageSource(74) - MessageSource initialized
+2018-02-01 22:18:59 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.dataSource(142) - ***HIBERNATE*** - DB DataSource initialized - HIBERNATE -
+2018-02-01 22:18:59 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(150) - ***HIBERNATE*** - LocalSessionFactoryBean initialized - HIBERNATE -
+2018-02-01 22:18:59 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(152) - ***HIBERNATE*** - HibernateProperties initialized - HIBERNATE -
+2018-02-01 22:18:59 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.setApplicationContext(55) - InternalResourceViewResolver inizialized
+2018-02-01 22:18:59 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] DEBUG com.mvc.spittr.web.SpittleController.<init>(53) - 2018-02-01T22:18:59.520 Constructor call
+2018-02-01 22:18:59 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationTrustResolver(111) - AuthenticationTrustResolver  initialized
+2018-02-01 22:18:59 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getSpitterDetailService(98) - SpitterDetailService  initialized
+2018-02-01 22:18:59 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationProvider(199) - UserDetailsService initialized
+2018-02-01 22:18:59 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.passwordEncoder(211) - BCryptPasswordEncoder  initialized
+2018-02-01 22:18:59 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationProvider(201) - Password encriptinig
+2018-02-01 22:18:59 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configureGlobalSecurity(188) - ConfigureGlobalSecurity user permit initialized
+2018-02-01 22:18:59 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.multipartResolver(92) - MultipartResolver initialized
+2018-02-01 22:18:59 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getTransactionManager(165) - ***HIBERNATE*** - HibernateTransactionManager initialized - HIBERNATE -
+2018-02-01 22:18:59 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSimpleMessage(184) - SimpleMailMessage initialized
+2018-02-01 22:18:59 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getJavaMailSender(207) - JavaMailMessage initialized
+2018-02-01 22:18:59 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configure(158) - WebSecurityConfig$$EnhancerBySpringCGLIB$$66c82724::configure view permit
+2018-02-01 22:18:59 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configure(159) - WebSecurityConfig$$EnhancerBySpringCGLIB$$66c82724 initialized
+2018-02-01 22:19:00 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getTokenRepository(104) - HibernateTokenRepositoryImpl  initialized
+2018-02-01 22:19:00 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getPersistentTokenBasedRememberMeServices(221) - PersistentTokenService  initialized
+2018-02-01 22:19:00 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.addInterceptors(122) - Interceptor added urls: /* /**
+2018-02-01 22:19:00 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.addFormatters(104) - Converter initialized, it converts string values[Roles] to UserProfiles
+2018-02-01 22:19:00 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.configureDefaultServletHandling(110) - DefaultServletHandlerConfigurer inizialized
+2018-02-01 22:19:00 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(65) - InternalResourceViewResolver inizialized
+2018-02-01 22:19:00 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(70) - resolver setting prefix /WEB-INF/views/
+2018-02-01 22:19:00 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(72) - resolver setting suffix .jsp
+2018-02-01 22:19:00 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(75) - org.springframework.web.servlet.view.JstlView.class set as view class
+2018-02-01 22:19:00 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(82) - InternalResourceViewResolver for html inizialized
+2018-02-01 22:19:00 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(87) - resolver setting prefix /WEB-INF/views/
+2018-02-01 22:19:00 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(89) - resolver setting suffix .html
+2018-02-01 22:19:00 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(92) - org.springframework.web.servlet.view.JstlView.class set as view class
+2018-02-01 22:19:00 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(29) - ************************Start - GenericServletDemoServlet************************
+2018-02-01 22:19:00 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(47) - ************************End - GenericServletDemoServlet************************
+2018-02-01 22:25:36 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ApacheServletInitializer.<clinit>(29) - ************************Start AppWebConfig************************
+2018-02-01 22:25:36 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ApacheServletInitializer.<clinit>(83) - ************************End AppWebConfig************************
+2018-02-01 22:25:36 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.SecurityWebApplicationInitializer.<clinit>(16) - 1 ************************SecurityWebApplicationInitializer Intizialized************************
+2018-02-01 22:25:36 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.<clinit>(55) - ************************Start WebAppInitializer************************
+2018-02-01 22:25:36 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.<clinit>(161) - ************************End WebAppInitializer************************
+2018-02-01 22:25:36 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.getRootConfigClasses(66) - AppRootConfig configured
+2018-02-01 22:25:36 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.getServletConfigClasses(81) - AppWebConfig configured
+2018-02-01 22:25:36 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(118) - CustomizeRegistration initialized
+2018-02-01 22:25:36 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(128) - ***START*** Multipart initializing 
+2018-02-01 22:25:36 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(129) - Download Directory:/tmp
+2018-02-01 22:25:36 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(137) - Multipart uploads files at /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WebApp/Downloads, maxFileSize=2097152, maxRequestSize=4194304, fileSizeThreshold=0
+2018-02-01 22:25:36 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(140) - ***END*** Multipart initialized 
+2018-02-01 22:25:36 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(37) - WebApplicationInitializer@ServletApacheInitializer instantiated
+2018-02-01 22:25:36 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(52) - Servlet [com.mvc.spittr.web.servlet.GenericServletDemoServlet] was added
+2018-02-01 22:25:37 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.<clinit>(59) - ************************AppRootConfig************************
+2018-02-01 22:25:37 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.<clinit>(72) - ************************Start - WebSecurityConfig************************
+2018-02-01 22:25:37 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.<clinit>(206) - ************************End - WebSecurityConfig************************
+2018-02-01 22:25:37 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.<clinit>(49) - ************************Start AppWebConfig************************
+2018-02-01 22:25:37 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.<clinit>(209) - ************************End AppWebConfig************************
+2018-02-01 22:25:38 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.messageSource(74) - MessageSource initialized
+2018-02-01 22:25:38 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationTrustResolver(111) - AuthenticationTrustResolver  initialized
+2018-02-01 22:25:38 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-02-01 22:25:38 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************
+2018-02-01 22:25:38 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.dataSource(142) - ***HIBERNATE*** - DB DataSource initialized - HIBERNATE -
+2018-02-01 22:25:38 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(150) - ***HIBERNATE*** - LocalSessionFactoryBean initialized - HIBERNATE -
+2018-02-01 22:25:38 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(152) - ***HIBERNATE*** - HibernateProperties initialized - HIBERNATE -
+2018-02-01 22:25:41 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.l.HttpRequestLogInterceptor.<clinit>(28) - HttpRequestLogInterceptor initialized
+2018-02-01 22:25:41 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.setApplicationContext(55) - InternalResourceViewResolver inizialized
+2018-02-01 22:25:42 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getSpitterDetailService(98) - SpitterDetailService  initialized
+2018-02-01 22:25:42 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationProvider(199) - UserDetailsService initialized
+2018-02-01 22:25:42 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.passwordEncoder(211) - BCryptPasswordEncoder  initialized
+2018-02-01 22:25:42 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationProvider(201) - Password encriptinig
+2018-02-01 22:25:42 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configureGlobalSecurity(188) - ConfigureGlobalSecurity user permit initialized
+2018-02-01 22:26:54 [localhost-startStop-1] INFO  c.m.s.web.config.WebAppInitializer.<clinit>(55) - ************************Start WebAppInitializer************************
+2018-02-01 22:26:54 [localhost-startStop-1] INFO  c.m.s.web.config.WebAppInitializer.<clinit>(161) - ************************End WebAppInitializer************************
+2018-02-01 22:26:54 [localhost-startStop-1] INFO  c.m.s.w.c.ApacheServletInitializer.<clinit>(29) - ************************Start AppWebConfig************************
+2018-02-01 22:26:54 [localhost-startStop-1] INFO  c.m.s.w.c.ApacheServletInitializer.<clinit>(83) - ************************End AppWebConfig************************
+2018-02-01 22:26:54 [localhost-startStop-1] INFO  c.m.s.w.c.SecurityWebApplicationInitializer.<clinit>(16) - 1 ************************SecurityWebApplicationInitializer Intizialized************************
+2018-02-01 22:26:54 [localhost-startStop-1] INFO  c.m.s.web.config.WebAppInitializer.getRootConfigClasses(66) - AppRootConfig configured
+2018-02-01 22:26:54 [localhost-startStop-1] INFO  c.m.s.web.config.WebAppInitializer.getServletConfigClasses(81) - AppWebConfig configured
+2018-02-01 22:26:54 [localhost-startStop-1] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(118) - CustomizeRegistration initialized
+2018-02-01 22:26:54 [localhost-startStop-1] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(128) - ***START*** Multipart initializing 
+2018-02-01 22:26:54 [localhost-startStop-1] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(129) - Download Directory:/tmp
+2018-02-01 22:26:54 [localhost-startStop-1] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(137) - Multipart uploads files at /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WebApp/Downloads, maxFileSize=2097152, maxRequestSize=4194304, fileSizeThreshold=0
+2018-02-01 22:26:54 [localhost-startStop-1] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(140) - ***END*** Multipart initialized 
+2018-02-01 22:26:54 [localhost-startStop-1] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(37) - WebApplicationInitializer@ServletApacheInitializer instantiated
+2018-02-01 22:26:54 [localhost-startStop-1] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(52) - Servlet [com.mvc.spittr.web.servlet.GenericServletDemoServlet] was added
+2018-02-01 22:26:56 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.<clinit>(59) - ************************AppRootConfig************************
+2018-02-01 22:26:56 [localhost-startStop-1] INFO  c.m.s.web.config.WebSecurityConfig.<clinit>(72) - ************************Start - WebSecurityConfig************************
+2018-02-01 22:26:56 [localhost-startStop-1] INFO  c.m.s.web.config.WebSecurityConfig.<clinit>(206) - ************************End - WebSecurityConfig************************
+2018-02-01 22:26:56 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.<clinit>(49) - ************************Start AppWebConfig************************
+2018-02-01 22:26:56 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.<clinit>(209) - ************************End AppWebConfig************************
+2018-02-01 22:26:57 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.messageSource(74) - MessageSource initialized
+2018-02-01 22:26:57 [localhost-startStop-1] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationTrustResolver(111) - AuthenticationTrustResolver  initialized
+2018-02-01 22:26:57 [localhost-startStop-1] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-02-01 22:26:57 [localhost-startStop-1] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************
+2018-02-01 22:26:57 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.dataSource(142) - ***HIBERNATE*** - DB DataSource initialized - HIBERNATE -
+2018-02-01 22:26:57 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(150) - ***HIBERNATE*** - LocalSessionFactoryBean initialized - HIBERNATE -
+2018-02-01 22:26:57 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(152) - ***HIBERNATE*** - HibernateProperties initialized - HIBERNATE -
+2018-02-01 22:27:01 [localhost-startStop-1] INFO  c.m.s.w.l.HttpRequestLogInterceptor.<clinit>(28) - HttpRequestLogInterceptor initialized
+2018-02-01 22:27:01 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.setApplicationContext(55) - InternalResourceViewResolver inizialized
+2018-02-01 22:27:01 [localhost-startStop-1] INFO  c.m.s.web.config.WebSecurityConfig.getSpitterDetailService(98) - SpitterDetailService  initialized
+2018-02-01 22:27:01 [localhost-startStop-1] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationProvider(199) - UserDetailsService initialized
+2018-02-01 22:27:01 [localhost-startStop-1] INFO  c.m.s.web.config.WebSecurityConfig.passwordEncoder(211) - BCryptPasswordEncoder  initialized
+2018-02-01 22:27:01 [localhost-startStop-1] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationProvider(201) - Password encriptinig
+2018-02-01 22:27:01 [localhost-startStop-1] INFO  c.m.s.web.config.WebSecurityConfig.configureGlobalSecurity(188) - ConfigureGlobalSecurity user permit initialized
+2018-02-01 22:27:02 [localhost-startStop-1] INFO  c.m.s.web.config.WebSecurityConfig.getTokenRepository(104) - HibernateTokenRepositoryImpl  initialized
+2018-02-01 22:27:02 [localhost-startStop-1] INFO  c.m.s.web.config.WebSecurityConfig.getPersistentTokenBasedRememberMeServices(221) - PersistentTokenService  initialized
+2018-02-01 22:27:02 [localhost-startStop-1] DEBUG com.mvc.spittr.web.SpittleController.<init>(53) - 2018-02-01T22:27:02.142 Constructor call
+2018-02-01 22:27:02 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.multipartResolver(92) - MultipartResolver initialized
+2018-02-01 22:27:02 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getTransactionManager(165) - ***HIBERNATE*** - HibernateTransactionManager initialized - HIBERNATE -
+2018-02-01 22:27:02 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getSimpleMessage(184) - SimpleMailMessage initialized
+2018-02-01 22:27:02 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getJavaMailSender(207) - JavaMailMessage initialized
+2018-02-01 22:27:02 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.addInterceptors(122) - Interceptor added urls: /* /**
+2018-02-01 22:27:02 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.addFormatters(104) - Converter initialized, it converts string values[Roles] to UserProfiles
+2018-02-01 22:27:02 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.configureDefaultServletHandling(110) - DefaultServletHandlerConfigurer inizialized
+2018-02-01 22:27:03 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(65) - InternalResourceViewResolver inizialized
+2018-02-01 22:27:03 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(70) - resolver setting prefix /WEB-INF/views/
+2018-02-01 22:27:03 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(72) - resolver setting suffix .jsp
+2018-02-01 22:27:03 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(75) - org.springframework.web.servlet.view.JstlView.class set as view class
+2018-02-01 22:27:03 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(82) - InternalResourceViewResolver for html inizialized
+2018-02-01 22:27:03 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(87) - resolver setting prefix /WEB-INF/views/
+2018-02-01 22:27:03 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(89) - resolver setting suffix .html
+2018-02-01 22:27:03 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(92) - org.springframework.web.servlet.view.JstlView.class set as view class
+2018-02-01 22:27:03 [localhost-startStop-1] INFO  c.m.s.web.config.WebSecurityConfig.configure(158) - WebSecurityConfig$$EnhancerBySpringCGLIB$$f20d8473::configure view permit
+2018-02-01 22:27:03 [localhost-startStop-1] INFO  c.m.s.web.config.WebSecurityConfig.configure(159) - WebSecurityConfig$$EnhancerBySpringCGLIB$$f20d8473 initialized
+2018-02-01 22:27:04 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.messageSource(74) - MessageSource initialized
+2018-02-01 22:27:04 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.dataSource(142) - ***HIBERNATE*** - DB DataSource initialized - HIBERNATE -
+2018-02-01 22:27:04 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(150) - ***HIBERNATE*** - LocalSessionFactoryBean initialized - HIBERNATE -
+2018-02-01 22:27:04 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(152) - ***HIBERNATE*** - HibernateProperties initialized - HIBERNATE -
+2018-02-01 22:27:05 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.setApplicationContext(55) - InternalResourceViewResolver inizialized
+2018-02-01 22:27:05 [localhost-startStop-1] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationTrustResolver(111) - AuthenticationTrustResolver  initialized
+2018-02-01 22:27:05 [localhost-startStop-1] INFO  c.m.s.web.config.WebSecurityConfig.getSpitterDetailService(98) - SpitterDetailService  initialized
+2018-02-01 22:27:05 [localhost-startStop-1] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationProvider(199) - UserDetailsService initialized
+2018-02-01 22:27:05 [localhost-startStop-1] INFO  c.m.s.web.config.WebSecurityConfig.passwordEncoder(211) - BCryptPasswordEncoder  initialized
+2018-02-01 22:27:05 [localhost-startStop-1] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationProvider(201) - Password encriptinig
+2018-02-01 22:27:05 [localhost-startStop-1] INFO  c.m.s.web.config.WebSecurityConfig.configureGlobalSecurity(188) - ConfigureGlobalSecurity user permit initialized
+2018-02-01 22:27:05 [localhost-startStop-1] INFO  c.m.s.web.config.WebSecurityConfig.getTokenRepository(104) - HibernateTokenRepositoryImpl  initialized
+2018-02-01 22:27:05 [localhost-startStop-1] INFO  c.m.s.web.config.WebSecurityConfig.getPersistentTokenBasedRememberMeServices(221) - PersistentTokenService  initialized
+2018-02-01 22:27:05 [localhost-startStop-1] DEBUG com.mvc.spittr.web.SpittleController.<init>(53) - 2018-02-01T22:27:05.678 Constructor call
+2018-02-01 22:27:05 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.multipartResolver(92) - MultipartResolver initialized
+2018-02-01 22:27:05 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getTransactionManager(165) - ***HIBERNATE*** - HibernateTransactionManager initialized - HIBERNATE -
+2018-02-01 22:27:05 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getSimpleMessage(184) - SimpleMailMessage initialized
+2018-02-01 22:27:05 [localhost-startStop-1] INFO  c.m.spittr.web.config.AppRootConfig.getJavaMailSender(207) - JavaMailMessage initialized
+2018-02-01 22:27:05 [localhost-startStop-1] INFO  c.m.s.web.config.WebSecurityConfig.configure(158) - WebSecurityConfig$$EnhancerBySpringCGLIB$$f20d8473::configure view permit
+2018-02-01 22:27:05 [localhost-startStop-1] INFO  c.m.s.web.config.WebSecurityConfig.configure(159) - WebSecurityConfig$$EnhancerBySpringCGLIB$$f20d8473 initialized
+2018-02-01 22:27:06 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.addInterceptors(122) - Interceptor added urls: /* /**
+2018-02-01 22:27:06 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.addFormatters(104) - Converter initialized, it converts string values[Roles] to UserProfiles
+2018-02-01 22:27:06 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.configureDefaultServletHandling(110) - DefaultServletHandlerConfigurer inizialized
+2018-02-01 22:27:06 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(65) - InternalResourceViewResolver inizialized
+2018-02-01 22:27:06 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(70) - resolver setting prefix /WEB-INF/views/
+2018-02-01 22:27:06 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(72) - resolver setting suffix .jsp
+2018-02-01 22:27:06 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(75) - org.springframework.web.servlet.view.JstlView.class set as view class
+2018-02-01 22:27:06 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(82) - InternalResourceViewResolver for html inizialized
+2018-02-01 22:27:06 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(87) - resolver setting prefix /WEB-INF/views/
+2018-02-01 22:27:06 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(89) - resolver setting suffix .html
+2018-02-01 22:27:06 [localhost-startStop-1] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(92) - org.springframework.web.servlet.view.JstlView.class set as view class
+2018-02-01 22:27:06 [localhost-startStop-1] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(29) - ************************Start - GenericServletDemoServlet************************
+2018-02-01 22:27:06 [localhost-startStop-1] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(47) - ************************End - GenericServletDemoServlet************************
+2018-02-01 22:28:16 [http-nio-8080-exec-3] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-01T22:28:16.290 - called url:/Spring-In-Action_WEBApp/spittle
+2018-02-01 22:28:16 [http-nio-8080-exec-3] INFO  com.mvc.spittr.web.SpittleController.spittles(81) - 2018-02-01T22:28:16.957 /spittle called
+2018-02-01 22:28:38 [http-nio-8080-exec-7] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-01T22:28:38.672 - called url:/Spring-In-Action_WEBApp/
+2018-02-01 22:28:42 [http-nio-8080-exec-9] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-01T22:28:42.741 - called url:/Spring-In-Action_WEBApp/spitter
+2018-02-01 22:28:45 [http-nio-8080-exec-1] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-01T22:28:45.859 - called url:/Spring-In-Action_WEBApp/spittle
+2018-02-01 22:28:45 [http-nio-8080-exec-1] INFO  com.mvc.spittr.web.SpittleController.spittles(81) - 2018-02-01T22:28:45.876 /spittle called
+2018-02-01 22:28:50 [http-nio-8080-exec-7] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-01T22:28:50.698 - called url:/Spring-In-Action_WEBApp/spitter
+2018-02-01 22:28:55 [http-nio-8080-exec-9] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-01T22:28:55.924 - called url:/Spring-In-Action_WEBApp/spittle
+2018-02-01 22:28:55 [http-nio-8080-exec-9] INFO  com.mvc.spittr.web.SpittleController.spittles(81) - 2018-02-01T22:28:55.940 /spittle called
+2018-02-01 22:28:57 [http-nio-8080-exec-1] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-01T22:28:57.931 - called url:/Spring-In-Action_WEBApp/spitter
+2018-02-01 22:28:58 [http-nio-8080-exec-6] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-01T22:28:58.644 - called url:/Spring-In-Action_WEBApp/
+2018-02-01 22:30:12 [http-nio-8080-exec-2] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-01T22:30:12.627 - called url:/Spring-In-Action_WEBApp/
+2018-02-01 22:37:18 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.SecurityWebApplicationInitializer.<clinit>(16) - 1 ************************SecurityWebApplicationInitializer Intizialized************************
+2018-02-01 22:37:18 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.<clinit>(55) - ************************Start WebAppInitializer************************
+2018-02-01 22:37:18 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.<clinit>(161) - ************************End WebAppInitializer************************
+2018-02-01 22:37:18 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ApacheServletInitializer.<clinit>(29) - ************************Start AppWebConfig************************
+2018-02-01 22:37:18 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ApacheServletInitializer.<clinit>(83) - ************************End AppWebConfig************************
+2018-02-01 22:37:18 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.getRootConfigClasses(66) - AppRootConfig configured
+2018-02-01 22:37:18 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.getServletConfigClasses(81) - AppWebConfig configured
+2018-02-01 22:37:18 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(118) - CustomizeRegistration initialized
+2018-02-01 22:37:18 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(128) - ***START*** Multipart initializing 
+2018-02-01 22:37:18 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(129) - Download Directory:/tmp
+2018-02-01 22:37:18 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(137) - Multipart uploads files at /home/sabaja/Scrivania/spring-hibernate-workspace/Spring-In-Action_WebApp/Downloads, maxFileSize=2097152, maxRequestSize=4194304, fileSizeThreshold=0
+2018-02-01 22:37:18 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebAppInitializer.customizeRegistration(140) - ***END*** Multipart initialized 
+2018-02-01 22:37:18 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(37) - WebApplicationInitializer@ServletApacheInitializer instantiated
+2018-02-01 22:37:18 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.ApacheServletInitializer.onStartup(52) - Servlet [com.mvc.spittr.web.servlet.GenericServletDemoServlet] was added
+2018-02-01 22:37:20 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.<clinit>(59) - ************************AppRootConfig************************
+2018-02-01 22:37:20 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.<clinit>(72) - ************************Start - WebSecurityConfig************************
+2018-02-01 22:37:20 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.<clinit>(209) - ************************End - WebSecurityConfig************************
+2018-02-01 22:37:20 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.<clinit>(49) - ************************Start AppWebConfig************************
+2018-02-01 22:37:20 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.<clinit>(209) - ************************End AppWebConfig************************
+2018-02-01 22:37:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.messageSource(74) - MessageSource initialized
+2018-02-01 22:37:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationTrustResolver(111) - AuthenticationTrustResolver  initialized
+2018-02-01 22:37:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-02-01 22:37:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************
+2018-02-01 22:37:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.dataSource(142) - ***HIBERNATE*** - DB DataSource initialized - HIBERNATE -
+2018-02-01 22:37:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(150) - ***HIBERNATE*** - LocalSessionFactoryBean initialized - HIBERNATE -
+2018-02-01 22:37:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(152) - ***HIBERNATE*** - HibernateProperties initialized - HIBERNATE -
+2018-02-01 22:37:24 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.l.HttpRequestLogInterceptor.<clinit>(28) - HttpRequestLogInterceptor initialized
+2018-02-01 22:37:24 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.setApplicationContext(55) - InternalResourceViewResolver inizialized
+2018-02-01 22:37:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getSpitterDetailService(98) - SpitterDetailService  initialized
+2018-02-01 22:37:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationProvider(202) - UserDetailsService initialized
+2018-02-01 22:37:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.passwordEncoder(214) - BCryptPasswordEncoder  initialized
+2018-02-01 22:37:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationProvider(204) - Password encriptinig
+2018-02-01 22:37:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configureGlobalSecurity(191) - ConfigureGlobalSecurity user permit initialized
+2018-02-01 22:37:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getTokenRepository(104) - HibernateTokenRepositoryImpl  initialized
+2018-02-01 22:37:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getPersistentTokenBasedRememberMeServices(224) - PersistentTokenService  initialized
+2018-02-01 22:37:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] DEBUG com.mvc.spittr.web.SpittleController.<init>(53) - 2018-02-01T22:37:25.872 Constructor call
+2018-02-01 22:37:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.multipartResolver(92) - MultipartResolver initialized
+2018-02-01 22:37:25 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getTransactionManager(165) - ***HIBERNATE*** - HibernateTransactionManager initialized - HIBERNATE -
+2018-02-01 22:37:26 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSimpleMessage(184) - SimpleMailMessage initialized
+2018-02-01 22:37:26 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getJavaMailSender(207) - JavaMailMessage initialized
+2018-02-01 22:37:26 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.addInterceptors(122) - Interceptor added urls: /* /**
+2018-02-01 22:37:26 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.addFormatters(104) - Converter initialized, it converts string values[Roles] to UserProfiles
+2018-02-01 22:37:26 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.configureDefaultServletHandling(110) - DefaultServletHandlerConfigurer inizialized
+2018-02-01 22:37:26 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(65) - InternalResourceViewResolver inizialized
+2018-02-01 22:37:26 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(70) - resolver setting prefix /WEB-INF/views/
+2018-02-01 22:37:26 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(72) - resolver setting suffix .jsp
+2018-02-01 22:37:26 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(75) - org.springframework.web.servlet.view.JstlView.class set as view class
+2018-02-01 22:37:27 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(82) - InternalResourceViewResolver for html inizialized
+2018-02-01 22:37:27 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(87) - resolver setting prefix /WEB-INF/views/
+2018-02-01 22:37:27 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(89) - resolver setting suffix .html
+2018-02-01 22:37:27 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(92) - org.springframework.web.servlet.view.JstlView.class set as view class
+2018-02-01 22:37:27 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configure(161) - WebSecurityConfig$$EnhancerBySpringCGLIB$$407a78e3::configure view permit
+2018-02-01 22:37:27 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configure(162) - WebSecurityConfig$$EnhancerBySpringCGLIB$$407a78e3 initialized
+2018-02-01 22:37:28 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.messageSource(74) - MessageSource initialized
+2018-02-01 22:37:28 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.dataSource(142) - ***HIBERNATE*** - DB DataSource initialized - HIBERNATE -
+2018-02-01 22:37:28 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(150) - ***HIBERNATE*** - LocalSessionFactoryBean initialized - HIBERNATE -
+2018-02-01 22:37:28 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSessionFactory(152) - ***HIBERNATE*** - HibernateProperties initialized - HIBERNATE -
+2018-02-01 22:37:28 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.setApplicationContext(55) - InternalResourceViewResolver inizialized
+2018-02-01 22:37:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationTrustResolver(111) - AuthenticationTrustResolver  initialized
+2018-02-01 22:37:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getSpitterDetailService(98) - SpitterDetailService  initialized
+2018-02-01 22:37:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationProvider(202) - UserDetailsService initialized
+2018-02-01 22:37:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.passwordEncoder(214) - BCryptPasswordEncoder  initialized
+2018-02-01 22:37:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getAuthenticationProvider(204) - Password encriptinig
+2018-02-01 22:37:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configureGlobalSecurity(191) - ConfigureGlobalSecurity user permit initialized
+2018-02-01 22:37:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getTokenRepository(104) - HibernateTokenRepositoryImpl  initialized
+2018-02-01 22:37:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.getPersistentTokenBasedRememberMeServices(224) - PersistentTokenService  initialized
+2018-02-01 22:37:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] DEBUG com.mvc.spittr.web.SpittleController.<init>(53) - 2018-02-01T22:37:29.333 Constructor call
+2018-02-01 22:37:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.multipartResolver(92) - MultipartResolver initialized
+2018-02-01 22:37:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getTransactionManager(165) - ***HIBERNATE*** - HibernateTransactionManager initialized - HIBERNATE -
+2018-02-01 22:37:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getSimpleMessage(184) - SimpleMailMessage initialized
+2018-02-01 22:37:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.spittr.web.config.AppRootConfig.getJavaMailSender(207) - JavaMailMessage initialized
+2018-02-01 22:37:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configure(161) - WebSecurityConfig$$EnhancerBySpringCGLIB$$407a78e3::configure view permit
+2018-02-01 22:37:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.web.config.WebSecurityConfig.configure(162) - WebSecurityConfig$$EnhancerBySpringCGLIB$$407a78e3 initialized
+2018-02-01 22:37:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.addInterceptors(122) - Interceptor added urls: /* /**
+2018-02-01 22:37:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.addFormatters(104) - Converter initialized, it converts string values[Roles] to UserProfiles
+2018-02-01 22:37:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.configureDefaultServletHandling(110) - DefaultServletHandlerConfigurer inizialized
+2018-02-01 22:37:30 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(65) - InternalResourceViewResolver inizialized
+2018-02-01 22:37:30 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(70) - resolver setting prefix /WEB-INF/views/
+2018-02-01 22:37:30 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(72) - resolver setting suffix .jsp
+2018-02-01 22:37:30 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver(75) - org.springframework.web.servlet.view.JstlView.class set as view class
+2018-02-01 22:37:30 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(82) - InternalResourceViewResolver for html inizialized
+2018-02-01 22:37:30 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(87) - resolver setting prefix /WEB-INF/views/
+2018-02-01 22:37:30 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(89) - resolver setting suffix .html
+2018-02-01 22:37:30 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.mvc.spittr.web.config.AppWebConfig.viewResolver2(92) - org.springframework.web.servlet.view.JstlView.class set as view class
+2018-02-01 22:37:30 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(29) - ************************Start - GenericServletDemoServlet************************
+2018-02-01 22:37:30 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(47) - ************************End - GenericServletDemoServlet************************
+2018-02-01 22:38:16 [http-nio-8080-exec-2] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-01T22:38:16.292 - called url:/Spring-In-Action_WEBApp/spitter
+2018-02-01 22:38:18 [http-nio-8080-exec-6] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-01T22:38:18.627 - called url:/Spring-In-Action_WEBApp/spittle
+2018-02-01 22:38:19 [http-nio-8080-exec-6] INFO  com.mvc.spittr.web.SpittleController.spittles(81) - 2018-02-01T22:38:19.342 /spittle called
+2018-02-01 22:38:41 [http-nio-8080-exec-8] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-01T22:38:41.198 - called url:/Spring-In-Action_WEBApp/

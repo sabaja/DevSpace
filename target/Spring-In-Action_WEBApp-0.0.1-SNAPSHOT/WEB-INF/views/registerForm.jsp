@@ -68,7 +68,7 @@
 			<sf:errors path="password" cssErrorClass="errors" />
 		</div>
 		<br />
-		
+		<input type="hidden" name="${_csrf.parameterName}"  value="${_csrf.token}" />
 		<input type="submit" value="Register" />
 	</sf:form>
 </body>

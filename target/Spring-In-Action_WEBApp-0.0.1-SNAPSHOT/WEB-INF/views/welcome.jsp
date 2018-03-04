@@ -22,4 +22,5 @@
 		<a href="login"><s:message code="spittr.login" /></a>
 	</h1>
 </body>
+<input type="hidden" name="${_csrf.parameterName}"  value="${_csrf.token}" />
 </html>

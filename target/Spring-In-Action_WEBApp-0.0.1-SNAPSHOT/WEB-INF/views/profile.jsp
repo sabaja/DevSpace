@@ -12,6 +12,7 @@
 </style>
 </head>
 <body>
+  <%@include file="authheader.jsp" %>   
 	<form method="GET" action="../spitter">
 		<h1>Your Profile</h1>
 		User:
@@ -28,6 +29,7 @@
 		<div>
 			<input type="submit" value="Home" />
 		</div>
+		<input type="hidden" name="${_csrf.parameterName}"  value="${_csrf.token}" />
 	</form>
 </body>
 </html>

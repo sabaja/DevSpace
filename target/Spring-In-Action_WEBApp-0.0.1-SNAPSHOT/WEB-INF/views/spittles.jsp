@@ -1,7 +1,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE HTML>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<%@include file="authheader.jsp"%>
 <p>List of spittles:</p>
+
 <c:forEach items="${spittleList}" var="spittle">
 	<!--c:set var="${spitterIds}" /-->
 	<ul>
@@ -12,16 +14,15 @@
 
 			</div>
 			<div>
-				<span class="spitterId"
-					style="color: darkcyan; font-weight: bold">[ spitter id: <c:out
-						value="${spittle.spitter.getId()}" />, spitter name: <c:out
-						value="${spittle.spitter.getUsername()}" />
-				</span> 
-				<span class="spittleTime"
-					style="color: darkcyan; font-weight: bold">
-					, date time: <c:out
+				<span class="spitterName" style="color: #337ab7; font-weight: bold">[
+					spitter name: <c:out value="${spittle.spitter.getUsername()}" />,
+				</span>
+				<span class="spitterId"	style="color: #337ab7; font-weight: bold"> spitter id (<c:out
+						value="${spittle.spitter.getId()}" />),
+				</span> <span class="spittleTime"
+					style="color: #337ab7; font-weight: bold"> date time: <c:out
 						value="${spittle.time}" /> ]
-				</span> 
+				</span>
 				<!--  span class="spittleLocation"
 					style="color: darkolivegreen; font-weight: bold"> ( <c:out
 						value="${spittle.latitude}" />, <c:out

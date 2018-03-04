@@ -17,6 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -30,6 +31,7 @@ import com.mvc.spittr.service.SpitterService;
 import com.mvc.spittr.service.SpittleService;
 import com.mvc.spittr.service.backup.SpittleRepository;
 import com.mvc.spittr.web.util.RequestUtilFacade;
+import com.mvc.spittr.web.util.WebFacilities;
 
 @Controller
 @RequestMapping({ "/spittle" })
@@ -64,20 +66,21 @@ public class SpittleController {
 	 *                        20)); return "spittles"; }
 	 */
 	@RequestMapping(method = RequestMethod.GET)
-	public String spittles(Model model, @RequestParam(value = "max", defaultValue = MAX_LONG_AS_STRING) long max,
-			@RequestParam(value = "count", defaultValue = "30") int count,
-//			@RequestParam(value = "spitterId", required = false) Long spitterId, 
-			HttpServletRequest request,
+	public String spittles(ModelMap model, @RequestParam(value = "max", defaultValue = MAX_LONG_AS_STRING) long max,
+			@RequestParam(value = "count", defaultValue = "30") int count, HttpServletRequest request,
 			HttpServletResponse response) {
-		// List<Spittle> spittles = spittleRepository.findSpittles(max, count);
+		
 		List<Spittle> spittles = spittleService.findSpittles();
 		model.addAttribute("spittleList", spittles);
-		
-		List<Long> spitterIds = spittles.stream().map(Spittle::getId).collect(Collectors.toList()); 
-		if(Objects.isNull(spitterIds)){
+
+		List<Long> spitterIds = spittles.stream().map(Spittle::getId).collect(Collectors.toList());
+		if (Objects.isNull(spitterIds)) {
 			logger.info("{} List<Long> spitterIds is null", LocalDateTime.now());
 		}
+		
 		model.addAttribute("spitterIds", spitterIds);
+		model.addAttribute("loggedinuser", WebFacilities.getPrincipal());
+		
 		logger.info("{} /spittle called", LocalDateTime.now());
 		return "spittles";// name view
 	}
@@ -138,6 +141,7 @@ public class SpittleController {
 			throw new SpittleNotFoundException();
 		}
 		model.addAttribute(spittle);
+		model.addAttribute("loggedinuser", WebFacilities.getPrincipal());
 		logger.info("{} request called ", RequestUtilFacade.getCurrentUri(request).toString());
 		logger.info("{} single view is called with param {} ", LocalDateTime.now(), spittleId);
 		return "spittle";

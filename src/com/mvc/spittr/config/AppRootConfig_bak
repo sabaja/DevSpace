@@ -41,21 +41,21 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
  *         non-web components. You’re almost ready to start building a web
  *         application with Spring MVC . The big question at this point is what
  *         application you’ll build.
- *         
- *         "com.mvc.spittr.web.config" 
+ * 
+ *         "com.mvc.spittr.web.config"
  */
 
 @Configuration
 @PropertySources({ @PropertySource("classpath:hibernate-mysql.properties"),
 		@PropertySource("classpath:mail-smtp.properties") })
 @ComponentScans(value = { @ComponentScan(basePackages = { "com.mvc.spittr.dao", "com.mvc.spittr.service",
-		"com.mvc.spittr.service.backup"}, excludeFilters = {
+		"com.mvc.spittr.service.backup" }, excludeFilters = {
 				@Filter(type = FilterType.ANNOTATION, value = EnableWebMvc.class) }) })
 @EnableTransactionManagement
-public class AppRootConfig {
+public class AppRootConfig_bak {
 
 	private static final Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
-	static{
+	static {
 		logger.info("************************AppRootConfig************************");
 	}
 	@Autowired
@@ -83,8 +83,7 @@ public class AppRootConfig {
 	 * properties to be set. This makes it extremely simple to declare as a bean
 	 * in your Spring configuration, if you need further configurations you must
 	 * adding them in customizeRegistration(ServletRegistration.Dynamic
-	 * registration) method. see
-	 * {@com.mvc.spittr.web.config.WebAppInitializer}
+	 * registration) method. see {@com.mvc.spittr.web.config.WebAppInitializer}
 	 */
 
 	@Bean
@@ -93,13 +92,13 @@ public class AppRootConfig {
 		return new StandardServletMultipartResolver();
 	}
 
-//	https://mabboud.net/how-to-get-spring-multipart-file-uploading-working-with-spring-security/
-//	@Bean
-//	public CommonsMultipartResolver filterMultipartResolver(){
-//		logger.info("CommonsMultipartResolver initialized");
-//	    return new CommonsMultipartResolver();
-//	}	
-	
+	// https://mabboud.net/how-to-get-spring-multipart-file-uploading-working-with-spring-security/
+	// @Bean
+	// public CommonsMultipartResolver filterMultipartResolver(){
+	// logger.info("CommonsMultipartResolver initialized");
+	// return new CommonsMultipartResolver();
+	// }
+
 	/**
 	 * CONFIGURING A JAKARTA COMMONS FILE UPLOAD MULTIPART RESOLVER
 	 * 
@@ -150,9 +149,10 @@ public class AppRootConfig {
 		logger.info("***HIBERNATE*** - LocalSessionFactoryBean initialized - HIBERNATE -");
 		factoryBean.setHibernateProperties(getHibernateProperties());
 		logger.info("***HIBERNATE*** - HibernateProperties initialized - HIBERNATE -");
-		//factoryBean.setAnnotatedClasses(Spitter.class, Spittle.class, SpitterRole.class);
-		
-		//Automatic scan in packages
+		// factoryBean.setAnnotatedClasses(Spitter.class, Spittle.class,
+		// SpitterRole.class);
+
+		// Automatic scan in packages
 		factoryBean.setPackagesToScan("com.mvc.spittr.entity");
 
 		return factoryBean;
@@ -187,10 +187,8 @@ public class AppRootConfig {
 	}
 
 	/**
-	 * #Gmail SMTP configuration 
-	 * spring.mail.host=smtp.gmail.com
-	 * spring.mail.port=587 
-	 * spring.mail.username=jacoposabatini76@gmail.com
+	 * #Gmail SMTP configuration spring.mail.host=smtp.gmail.com
+	 * spring.mail.port=587 spring.mail.username=jacoposabatini76@gmail.com
 	 * spring.mail.password=Rinaldi1111 spring.mail.smtp.auth=true
 	 * spring.mail.smtp.starttls.enable=true
 	 * 

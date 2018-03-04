@@ -1,4 +1,4 @@
-package com.mvc.spittr.web.config;
+package com.mvc.spittr.config;
 
 import java.io.File;
 import java.lang.invoke.MethodHandles;

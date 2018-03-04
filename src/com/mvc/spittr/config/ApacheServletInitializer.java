@@ -1,4 +1,4 @@
-package com.mvc.spittr.web.config;
+package com.mvc.spittr.config;
 
 import java.lang.invoke.MethodHandles;
 import java.sql.Driver;
@@ -58,7 +58,7 @@ public class ApacheServletInitializer implements WebApplicationInitializer, Serv
 	@Override
 	public void contextDestroyed(ServletContextEvent sce) {
 		//desroy session
-		new AppRootConfig().getSessionFactory().destroy();
+		new HibernateConfiguration().getSessionFactory().destroy();
 		logger.info("Session destroyed!");
 		Enumeration<Driver> drivers = DriverManager.getDrivers();
 	    while (drivers.hasMoreElements()) {

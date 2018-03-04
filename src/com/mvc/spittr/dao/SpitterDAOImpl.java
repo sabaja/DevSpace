@@ -2,6 +2,7 @@ package com.mvc.spittr.dao;
 
 import java.lang.invoke.MethodHandles;
 import java.util.List;
+import java.util.Objects;
 
 import javax.persistence.TypedQuery;
 
@@ -9,6 +10,7 @@ import org.hibernate.Criteria;
 import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,13 +30,16 @@ import com.mvc.spittr.entity.Spittle;
 public class SpitterDAOImpl implements SpitterDao {
 
 	private static final Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
-
+static{
+	logger.info("spitterDAOImpl Static instanced");
+}
 	@Autowired
 	private SessionFactory sessionFactory;
 
 	@Override
 	public Spitter findByUserName(String username) {
 		Session session = sessionFactory.openSession();
+		logger.info("Inside spitterDAOImpl.findByUserName()");
 		// https://stackoverflow.com/questions/9954590/hibernate-error-querysyntaxexception-users-is-not-mapped-from-users
 		/**
 		 * For example: your bean class name is UserDetails
@@ -94,9 +99,8 @@ public class SpitterDAOImpl implements SpitterDao {
 	@Override
 	public List<Spitter> listSpitters() {
 		Session session = sessionFactory.getCurrentSession();
-		@SuppressWarnings("unchecked")
+		@SuppressWarnings("unchecked")      
 		List<Spitter> spitters = (List<Spitter>) session.createQuery("from Spitter").list();
-		logger.info("Listed spitters");
 		return spitters;
 	}
 
@@ -112,14 +116,27 @@ public class SpitterDAOImpl implements SpitterDao {
 
 	}
 
-	@Override
-	public List<Spittle> listSpittles(Long id) {
-		String sql = "from Spittle where spitter_id = :id";
-		Session session = sessionFactory.getCurrentSession();
-		@SuppressWarnings("unchecked")
-		List<Spittle> spittles = (List<Spittle>)session.createQuery(sql).setParameter("id", id).list();
-		logger.info("Listed spitters by id");
-		return spittles;
+	/**
+	 * @return the sessionFactory
+	 */
+	public SessionFactory getSessionFactory() {
+		return sessionFactory;
 	}
+
+	/**
+	 * @param sessionFactory the sessionFactory to set
+	 */
+	public void setSessionFactory(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
+	}
+
+	@Override
+	public List<Spitter> listSpittersWithCriteria() {
+		Session session = sessionFactory.getCurrentSession();
+		List<Spitter> spitters = session.createCriteria(Spitter.class).addOrder(Order.asc("firstName")).list();
+		return spitters;
+	}
+
+
 
 }

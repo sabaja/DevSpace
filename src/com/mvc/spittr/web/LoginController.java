@@ -1,34 +1,32 @@
 package com.mvc.spittr.web;
 
-import static org.springframework.web.bind.annotation.RequestMethod.*;
-
 import java.lang.invoke.MethodHandles;
-import java.time.Instant;
-import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Objects;
 
-import javax.inject.Inject;
 import javax.inject.Provider;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.security.authentication.AuthenticationTrustResolver;
-import org.springframework.security.authentication.AuthenticationTrustResolverImpl;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.rememberme.PersistentTokenBasedRememberMeServices;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
+import com.mvc.spittr.entity.Spitter;
+import com.mvc.spittr.service.SpitterService;
+import com.mvc.spittr.service.SpitterServiceImpl;
 import com.mvc.spittr.service.backup.SpittleRepository;
-import com.mvc.spittr.web.util.RequestUtilFacade;
+import com.mvc.spittr.web.util.WebFacilities;
 
 /**
  * 
@@ -46,7 +44,7 @@ import com.mvc.spittr.web.util.RequestUtilFacade;
 // applies to
 // all handler methods in the controller.
 @Controller
-@SessionAttributes("roles")
+@SessionAttributes(names = { "roles", "users" })
 public class LoginController {
 
 	@SuppressWarnings("unused")
@@ -59,7 +57,10 @@ public class LoginController {
 	private AuthenticationTrustResolver authenticationTrustResolver;
 
 	@Autowired
-	PersistentTokenBasedRememberMeServices persistentTokenBasedRememberMeServices;
+	private PersistentTokenBasedRememberMeServices persistentTokenBasedRememberMeServices;
+
+	@Autowired
+	private SpitterService spitterService;
 
 	public LoginController() {
 		super();
@@ -86,23 +87,11 @@ public class LoginController {
 
 	// root call welcome page
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String welcomePage(HttpServletRequest request, HttpServletResponse response) {
+	public String welcomePage(HttpServletRequest request, HttpServletResponse response, ModelMap model) {
 		// logger.info("{} request called ",
 		// RequestUtilFacade.getCurrentUri(request).toString());
 		return "welcome";
 
-	}
-
-	// Given the way you configured InternalResourceViewResolver , the view name
-	// “home” will be resolved as a JSP at / WEB-INF /views/home.jsp. For now,
-	// you’ll keep the Spittr application’s home page rather basic, as shown
-	// next.
-	@RequestMapping(value = "/spitter", method = RequestMethod.GET)
-	public String home(HttpServletRequest request, HttpServletResponse response) {
-		// logger.info("{} request called ",
-		// RequestUtilFacade.getCurrentUri(request).toString());
-		// logger.info("{} /Home called", LocalDateTime.now());
-		return "home";
 	}
 
 	// http://websystique.com/springmvc/spring-mvc-4-and-spring-security-4-integration-example/
@@ -113,41 +102,69 @@ public class LoginController {
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String loginPage() {
 		if (this.isCurrentAuthenticationAnonymous()) {
-			logger.info("login ok");
+			logger.info("Is Current Authentication Anonymous? {}", this.isCurrentAuthenticationAnonymous());
 			return "login";
 		} else {
-			logger.info("redirect:/");
-			return "redirect:/";
+			logger.info("login requested but redirect:/spitter");
+			return "redirect:/spitter";
 		}
 	}
 
-	// public WebUserFacilityAuthentication getFacility() {
-	// return facility;
-	// }
-	// @Autowired
-	// public void setFacility(WebUserFacilityAuthentication facility) {
-	// this.facility = facility;
-	// }
-	private String getPrincipal() {
-		String userName = null;
-		// The identity of the principal being authenticated. In the case of an
-		// authentication request with username and password, this would be the
-		// username. Callers are expected to populate the principal for an
-		// authentication request.
-		// The AuthenticationManager implementation will often return an
-		// Authentication containing richer information as the principal for use
-		// by the application. Many of the authentication providers will create
-		// a UserDetails object as the principal.
-		Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-
-		if (principal instanceof UserDetails) {
-			userName = ((UserDetails) principal).getUsername();
-			logger.info("Auth valaue: {}", userName);
-		} else {
-			userName = principal.toString();
-			logger.info("Auth valaue: {}", userName);
+	/**
+	 * This method will list all existing users.
+	 */
+	@RequestMapping(value = { "/list" }, method = RequestMethod.GET)
+	public String listUsers(HttpSession session, ModelMap model) {
+		if (!Objects.isNull(spitterService)) {
+			logger.info("spitterService is null? {}", Objects.isNull(spitterService));
 		}
-		return userName;
+
+		List<Spitter> users = spitterService.listSpittersWithCriteria();
+		if (Objects.isNull(users)) {
+			// users.stream().forEach(s -> System.out.println(s.toString()));
+			/*
+			 * String sessionUserParam = (String)
+			 * session.getAttribute("users").toString(); 
+			 * if (sessionUserParam.equals(null) || "".equals(sessionUserParam)) {
+			 */
+			
+			logger.info("Users are null? {}", Objects.isNull(users));
+		}
+		model.addAttribute("users", users);
+		model.addAttribute("loggedinuser", WebFacilities.getPrincipal());
+
+		return "userslist";
+	}
+
+	@RequestMapping(value = "/logout", method = RequestMethod.GET)
+	public String logoutPage(HttpServletRequest request, HttpServletResponse response) {
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		logger.info("Before Logout - authentication_{} ", auth.toString());
+		if (auth != null) {
+			// new SecurityContextLogoutHandler().logout(request, response,
+			// auth);
+			persistentTokenBasedRememberMeServices.logout(request, response, auth);
+			SecurityContextHolder.getContext().setAuthentication(null);
+			logger.info("After Logout authentication_{} ", auth.toString());
+		}
+		// return "redirect:/login?logout";
+		return "redirect:/";
+	}
+
+	/**
+	 * @return the authenticationTrustResolver
+	 */
+	public AuthenticationTrustResolver getAuthenticationTrustResolver() {
+		return authenticationTrustResolver;
+	}
+
+	/**
+	 * @param authenticationTrustResolver
+	 *            the authenticationTrustResolver to set
+	 */
+	@Autowired
+	public void setAuthenticationTrustResolver(AuthenticationTrustResolver authenticationTrustResolver) {
+		this.authenticationTrustResolver = authenticationTrustResolver;
 	}
 
 	/**
@@ -156,31 +173,23 @@ public class LoginController {
 	 */
 	private boolean isCurrentAuthenticationAnonymous() {
 		final Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-		boolean flag;
-
-		if (Objects.isNull(authenticationTrustResolver)) {
-			authenticationTrustResolver = new AuthenticationTrustResolverImpl();
-			flag = authenticationTrustResolver.isAnonymous(authentication);
-			logger.info("AuthenticationTrustResolver is null flag value: {}", flag);
-		} else {
-			flag = authenticationTrustResolver.isAnonymous(authentication);
-			logger.info("AuthenticationTrustResolver is not null value: {}", flag);
-		}
+		boolean flag = authenticationTrustResolver.isAnonymous(authentication);
+		logger.info("isCurrentAuthenticationAnonymous() flag value: {} and credential_{}", flag,
+				authentication.getCredentials());
+		/*
+		 * if (Objects.isNull(authenticationTrustResolver)) {
+		 * authenticationTrustResolver = new AuthenticationTrustResolverImpl();
+		 * flag = authenticationTrustResolver.isAnonymous(authentication);
+		 * 
+		 * logger.
+		 * info("\nAuthenticationTrustResolver is null flag value: {} and credential_{}"
+		 * , flag, authentication.getCredentials()); } else { flag =
+		 * authenticationTrustResolver.isAnonymous(authentication); logger.
+		 * info("\nAuthenticationTrustResolver is not null value: {} and credential_{}"
+		 * , flag, authentication.getCredentials()); }
+		 */
 		return flag;
 	}
-
-	@RequestMapping(value = "/logout", method = RequestMethod.GET)
-	public String logoutPage(HttpServletRequest request, HttpServletResponse response) {
-		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-		if (auth != null) {
-			// new SecurityContextLogoutHandler().logout(request, response,
-			// auth);
-			persistentTokenBasedRememberMeServices.logout(request, response, auth);
-			SecurityContextHolder.getContext().setAuthentication(null);
-		}
-		return "redirect:/login?logout";
-	}
-
 	// public AuthenticationTrustResolver getAuthenticationTrustResolver() {
 	// return authenticationTrustResolverProvider;
 	// }
@@ -191,4 +200,42 @@ public class LoginController {
 	// this.authenticationTrustResolver = authenticationTrustResolverProvider;
 	// }
 
+	/**
+	 * @return the spitterService
+	 */
+	
+	public SpitterService getSpitterService() {
+		return spitterService;
+	}
+
+	/**
+	 * @param spitterService the spitterService to set
+	 */
+	public void setSpitterService(SpitterService spitterService) {
+		this.spitterService = spitterService;
+	}
+
+	// public WebUserFacilityAuthentication getFacility() {
+	// return facility;
+	// }
+	// @Autowired
+	// public void setFacility(WebUserFacilityAuthentication facility) {
+	// this.facility = facility;
+	// }
+	/*
+	 * private String getPrincipal() { String userName = null; // The identity
+	 * of the principal being authenticated. In the case of an // authentication
+	 * request with username and password, this would be the // username.
+	 * Callers are expected to populate the principal for an // authentication
+	 * request. // The AuthenticationManager implementation will often return an
+	 * // Authentication containing richer information as the principal for use
+	 * // by the application. Many of the authentication providers will create
+	 * // a UserDetails object as the principal. Object principal =
+	 * SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+	 * 
+	 * if (principal instanceof UserDetails) { userName = ((UserDetails)
+	 * principal).getUsername(); logger.info("Auth valaue: {}", userName); }
+	 * else { userName = principal.toString(); logger.info("Auth valaue: {}",
+	 * userName); } return userName; }
+	 */
 }

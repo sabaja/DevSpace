@@ -27,67 +27,26 @@ import org.springframework.stereotype.Component;
 @Table(name = "SPITTER", schema = "HIBERNATE")
 public class Spitter implements Serializable {
 
-	/**
-	 * serialVersionUID
-	 */
 	private static final long serialVersionUID = 5423001819232221965L;
 
-	@Id
-	@Column(name = "SPITTER_ID", nullable = false, unique = true)
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
-
-//	@NotNull
-	@Column(name="SSO_ID", unique=true, nullable=true)
 	private String ssoId;
-	
-//	@NotNull
-	@Size(min = 2, max = 30)
-	@Column(name = "FIRSTNAME", nullable = true)
 	private String firstName;
-
-//	@NotNull
-	@Size(min = 2, max = 30)
-	@Column(name = "LASTNAME", nullable = true)
 	private String lastName;
-
-	@NotNull
-	@Size(min = 1, max = 16)
-	@Column(name = "USERNAME", nullable = false, unique = true)
 	private String username;
-
-	@NotNull
-	@Size(min = 5, max = 25)
-	@Column(name = "PASSWORD", nullable = false)
 	private String password;
-	
-	@NotNull
-	@Column(name="EMAIL", nullable=false)
 	private String email;
-	
-	@Column(name="ENABLED")
 	private boolean enable = true;
-
-	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "spitter")
-	@Column(name = "SPITTER_ID", nullable = true)
-//	@JoinColumn(name = "SPITTER_ID")
 	private List<Spittle> spittles = new LinkedList<>();
-
-	@ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-	@JoinTable(name = "SPITTER_SPITTER_ROLE", joinColumns = { @JoinColumn(name = "SPITTER_ID") }, inverseJoinColumns = {
-			@JoinColumn(name = "ROLE_ID") })
 	private Set<SpitterRole> roles = new HashSet<>();
 
-	/**
-	 * Default Constructor
-	 */
 	public Spitter() {
 		super();
 
 	}
 
-	public Spitter(String firstName, String lastName, String username, String password, String email, List<Spittle> spittles,
-			Set<SpitterRole> roles) {
+	public Spitter(String firstName, String lastName, String username, String password, String email,
+			List<Spittle> spittles, Set<SpitterRole> roles) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -110,8 +69,8 @@ public class Spitter implements Serializable {
 
 	}
 
-	public Spitter(String firstName, String lastName, String username, String password, String ssoId,String spittles, String email,
-			SpitterRole roles) {
+	public Spitter(String firstName, String lastName, String username, String password, String ssoId, String spittles,
+			String email, SpitterRole roles) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.username = username;
@@ -122,6 +81,20 @@ public class Spitter implements Serializable {
 		this.roles.add(roles);
 
 	}
+
+	@Id
+	@Column(name = "SPITTER_ID", nullable = false, unique = true)
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	@Size(min = 2, max = 30)
+	@Column(name = "FIRSTNAME", nullable = true)
 	public String getFirstName() {
 		return firstName;
 	}
@@ -131,6 +104,8 @@ public class Spitter implements Serializable {
 
 	}
 
+	@Size(min = 2, max = 30)
+	@Column(name = "LASTNAME", nullable = true)
 	public String getLastName() {
 		return lastName;
 	}
@@ -140,6 +115,9 @@ public class Spitter implements Serializable {
 
 	}
 
+	@NotNull
+	@Size(min = 1, max = 16)
+	@Column(name = "USERNAME", nullable = false, unique = true)
 	public String getUsername() {
 		return username;
 	}
@@ -149,6 +127,9 @@ public class Spitter implements Serializable {
 
 	}
 
+	@NotNull
+	@Size(min = 5, max = 25)
+	@Column(name = "PASSWORD", nullable = false)
 	public String getPassword() {
 		return password;
 	}
@@ -158,14 +139,7 @@ public class Spitter implements Serializable {
 
 	}
 
-	public long getId() {
-		return id;
-	}
-
-	public void setId(long id) {
-		this.id = id;
-	}
-
+	@Column(name = "SSO_ID", unique = true, nullable = true)
 	public String getSsoId() {
 		return ssoId;
 	}
@@ -174,6 +148,9 @@ public class Spitter implements Serializable {
 		this.ssoId = ssoId;
 	}
 
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "spitter")
+	@Column(name = "SPITTER_ID", nullable = true)
+	// @JoinColumn(name = "SPITTER_ID")
 	public List<Spittle> getSpittles() {
 		return spittles;
 	}
@@ -182,6 +159,9 @@ public class Spitter implements Serializable {
 		this.spittles = spittles;
 	}
 
+	@ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@JoinTable(name = "SPITTER_SPITTER_ROLE", joinColumns = { @JoinColumn(name = "SPITTER_ID") }, inverseJoinColumns = {
+			@JoinColumn(name = "ROLE_ID") })
 	public Set<SpitterRole> getRoles() {
 		return roles;
 	}
@@ -190,6 +170,7 @@ public class Spitter implements Serializable {
 		this.roles = roles;
 	}
 
+	@Column(name = "ENABLED")
 	public boolean isEnable() {
 		return enable;
 	}
@@ -198,6 +179,8 @@ public class Spitter implements Serializable {
 		this.enable = enable;
 	}
 
+	@NotNull
+	@Column(name = "EMAIL", nullable = false)
 	public String getEmail() {
 		return email;
 	}
@@ -206,7 +189,9 @@ public class Spitter implements Serializable {
 		this.email = email;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#hashCode()
 	 */
 	@Override
@@ -226,7 +211,9 @@ public class Spitter implements Serializable {
 		return result;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
 	@Override
@@ -285,7 +272,9 @@ public class Spitter implements Serializable {
 		return true;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
@@ -294,7 +283,4 @@ public class Spitter implements Serializable {
 				+ ", username=" + username + ", password=" + password + ", email=" + email + ", enable=" + enable
 				+ ", spittles=" + spittles + ", roles=" + roles + "]";
 	}
-
-
-
 }

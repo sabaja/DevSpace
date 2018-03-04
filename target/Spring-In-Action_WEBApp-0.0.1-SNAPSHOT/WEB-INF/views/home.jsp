@@ -9,9 +9,10 @@
 <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
 </head>
 <body>
-
+  <%@include file="authheader.jsp" %>   
 	<h1><s:message code="spittr.home" /></h1>
-	<a href="<c:url value="/spittle" />">Spittles</a> |
+	<a href="<c:url value="/spittle" />">Spittles</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;   
 	<a href="<c:url value="/spitter/registration" />">Register</a>
 </body>
+<input type="hidden" name="${_csrf.parameterName}"  value="${_csrf.token}" />
 </html>

@@ -56,6 +56,12 @@ body, #mainWrapper, .form-control{
 	font-size:12px!important;
 }
 
+div {
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    border: 1px solid red;
+}
 #mainWrapper {
 	/*height: 720px; Without explicit px values, % in children's does not work*/
 	height: 100vh; /*with Viewport-Percentage, we can handles all devices screens  */

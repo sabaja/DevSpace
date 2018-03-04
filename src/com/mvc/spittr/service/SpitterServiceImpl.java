@@ -1,8 +1,10 @@
 package com.mvc.spittr.service;
 
+import java.lang.invoke.MethodHandles;
 import java.util.List;
 
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,10 +19,13 @@ import com.mvc.spittr.entity.Spittle;
 public class SpitterServiceImpl implements SpitterService {
 	
 	@Autowired
-	SpitterDao spitterDao;
+	private SpitterDao spitterDao;
+	private static final Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
+
 	
 	@Override
 	public Spitter findByUserName(String username) {
+		logger.info("Inside SpitterDaoImpl.findByUserName");
 		return spitterDao.findByUserName(username);
 	}
 
@@ -42,8 +47,7 @@ public class SpitterServiceImpl implements SpitterService {
 
 	@Override
 	public List<Spitter> listSpitters() {
-		spitterDao.listSpitters();
-		return null;
+		return spitterDao.listSpitters();
 	}
 
 	@Override
@@ -54,14 +58,28 @@ public class SpitterServiceImpl implements SpitterService {
 
 	@Override
 	public Spitter findBySsoId(String ssoId) {
-		spitterDao.findBySsoId(ssoId);
-		return null;
+		return spitterDao.findBySsoId(ssoId);
+	}
+
+	/**
+	 * @return the spitterDao
+	 */
+	public SpitterDao getSpitterDao() {
+		return spitterDao;
+	}
+
+	/**
+	 * @param spitterDao the spitterDao to set
+	 */
+	public void setSpitterDao(SpitterDao spitterDao) {
+		this.spitterDao = spitterDao;
 	}
 
 	@Override
-	public List<Spittle> listSpittles(Long id) {
-		spitterDao.listSpittles(id);
-		return null;
+	public List<Spitter> listSpittersWithCriteria() {
+		return spitterDao.listSpittersWithCriteria();
 	}
+
+
 
 }

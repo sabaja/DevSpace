@@ -3,7 +3,7 @@ package com.mvc.spittr.entity;
 import java.io.Serializable;
 
 public enum RoleType implements Serializable {
-	USER("USER"), ADMIN("ADMIN"), DB("DB");
+	USER("ROLE_USER"), ADMIN("ROLE_ADMIN"), DB("ROLE_DB");
 
 	private String roleType;
 

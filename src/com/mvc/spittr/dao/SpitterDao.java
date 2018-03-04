@@ -18,7 +18,7 @@ public interface SpitterDao {
 	public void save(Spitter spitter);
 	public void updateSpitter(Spitter spitter);
 	public List<Spitter> listSpitters();
-	public List<Spittle> listSpittles(Long id);
+	public List<Spitter> listSpittersWithCriteria();
 	public void removePerson(Long id);
 	public void insertSpittle(Spittle spittle);
 }
