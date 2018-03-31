@@ -10,8 +10,8 @@
 </head>
 <body>
 	<s:escapeBody htmlEscape="true">
-		Please press link below to enter into Spitter's home 
-	</s:escapeBody>
+		Please press link below to enter into Spitter's
+		</s:escapeBody><a href="">&nbsp;Home</a>
 	<h1>
 		<a href="spitter"><s:message code="spittr.home" /></a>
 	</h1>

@@ -1,0 +1,6 @@
+2018-03-18 14:29:06 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-03-18 14:29:06 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************
+2018-03-18 14:29:10 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.l.HttpRequestLogInterceptor.<clinit>(28) - HttpRequestLogInterceptor initialized
+2018-03-18 14:29:11 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-18T14:29:11.656 Constructor call
+2018-03-18 14:29:14 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(29) - ************************Start - GenericServletDemoServlet************************
+2018-03-18 14:29:14 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(47) - ************************End - GenericServletDemoServlet************************

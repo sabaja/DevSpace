@@ -1,0 +1,4 @@
+2018-02-25 14:42:37 [http-nio-8080-exec-7] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-25T14:42:37.555 - called url:/Spring-In-Action_WEBApp/list
+2018-02-25 14:42:37 [http-nio-8080-exec-7] INFO  com.mvc.spittr.web.LoginController.listUsers(118) - spitterService is null? false
+2018-02-25 14:42:37 [http-nio-8080-exec-7] INFO  com.mvc.spittr.web.LoginController.listUsers(124) - User is null? true
+2018-02-25 14:42:37 [http-nio-8080-exec-7] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(31) - Auth valaue: anonymous

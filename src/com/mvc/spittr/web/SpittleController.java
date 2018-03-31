@@ -52,7 +52,7 @@ public class SpittleController {
 	private static final Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());// This
 
 	public SpittleController(SpittleRepository spittleRepository) {
-		logger.debug("{} Constructor call", LocalDateTime.now());
+		logger.info("{} Constructor call", LocalDateTime.now());
 		this.spittleRepository = spittleRepository;
 	}
 

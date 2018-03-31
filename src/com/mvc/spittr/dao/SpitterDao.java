@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.mvc.spittr.entity.Spitter;
 import com.mvc.spittr.entity.Spittle;
+import com.mvc.spittr.entity.view.UsernameRole;
 
 /**
  * http://www.journaldev.com/3531/spring-mvc-hibernate-mysql-integration-crud-example-tutorial
@@ -21,4 +22,5 @@ public interface SpitterDao {
 	public List<Spitter> listSpittersWithCriteria();
 	public void removePerson(Long id);
 	public void insertSpittle(Spittle spittle);
+	public List<UsernameRole> getRoleByUsername(String username);
 }

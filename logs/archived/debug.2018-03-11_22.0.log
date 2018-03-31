@@ -1,0 +1,129 @@
+2018-03-11 22:06:10 [localhost-startStop-1] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-03-11 22:06:11 [localhost-startStop-1] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************
+2018-03-11 22:06:15 [localhost-startStop-1] INFO  c.m.s.w.l.HttpRequestLogInterceptor.<clinit>(28) - HttpRequestLogInterceptor initialized
+2018-03-11 22:06:16 [localhost-startStop-1] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-11T22:06:16.376 Constructor call
+2018-03-11 22:06:19 [localhost-startStop-1] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-11T22:06:19.549 Constructor call
+2018-03-11 22:06:20 [localhost-startStop-1] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(29) - ************************Start - GenericServletDemoServlet************************
+2018-03-11 22:06:20 [localhost-startStop-1] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(47) - ************************End - GenericServletDemoServlet************************
+2018-03-11 22:07:54 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-03-11 22:07:54 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************
+2018-03-11 22:07:58 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.l.HttpRequestLogInterceptor.<clinit>(28) - HttpRequestLogInterceptor initialized
+2018-03-11 22:07:59 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-11T22:07:59.033 Constructor call
+2018-03-11 22:08:01 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-11T22:08:01.811 Constructor call
+2018-03-11 22:08:02 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(29) - ************************Start - GenericServletDemoServlet************************
+2018-03-11 22:08:02 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(47) - ************************End - GenericServletDemoServlet************************
+2018-03-11 22:08:45 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-03-11 22:08:45 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************
+2018-03-11 22:08:48 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.l.HttpRequestLogInterceptor.<clinit>(28) - HttpRequestLogInterceptor initialized
+2018-03-11 22:08:49 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-11T22:08:49.732 Constructor call
+2018-03-11 22:08:52 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-11T22:08:52.270 Constructor call
+2018-03-11 22:08:52 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(29) - ************************Start - GenericServletDemoServlet************************
+2018-03-11 22:08:52 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(47) - ************************End - GenericServletDemoServlet************************
+2018-03-11 22:10:12 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-03-11 22:10:12 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************
+2018-03-11 22:10:15 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.l.HttpRequestLogInterceptor.<clinit>(28) - HttpRequestLogInterceptor initialized
+2018-03-11 22:10:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-11T22:10:16.286 Constructor call
+2018-03-11 22:10:18 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-11T22:10:18.176 Constructor call
+2018-03-11 22:10:18 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(29) - ************************Start - GenericServletDemoServlet************************
+2018-03-11 22:10:18 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(47) - ************************End - GenericServletDemoServlet************************
+2018-03-11 22:12:23 [http-nio-8080-exec-6] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-11T22:12:23.300 - called url:/Spring-In-Action_WEBApp/spitter/getrole-Beff
+2018-03-11 22:21:05 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-03-11 22:21:05 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************
+2018-03-11 22:21:10 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.l.HttpRequestLogInterceptor.<clinit>(28) - HttpRequestLogInterceptor initialized
+2018-03-11 22:21:11 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-11T22:21:11.110 Constructor call
+2018-03-11 22:21:14 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-11T22:21:14.211 Constructor call
+2018-03-11 22:21:14 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(29) - ************************Start - GenericServletDemoServlet************************
+2018-03-11 22:21:14 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(47) - ************************End - GenericServletDemoServlet************************
+2018-03-11 22:21:45 [http-nio-8080-exec-7] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-11T22:21:45.674 - called url:/Spring-In-Action_WEBApp/list
+2018-03-11 22:21:45 [http-nio-8080-exec-7] INFO  com.mvc.spittr.web.LoginController.listUsers(119) - spitterService is null? false
+2018-03-11 22:21:46 [http-nio-8080-exec-7] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(31) - Auth valaue: anonymous
+2018-03-11 22:21:48 [http-nio-8080-exec-10] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-11T22:21:48.796 - called url:/Spring-In-Action_WEBApp/spitter/getrole-Beff
+2018-03-11 22:21:49 [http-nio-8080-exec-10] INFO  com.mvc.spittr.web.SpitterController.showRoleUsername(165) - Role value= USER username value=USER
+2018-03-11 22:28:06 [http-nio-8080-exec-16] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-11T22:28:06.810 - called url:/Spring-In-Action_WEBApp/list
+2018-03-11 22:28:06 [http-nio-8080-exec-16] INFO  com.mvc.spittr.web.LoginController.listUsers(119) - spitterService is null? false
+2018-03-11 22:28:06 [http-nio-8080-exec-16] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(31) - Auth valaue: anonymous
+2018-03-11 22:28:08 [http-nio-8080-exec-8] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-11T22:28:08.487 - called url:/Spring-In-Action_WEBApp/spitter/getrole-Beff
+2018-03-11 22:28:08 [http-nio-8080-exec-8] INFO  com.mvc.spittr.web.SpitterController.showRoleUsername(165) - Role value= USER username value=USER
+2018-03-11 22:28:23 [http-nio-8080-exec-11] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-11T22:28:23.854 - called url:/Spring-In-Action_WEBApp/spitter/getrole-Beff
+2018-03-11 22:28:23 [http-nio-8080-exec-11] INFO  com.mvc.spittr.web.SpitterController.showRoleUsername(165) - Role value= USER username value=USER
+2018-03-11 22:28:39 [http-nio-8080-exec-13] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-11T22:28:39.946 - called url:/Spring-In-Action_WEBApp/list
+2018-03-11 22:28:39 [http-nio-8080-exec-13] INFO  com.mvc.spittr.web.LoginController.listUsers(119) - spitterService is null? false
+2018-03-11 22:28:39 [http-nio-8080-exec-13] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(31) - Auth valaue: anonymous
+2018-03-11 22:31:49 [http-nio-8080-exec-9] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-11T22:31:49.981 - called url:/Spring-In-Action_WEBApp/spitter/getrole-Beff
+2018-03-11 22:31:49 [http-nio-8080-exec-9] INFO  com.mvc.spittr.web.SpitterController.showRoleUsername(165) - Role value= USER username value=USER
+2018-03-11 22:32:51 [http-nio-8080-exec-10] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-11T22:32:51.883 - called url:/Spring-In-Action_WEBApp/spitter/getrole-Beff
+2018-03-11 22:32:51 [http-nio-8080-exec-10] INFO  com.mvc.spittr.web.SpitterController.showRoleUsername(165) - Role value= USER username value=USER
+2018-03-11 22:35:19 [http-nio-8080-exec-16] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-11T22:35:19.847 - called url:/Spring-In-Action_WEBApp/spitter/getrole-Beff
+2018-03-11 22:35:19 [http-nio-8080-exec-16] INFO  com.mvc.spittr.web.SpitterController.showRoleUsername(165) - Role value= USER username value=USER
+2018-03-11 22:36:48 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-03-11 22:36:48 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************
+2018-03-11 22:36:52 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.l.HttpRequestLogInterceptor.<clinit>(28) - HttpRequestLogInterceptor initialized
+2018-03-11 22:36:53 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-11T22:36:53.288 Constructor call
+2018-03-11 22:36:55 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-11T22:36:55.593 Constructor call
+2018-03-11 22:36:55 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(29) - ************************Start - GenericServletDemoServlet************************
+2018-03-11 22:36:55 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(47) - ************************End - GenericServletDemoServlet************************
+2018-03-11 22:36:56 [http-nio-8080-exec-12] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-11T22:36:56.817 - called url:/Spring-In-Action_WEBApp/spitter/getrole-Beff
+2018-03-11 22:36:57 [http-nio-8080-exec-12] INFO  com.mvc.spittr.web.SpitterController.showRoleUsername(165) - Role value= USER username value=Beff
+2018-03-11 22:38:40 [http-nio-8080-exec-17] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-11T22:38:40.532 - called url:/Spring-In-Action_WEBApp/spitter/getrole-Beff
+2018-03-11 22:38:40 [http-nio-8080-exec-17] INFO  com.mvc.spittr.web.SpitterController.showRoleUsername(165) - Role value= USER username value=Beff
+2018-03-11 22:39:20 [http-nio-8080-exec-19] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-11T22:39:20.044 - called url:/Spring-In-Action_WEBApp/spitter/getrole-Beff
+2018-03-11 22:39:20 [http-nio-8080-exec-19] INFO  com.mvc.spittr.web.SpitterController.showRoleUsername(165) - Role value= USER username value=Beff
+2018-03-11 22:45:34 [http-nio-8080-exec-22] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-11T22:45:34.477 - called url:/Spring-In-Action_WEBApp/spitter/getrole-Beff
+2018-03-11 22:45:34 [http-nio-8080-exec-22] INFO  com.mvc.spittr.web.SpitterController.showRoleUsername(165) - Role value= USER username value=Beff
+2018-03-11 22:46:20 [http-nio-8080-exec-20] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-11T22:46:20.613 - called url:/Spring-In-Action_WEBApp/spitter/getrole-Beff
+2018-03-11 22:46:20 [http-nio-8080-exec-20] INFO  com.mvc.spittr.web.SpitterController.showRoleUsername(165) - Role value= USER username value=Beff
+2018-03-11 22:46:45 [http-nio-8080-exec-17] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-11T22:46:45.653 - called url:/Spring-In-Action_WEBApp/spitter/getrole-Beff
+2018-03-11 22:46:45 [http-nio-8080-exec-17] INFO  com.mvc.spittr.web.SpitterController.showRoleUsername(165) - Role value= USER username value=Beff
+2018-03-11 22:53:28 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-03-11 22:53:28 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************
+2018-03-11 22:53:31 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.l.HttpRequestLogInterceptor.<clinit>(28) - HttpRequestLogInterceptor initialized
+2018-03-11 22:53:32 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-11T22:53:32.384 Constructor call
+2018-03-11 22:53:34 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-11T22:53:34.408 Constructor call
+2018-03-11 22:53:34 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(29) - ************************Start - GenericServletDemoServlet************************
+2018-03-11 22:53:34 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(47) - ************************End - GenericServletDemoServlet************************
+2018-03-11 22:53:52 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-03-11 22:53:52 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************
+2018-03-11 22:53:55 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.l.HttpRequestLogInterceptor.<clinit>(28) - HttpRequestLogInterceptor initialized
+2018-03-11 22:53:56 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-11T22:53:56.721 Constructor call
+2018-03-11 22:53:59 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-11T22:53:59.102 Constructor call
+2018-03-11 22:53:59 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(29) - ************************Start - GenericServletDemoServlet************************
+2018-03-11 22:53:59 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(47) - ************************End - GenericServletDemoServlet************************
+2018-03-11 22:54:43 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-03-11 22:54:43 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************
+2018-03-11 22:54:46 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.l.HttpRequestLogInterceptor.<clinit>(28) - HttpRequestLogInterceptor initialized
+2018-03-11 22:54:47 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-11T22:54:47.292 Constructor call
+2018-03-11 22:54:49 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-11T22:54:49.297 Constructor call
+2018-03-11 22:54:49 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(29) - ************************Start - GenericServletDemoServlet************************
+2018-03-11 22:54:49 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(47) - ************************End - GenericServletDemoServlet************************
+2018-03-11 22:54:50 [http-nio-8080-exec-21] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-11T22:54:50.243 - called url:/Spring-In-Action_WEBApp/spitter/getrole-Beff
+2018-03-11 22:55:33 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-03-11 22:55:33 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************
+2018-03-11 22:55:36 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.l.HttpRequestLogInterceptor.<clinit>(28) - HttpRequestLogInterceptor initialized
+2018-03-11 22:55:37 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-11T22:55:37.031 Constructor call
+2018-03-11 22:55:39 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-11T22:55:39.244 Constructor call
+2018-03-11 22:55:39 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(29) - ************************Start - GenericServletDemoServlet************************
+2018-03-11 22:55:39 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(47) - ************************End - GenericServletDemoServlet************************
+2018-03-11 22:55:58 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-03-11 22:55:58 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************
+2018-03-11 22:56:01 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.l.HttpRequestLogInterceptor.<clinit>(28) - HttpRequestLogInterceptor initialized
+2018-03-11 22:56:02 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-11T22:56:02.459 Constructor call
+2018-03-11 22:56:04 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-11T22:56:04.607 Constructor call
+2018-03-11 22:56:05 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(29) - ************************Start - GenericServletDemoServlet************************
+2018-03-11 22:56:05 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(47) - ************************End - GenericServletDemoServlet************************
+2018-03-11 22:57:27 [http-nio-8080-exec-18] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-11T22:57:27.001 - called url:/Spring-In-Action_WEBApp/spitter/getrole-Beff
+2018-03-11 22:57:42 [http-nio-8080-exec-26] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-11T22:57:42.398 - called url:/Spring-In-Action_WEBApp/list
+2018-03-11 22:57:42 [http-nio-8080-exec-26] INFO  com.mvc.spittr.web.LoginController.listUsers(119) - spitterService is null? false
+2018-03-11 22:57:42 [http-nio-8080-exec-26] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(31) - Auth valaue: anonymous
+2018-03-11 22:57:45 [http-nio-8080-exec-28] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-11T22:57:45.102 - called url:/Spring-In-Action_WEBApp/spitter/getrole-Beff
+2018-03-11 22:59:06 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-03-11 22:59:06 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************
+2018-03-11 22:59:09 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.l.HttpRequestLogInterceptor.<clinit>(28) - HttpRequestLogInterceptor initialized
+2018-03-11 22:59:10 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-11T22:59:10.627 Constructor call
+2018-03-11 22:59:13 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-11T22:59:13.021 Constructor call
+2018-03-11 22:59:13 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(29) - ************************Start - GenericServletDemoServlet************************
+2018-03-11 22:59:13 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(47) - ************************End - GenericServletDemoServlet************************
+2018-03-11 22:59:13 [http-nio-8080-exec-33] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-11T22:59:13.718 - called url:/Spring-In-Action_WEBApp/list
+2018-03-11 22:59:13 [http-nio-8080-exec-33] INFO  com.mvc.spittr.web.LoginController.listUsers(119) - spitterService is null? false
+2018-03-11 22:59:14 [http-nio-8080-exec-33] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(31) - Auth valaue: anonymous
+2018-03-11 22:59:21 [http-nio-8080-exec-30] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-11T22:59:21.174 - called url:/Spring-In-Action_WEBApp/spitter/getrole-Beff
+2018-03-11 22:59:21 [http-nio-8080-exec-30] INFO  com.mvc.spittr.web.SpitterController.showRoleUsername(165) - Role value= USER username value=Beff

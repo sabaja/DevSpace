@@ -18,7 +18,7 @@
 	</h1>
 	<a href="<c:url value="/spittle" />">&nbsp;&nbsp;&nbsp;Spittles</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 	<a href="<c:url value="/spitter/registration" />">Register</a>
-	<sec:authorize access="hasRole('ADMIN') or hasRole('DB')">
+	<sec:authorize access="hasRole('ADMIN')">
 		<h1>
 		<s:message code="spittr.admin" />
 	</h1>

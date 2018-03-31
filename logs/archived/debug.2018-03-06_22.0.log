@@ -1,0 +1,6 @@
+2018-03-06 22:37:13 [localhost-startStop-1] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-03-06 22:37:13 [localhost-startStop-1] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************
+2018-03-06 22:38:35 [localhost-startStop-1] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-03-06 22:38:35 [localhost-startStop-1] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************
+2018-03-06 22:55:58 [localhost-startStop-1] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-03-06 22:55:58 [localhost-startStop-1] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************

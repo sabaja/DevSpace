@@ -9,6 +9,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -35,11 +36,15 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.mvc.spittr.constants.SpitterConsts;
 import com.mvc.spittr.entity.Spitter;
+import com.mvc.spittr.entity.SpitterRole;
 import com.mvc.spittr.entity.Spittle;
+import com.mvc.spittr.entity.view.UsernameRole;
 import com.mvc.spittr.service.SpitterService;
 import com.mvc.spittr.service.backup.SpitterRepository;
 import com.mvc.spittr.web.util.RequestUtilFacade;
 import com.mvc.spittr.web.util.WebFacilities;
+
+import ch.qos.logback.core.net.SyslogOutputStream;
 
 @Controller
 @RequestMapping("/spitter")
@@ -61,14 +66,14 @@ public class SpitterController {
 	}
 
 	// Given the way you configured InternalResourceViewResolver , the view name
-		// “home” will be resolved as a JSP at / WEB-INF /views/home.jsp. For now,
-		// you’ll keep the Spittr application’s home page rather basic, as shown
-		// next.
-		@RequestMapping(method = RequestMethod.GET)
-		public String home(HttpServletRequest request, HttpServletResponse response, ModelMap model) {
-			model.addAttribute("loggedinuser", WebFacilities.getPrincipal());
-			return "home";
-		}
+	// “home” will be resolved as a JSP at / WEB-INF /views/home.jsp. For now,
+	// you’ll keep the Spittr application’s home page rather basic, as shown
+	// next.
+	@RequestMapping(method = RequestMethod.GET)
+	public String home(HttpServletRequest request, HttpServletResponse response, ModelMap model) {
+		model.addAttribute("loggedinuser", WebFacilities.getPrincipal());
+		return "home";
+	}
 	// The showRegistrationForm() method’s @RequestMapping annotation, along
 	// with the
 	// class-level @RequestMapping annotation, declares that it will handle HTTP
@@ -102,8 +107,6 @@ public class SpitterController {
 		return registerForm;
 	}
 
-	
-	
 	// Multipart picture download @RequestPart example:
 	// http://www.journaldev.com/2573/spring-mvc-file-upload-example-single-multiple-files
 	@RequestMapping(value = "/registration", method = RequestMethod.POST)
@@ -155,6 +158,17 @@ public class SpitterController {
 		logger.info("spitter username value= {}", username);
 
 		return profile;
+	}
+
+	@RequestMapping(value = "/getrole-{username}", method = RequestMethod.GET)
+	public String showRoleUsername(@PathVariable String username, ModelMap model, HttpServletRequest request,
+			HttpServletResponse response) {
+		List<UsernameRole> userRole = null;
+		userRole = service.getRoleByUsername(username);
+
+		userRole.forEach(role -> logger.info("Username:{} role:{} ", role.getUsername(), role.getRole()));
+		ModelMap res = model.addAttribute("user_role", userRole);
+		return "getrole";
 	}
 
 	/**

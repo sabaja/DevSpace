@@ -2,7 +2,7 @@ package com.mvc.spittr.dao;
 
 import java.lang.invoke.MethodHandles;
 import java.util.List;
-import java.util.Objects;
+import java.util.stream.Collectors;
 
 import javax.persistence.TypedQuery;
 
@@ -12,6 +12,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
+import org.hibernate.query.Query;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,7 @@ import org.springframework.stereotype.Repository;
 
 import com.mvc.spittr.entity.Spitter;
 import com.mvc.spittr.entity.Spittle;
+import com.mvc.spittr.entity.view.UsernameRole;
 
 /**
  * 
@@ -30,16 +32,15 @@ import com.mvc.spittr.entity.Spittle;
 public class SpitterDAOImpl implements SpitterDao {
 
 	private static final Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
-static{
-	logger.info("spitterDAOImpl Static instanced");
-}
+	static {
+		logger.info("spitterDAOImpl Static instanced");
+	}
 	@Autowired
 	private SessionFactory sessionFactory;
 
 	@Override
 	public Spitter findByUserName(String username) {
 		Session session = sessionFactory.openSession();
-		logger.info("Inside spitterDAOImpl.findByUserName()");
 		// https://stackoverflow.com/questions/9954590/hibernate-error-querysyntaxexception-users-is-not-mapped-from-users
 		/**
 		 * For example: your bean class name is UserDetails
@@ -67,8 +68,8 @@ static{
 
 	@Override
 	public void save(Spitter spitter) {
-		//Da togliere
-//		spitter.setSsoId("ssoId");
+		// Da togliere
+		// spitter.setSsoId("ssoId");
 		logger.info("employee before saved: {}", spitter.toString());
 		sessionFactory.getCurrentSession().save(spitter);
 		logger.info("employee after saved: {}", spitter.toString());
@@ -99,7 +100,7 @@ static{
 	@Override
 	public List<Spitter> listSpitters() {
 		Session session = sessionFactory.getCurrentSession();
-		@SuppressWarnings("unchecked")      
+		@SuppressWarnings("unchecked")
 		List<Spitter> spitters = (List<Spitter>) session.createQuery("from Spitter").list();
 		return spitters;
 	}
@@ -124,19 +125,35 @@ static{
 	}
 
 	/**
-	 * @param sessionFactory the sessionFactory to set
+	 * @param sessionFactory
+	 *            the sessionFactory to set
 	 */
 	public void setSessionFactory(SessionFactory sessionFactory) {
 		this.sessionFactory = sessionFactory;
 	}
 
+	@SuppressWarnings({ "deprecation", "unchecked" })
 	@Override
 	public List<Spitter> listSpittersWithCriteria() {
 		Session session = sessionFactory.getCurrentSession();
-		List<Spitter> spitters = session.createCriteria(Spitter.class).addOrder(Order.asc("firstName")).list();
+		List<Spitter> spitters = session.createCriteria(Spitter.class)
+				.addOrder(Order.asc("firstName"))
+				.list();
 		return spitters;
 	}
 
+	@Override
+	public List<UsernameRole> getRoleByUsername(String username) {
+		Session session = sessionFactory.openSession();
 
+		TypedQuery<UsernameRole> query = (TypedQuery<UsernameRole>) session
+				.createQuery("from UsernameRole where username = :username");
+		List<UsernameRole> r = query.setParameter("username", username).getResultList();
+/*
+		List<UsernameRole> roles = session.createQuery("from UsernameRole").list();
+		
+		List<UsernameRole> r = roles.stream().filter(role -> role.getUsername().equalsIgnoreCase(username)).collect(Collectors.toList());*/
+		return r;
+	}
 
 }

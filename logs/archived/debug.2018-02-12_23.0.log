@@ -1,0 +1,11 @@
+2018-02-12 23:02:07 [http-nio-8080-exec-37] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-12T23:02:07.391 - called url:/Spring-In-Action_WEBApp/spittle
+2018-02-12 23:02:45 [http-nio-8080-exec-34] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-12T23:02:45.896 - called url:/Spring-In-Action_WEBApp/spittle
+2018-02-12 23:02:51 [http-nio-8080-exec-40] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-12T23:02:51.462 - called url:/Spring-In-Action_WEBApp/spittle
+2018-02-12 23:03:04 [http-nio-8080-exec-38] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-12T23:03:04.320 - called url:/Spring-In-Action_WEBApp/spittle/14
+2018-02-12 23:03:55 [http-nio-8080-exec-41] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-12T23:03:55.161 - called url:/Spring-In-Action_WEBApp/spittle
+2018-02-12 23:03:58 [http-nio-8080-exec-39] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-12T23:03:58.094 - called url:/Spring-In-Action_WEBApp/spittle/9
+2018-02-12 23:03:59 [http-nio-8080-exec-43] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-12T23:03:59.676 - called url:/Spring-In-Action_WEBApp/spitter
+2018-02-12 23:04:02 [http-nio-8080-exec-44] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-12T23:04:02.638 - called url:/Spring-In-Action_WEBApp/spittle
+2018-02-12 23:13:30 [http-nio-8080-exec-45] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-12T23:13:30.038 - called url:/Spring-In-Action_WEBApp/spittle
+2018-02-12 23:15:22 [http-nio-8080-exec-46] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-12T23:15:22.016 - called url:/Spring-In-Action_WEBApp/spitter
+2018-02-12 23:15:25 [http-nio-8080-exec-46] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-02-12T23:15:25.430 - called url:/Spring-In-Action_WEBApp/spittle

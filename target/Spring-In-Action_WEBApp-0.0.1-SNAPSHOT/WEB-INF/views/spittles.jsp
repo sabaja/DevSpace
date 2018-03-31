@@ -1,6 +1,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE HTML>
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<title>Spitter's spittles</title>
+<link href="<c:url value='css/bootstrap.css' />"
+	rel="stylesheet"></link>
+<link href="<c:url value='css/app.css' />" rel="stylesheet"></link>
 <%@include file="authheader.jsp"%>
 <p>List of spittles:</p>
 

@@ -194,6 +194,18 @@ td,
 th {
   padding: 0;
 }
+/*https://stackoverflow.com/questions/8169027/how-can-i-submit-a-post-form-using-the-a-href-tag*/
+.btn-link{
+  border:none;
+  outline:none;
+  background:none;
+  cursor:pointer;
+  color:#0000EE;
+  padding:0;
+  text-decoration:underline;
+  font-family:inherit;
+  font-size:inherit;
+}
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
   *,

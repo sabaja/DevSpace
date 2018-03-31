@@ -151,6 +151,12 @@ public class LoginController {
 		return "redirect:/";
 	}
 
+	@RequestMapping(value ="/access_denied", method = RequestMethod.GET)
+	public String accessDenied(){
+		return "accessDenied";
+	}
+	
+	
 	/**
 	 * @return the authenticationTrustResolver
 	 */
@@ -238,4 +244,5 @@ public class LoginController {
 	 * else { userName = principal.toString(); logger.info("Auth valaue: {}",
 	 * userName); } return userName; }
 	 */
+	
 }

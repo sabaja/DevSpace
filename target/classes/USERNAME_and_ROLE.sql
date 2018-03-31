@@ -1,0 +1,18 @@
+select s.USERNAME, sr.ROLE_TYPE from HIBERNATE.SPITTER s 
+inner join HIBERNATE.SPITTER_SPITTER_ROLE ssr
+on s.SPITTER_ID = ssr.SPITTER_ID 
+inner join HIBERNATE.SPITTER_ROLE sr
+on sr.ROLE_ID = ssr.ROLE_ID;
+
+
+Create or replace
+view HIBERNATE.USERNAME_ROLE
+as 
+(select UUID() as ID, s.USERNAME, sr.ROLE_TYPE from HIBERNATE.SPITTER s 
+inner join HIBERNATE.SPITTER_SPITTER_ROLE ssr
+on s.SPITTER_ID = ssr.SPITTER_ID 
+inner join HIBERNATE.SPITTER_ROLE sr
+on sr.ROLE_ID = ssr.ROLE_ID);
+
+commit;
+

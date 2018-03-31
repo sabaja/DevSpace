@@ -108,7 +108,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-
+		logger.info("{}::configure view permit", this.getClass().getSimpleName());
+		logger.info("{} initialized", this.getClass().getSimpleName());
 		/*
 		 * http.requiresChannel().antMatchers("/login").requiresSecure().and().
 		 * formLogin().loginPage("/login")
@@ -124,7 +125,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		http.authorizeRequests().anyRequest().permitAll().and().formLogin().loginPage("/login")
 				.loginProcessingUrl("/login").usernameParameter("username").passwordParameter("password").and()
 				.rememberMe().rememberMeParameter("remember-me").tokenRepository(tokenRepository)
-				.tokenValiditySeconds(60*2).key("Spitter-RememberMe").and().csrf().and().exceptionHandling().accessDeniedPage("/Access_Denied")
+				.tokenValiditySeconds(60*2).key("Spitter-RememberMe").and().csrf()
 				.and().logout().logoutSuccessUrl("/");
 		
 		//Autorization for all Spitter
@@ -137,15 +138,22 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		http.requiresChannel().anyRequest().requiresInsecure();
 
 		// http.requiresChannel().antMatchers("/").requiresInsecure();
-
-//		http.authorizeRequests().antMatchers("/list").access("hasRole('DB') or hasRole('ADMIN')");
+		logger.info("Before /list");
+		http.authorizeRequests()
+			.antMatchers("/list")
+//			.access("hasRole('DB') or hasRole('ADMIN')")
+			.hasRole("ADMIN")
+			.and().exceptionHandling().accessDeniedPage("/access_denied");
+//		http.authorizeRequests().antMatchers("/list").fullyAuthenticated();
+		logger.info("After /list");
 		
-		// DA RIVEDERE
+		/*Da rivedere
 		http.authorizeRequests().antMatchers("/spitters/{username}").authenticated();
 		http.authorizeRequests().antMatchers("/spitters")
 				.access("hasRole('USER') or hasRole('ADMIN') or hasRole('DB')");
 		http.authorizeRequests().antMatchers(HttpMethod.POST, "/spittle").access("hasRole('ADMIN')");
-
+		Fine*/
+		
 		// http://www.baeldung.com/spring-channel-security-https
 		http.sessionManagement().sessionFixation().none();
 
@@ -154,10 +162,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		// http.authorizeRequests().antMatchers("/**").hasRole("USER").and().formLogin();
 		// http.authorizeRequests().antMatchers("/**").hasRole("USER");
 
-		logger.info("{}::configure view permit", this.getClass().getSimpleName());
-		logger.info("{} initialized", this.getClass().getSimpleName());
+		
 
-		/**
+		/*
 		 * http.authorizeRequests().antMatchers("/", "/list")
 		 * .access("hasRole('USER') or hasRole('ADMIN') or hasRole('DBA')")
 		 * .antMatchers("/newuser/**",
@@ -169,9 +176,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		 * .tokenValiditySeconds(86400).and().csrf().and().exceptionHandling().accessDeniedPage("/Access_Denied");
 		 */
 
-		/**
-		 * 
-		 */
 	}
 
 	/**

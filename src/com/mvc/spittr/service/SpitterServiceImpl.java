@@ -13,6 +13,7 @@ import com.mvc.spittr.dao.SpitterDAOImpl;
 import com.mvc.spittr.dao.SpitterDao;
 import com.mvc.spittr.entity.Spitter;
 import com.mvc.spittr.entity.Spittle;
+import com.mvc.spittr.entity.view.UsernameRole;
 
 @Service("spitterServiceImpl")
 @Transactional
@@ -78,6 +79,12 @@ public class SpitterServiceImpl implements SpitterService {
 	@Override
 	public List<Spitter> listSpittersWithCriteria() {
 		return spitterDao.listSpittersWithCriteria();
+	}
+
+	@Override
+	public List<UsernameRole> getRoleByUsername(String username) {
+		return spitterDao.getRoleByUsername(username);
+		
 	}
 
 

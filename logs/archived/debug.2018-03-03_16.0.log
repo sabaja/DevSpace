@@ -1,0 +1,120 @@
+2018-03-03 16:06:16 [localhost-startStop-1] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-03-03 16:06:16 [localhost-startStop-1] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************
+2018-03-03 16:06:21 [localhost-startStop-1] INFO  c.m.s.w.l.HttpRequestLogInterceptor.<clinit>(28) - HttpRequestLogInterceptor initialized
+2018-03-03 16:06:22 [localhost-startStop-1] DEBUG com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-03T16:06:22.256 Constructor call
+2018-03-03 16:06:25 [localhost-startStop-1] DEBUG com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-03T16:06:25.442 Constructor call
+2018-03-03 16:06:25 [localhost-startStop-1] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(29) - ************************Start - GenericServletDemoServlet************************
+2018-03-03 16:06:25 [localhost-startStop-1] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(47) - ************************End - GenericServletDemoServlet************************
+2018-03-03 16:06:37 [http-nio-8080-exec-2] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:06:37.633 - called url:/Spring-In-Action_WEBApp/list
+2018-03-03 16:06:37 [http-nio-8080-exec-2] INFO  com.mvc.spittr.web.LoginController.listUsers(119) - spitterService is null? false
+2018-03-03 16:06:38 [http-nio-8080-exec-2] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(31) - Auth valaue: anonymous
+2018-03-03 16:10:27 [http-nio-8080-exec-7] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:10:27.194 - called url:/Spring-In-Action_WEBApp/list
+2018-03-03 16:10:27 [http-nio-8080-exec-7] INFO  com.mvc.spittr.web.LoginController.listUsers(119) - spitterService is null? false
+2018-03-03 16:10:27 [http-nio-8080-exec-7] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(31) - Auth valaue: anonymous
+2018-03-03 16:12:40 [http-nio-8080-exec-10] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:12:40.381 - called url:/Spring-In-Action_WEBApp/list
+2018-03-03 16:12:40 [http-nio-8080-exec-10] INFO  com.mvc.spittr.web.LoginController.listUsers(119) - spitterService is null? false
+2018-03-03 16:12:40 [http-nio-8080-exec-10] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(31) - Auth valaue: anonymous
+2018-03-03 16:13:30 [http-nio-8080-exec-5] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:13:30.722 - called url:/Spring-In-Action_WEBApp/list
+2018-03-03 16:13:30 [http-nio-8080-exec-5] INFO  com.mvc.spittr.web.LoginController.listUsers(119) - spitterService is null? false
+2018-03-03 16:13:30 [http-nio-8080-exec-5] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(31) - Auth valaue: anonymous
+2018-03-03 16:13:38 [http-nio-8080-exec-4] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:13:38.250 - called url:/Spring-In-Action_WEBApp/
+2018-03-03 16:13:40 [http-nio-8080-exec-3] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:13:40.401 - called url:/Spring-In-Action_WEBApp/spitter
+2018-03-03 16:13:40 [http-nio-8080-exec-3] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(31) - Auth valaue: anonymous
+2018-03-03 16:13:41 [http-nio-8080-exec-7] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:13:41.846 - called url:/Spring-In-Action_WEBApp/spittle
+2018-03-03 16:13:42 [http-nio-8080-exec-7] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(31) - Auth valaue: anonymous
+2018-03-03 16:13:42 [http-nio-8080-exec-7] INFO  com.mvc.spittr.web.SpittleController.spittles(84) - 2018-03-03T16:13:42.279 /spittle called
+2018-03-03 16:14:38 [http-nio-8080-exec-9] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:14:38.846 - called url:/Spring-In-Action_WEBApp/spittle
+2018-03-03 16:14:38 [http-nio-8080-exec-9] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(31) - Auth valaue: anonymous
+2018-03-03 16:14:38 [http-nio-8080-exec-9] INFO  com.mvc.spittr.web.SpittleController.spittles(84) - 2018-03-03T16:14:38.871 /spittle called
+2018-03-03 16:15:46 [http-nio-8080-exec-10] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:15:46.262 - called url:/Spring-In-Action_WEBApp/spittle
+2018-03-03 16:15:46 [http-nio-8080-exec-10] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(31) - Auth valaue: anonymous
+2018-03-03 16:15:46 [http-nio-8080-exec-10] INFO  com.mvc.spittr.web.SpittleController.spittles(84) - 2018-03-03T16:15:46.292 /spittle called
+2018-03-03 16:15:56 [http-nio-8080-exec-7] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:15:56.082 - called url:/Spring-In-Action_WEBApp/login
+2018-03-03 16:15:56 [http-nio-8080-exec-7] INFO  com.mvc.spittr.web.LoginController.isCurrentAuthenticationAnonymous(177) - isCurrentAuthenticationAnonymous() flag value: true and credential_
+2018-03-03 16:15:56 [http-nio-8080-exec-7] INFO  com.mvc.spittr.web.LoginController.isCurrentAuthenticationAnonymous(177) - isCurrentAuthenticationAnonymous() flag value: true and credential_
+2018-03-03 16:15:56 [http-nio-8080-exec-7] INFO  com.mvc.spittr.web.LoginController.loginPage(105) - Is Current Authentication Anonymous? true
+2018-03-03 16:16:14 [http-nio-8080-exec-1] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:16:14.385 - called url:/Spring-In-Action_WEBApp/login
+2018-03-03 16:16:14 [http-nio-8080-exec-1] INFO  com.mvc.spittr.web.LoginController.isCurrentAuthenticationAnonymous(177) - isCurrentAuthenticationAnonymous() flag value: true and credential_
+2018-03-03 16:16:14 [http-nio-8080-exec-1] INFO  com.mvc.spittr.web.LoginController.isCurrentAuthenticationAnonymous(177) - isCurrentAuthenticationAnonymous() flag value: true and credential_
+2018-03-03 16:16:14 [http-nio-8080-exec-1] INFO  com.mvc.spittr.web.LoginController.loginPage(105) - Is Current Authentication Anonymous? true
+2018-03-03 16:16:15 [http-nio-8080-exec-2] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:16:15.945 - called url:/Spring-In-Action_WEBApp/login
+2018-03-03 16:16:15 [http-nio-8080-exec-2] INFO  com.mvc.spittr.web.LoginController.isCurrentAuthenticationAnonymous(177) - isCurrentAuthenticationAnonymous() flag value: true and credential_
+2018-03-03 16:16:15 [http-nio-8080-exec-2] INFO  com.mvc.spittr.web.LoginController.isCurrentAuthenticationAnonymous(177) - isCurrentAuthenticationAnonymous() flag value: true and credential_
+2018-03-03 16:16:15 [http-nio-8080-exec-2] INFO  com.mvc.spittr.web.LoginController.loginPage(105) - Is Current Authentication Anonymous? true
+2018-03-03 16:30:53 [http-nio-8080-exec-7] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:30:53.626 - called url:/Spring-In-Action_WEBApp/logout
+2018-03-03 16:30:53 [http-nio-8080-exec-7] INFO  com.mvc.spittr.web.LoginController.logoutPage(142) - Before Logout - authentication_org.springframework.security.authentication.AnonymousAuthenticationToken@9055e4a6: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: 418894C5A48EF2A4EB87DC71F65F4216; Granted Authorities: ROLE_ANONYMOUS 
+2018-03-03 16:30:53 [http-nio-8080-exec-7] INFO  com.mvc.spittr.web.LoginController.logoutPage(148) - After Logout authentication_org.springframework.security.authentication.AnonymousAuthenticationToken@9055e4a6: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: 418894C5A48EF2A4EB87DC71F65F4216; Granted Authorities: ROLE_ANONYMOUS 
+2018-03-03 16:30:53 [http-nio-8080-exec-9] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:30:53.776 - called url:/Spring-In-Action_WEBApp/
+2018-03-03 16:30:57 [http-nio-8080-exec-4] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:30:57.263 - called url:/Spring-In-Action_WEBApp/spitter
+2018-03-03 16:30:57 [http-nio-8080-exec-4] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(31) - Auth valaue: anonymous
+2018-03-03 16:31:04 [http-nio-8080-exec-3] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:31:04.163 - called url:/Spring-In-Action_WEBApp/spittle
+2018-03-03 16:31:04 [http-nio-8080-exec-3] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(31) - Auth valaue: anonymous
+2018-03-03 16:31:04 [http-nio-8080-exec-3] INFO  com.mvc.spittr.web.SpittleController.spittles(84) - 2018-03-03T16:31:04.178 /spittle called
+2018-03-03 16:31:08 [http-nio-8080-exec-8] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:31:08.845 - called url:/Spring-In-Action_WEBApp/logout
+2018-03-03 16:31:08 [http-nio-8080-exec-8] INFO  com.mvc.spittr.web.LoginController.logoutPage(142) - Before Logout - authentication_org.springframework.security.authentication.AnonymousAuthenticationToken@9055e4a6: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: 418894C5A48EF2A4EB87DC71F65F4216; Granted Authorities: ROLE_ANONYMOUS 
+2018-03-03 16:31:08 [http-nio-8080-exec-8] INFO  com.mvc.spittr.web.LoginController.logoutPage(148) - After Logout authentication_org.springframework.security.authentication.AnonymousAuthenticationToken@9055e4a6: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: 418894C5A48EF2A4EB87DC71F65F4216; Granted Authorities: ROLE_ANONYMOUS 
+2018-03-03 16:31:08 [http-nio-8080-exec-9] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:31:08.867 - called url:/Spring-In-Action_WEBApp/
+2018-03-03 16:31:09 [http-nio-8080-exec-2] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:31:09.975 - called url:/Spring-In-Action_WEBApp/login
+2018-03-03 16:31:09 [http-nio-8080-exec-2] INFO  com.mvc.spittr.web.LoginController.isCurrentAuthenticationAnonymous(177) - isCurrentAuthenticationAnonymous() flag value: true and credential_
+2018-03-03 16:31:09 [http-nio-8080-exec-2] INFO  com.mvc.spittr.web.LoginController.isCurrentAuthenticationAnonymous(177) - isCurrentAuthenticationAnonymous() flag value: true and credential_
+2018-03-03 16:31:09 [http-nio-8080-exec-2] INFO  com.mvc.spittr.web.LoginController.loginPage(105) - Is Current Authentication Anonymous? true
+2018-03-03 16:31:19 [http-nio-8080-exec-7] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:31:19.004 - called url:/Spring-In-Action_WEBApp/spitter
+2018-03-03 16:31:19 [http-nio-8080-exec-7] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(28) - Auth valaue: admin
+2018-03-03 16:32:42 [http-nio-8080-exec-1] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:32:42.637 - called url:/Spring-In-Action_WEBApp/spitter
+2018-03-03 16:32:42 [http-nio-8080-exec-1] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(28) - Auth valaue: admin
+2018-03-03 16:32:52 [http-nio-8080-exec-2] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:32:52.821 - called url:/Spring-In-Action_WEBApp/list
+2018-03-03 16:32:52 [http-nio-8080-exec-2] INFO  com.mvc.spittr.web.LoginController.listUsers(119) - spitterService is null? false
+2018-03-03 16:32:52 [http-nio-8080-exec-2] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(28) - Auth valaue: admin
+2018-03-03 16:34:10 [http-nio-8080-exec-5] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:34:10.349 - called url:/Spring-In-Action_WEBApp/list
+2018-03-03 16:34:10 [http-nio-8080-exec-5] INFO  com.mvc.spittr.web.LoginController.listUsers(119) - spitterService is null? false
+2018-03-03 16:34:10 [http-nio-8080-exec-5] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(28) - Auth valaue: admin
+2018-03-03 16:34:52 [http-nio-8080-exec-9] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:34:52.040 - called url:/Spring-In-Action_WEBApp/list
+2018-03-03 16:34:52 [http-nio-8080-exec-9] INFO  com.mvc.spittr.web.LoginController.listUsers(119) - spitterService is null? false
+2018-03-03 16:34:52 [http-nio-8080-exec-9] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(28) - Auth valaue: admin
+2018-03-03 16:35:19 [http-nio-8080-exec-3] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:35:19.803 - called url:/Spring-In-Action_WEBApp/list
+2018-03-03 16:35:19 [http-nio-8080-exec-3] INFO  com.mvc.spittr.web.LoginController.listUsers(119) - spitterService is null? false
+2018-03-03 16:35:19 [http-nio-8080-exec-3] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(28) - Auth valaue: admin
+2018-03-03 16:36:54 [http-nio-8080-exec-4] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:36:54.585 - called url:/Spring-In-Action_WEBApp/list
+2018-03-03 16:36:54 [http-nio-8080-exec-4] INFO  com.mvc.spittr.web.LoginController.listUsers(119) - spitterService is null? false
+2018-03-03 16:36:54 [http-nio-8080-exec-4] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(28) - Auth valaue: admin
+2018-03-03 16:43:53 [http-nio-8080-exec-3] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:43:53.769 - called url:/Spring-In-Action_WEBApp/list
+2018-03-03 16:43:53 [http-nio-8080-exec-3] INFO  com.mvc.spittr.web.LoginController.listUsers(119) - spitterService is null? false
+2018-03-03 16:43:53 [http-nio-8080-exec-3] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(28) - Auth valaue: admin
+2018-03-03 16:43:58 [http-nio-8080-exec-4] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:43:58.275 - called url:/Spring-In-Action_WEBApp/logout
+2018-03-03 16:43:58 [http-nio-8080-exec-4] INFO  com.mvc.spittr.web.LoginController.logoutPage(142) - Before Logout - authentication_org.springframework.security.authentication.UsernamePasswordAuthenticationToken@821a3ac0: Principal: org.springframework.security.core.userdetails.User@586034f: Username: admin; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_ADMIN,ROLE_DB,ROLE_USER; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: 418894C5A48EF2A4EB87DC71F65F4216; Granted Authorities: ROLE_ADMIN, ROLE_DB, ROLE_USER 
+2018-03-03 16:43:58 [http-nio-8080-exec-4] INFO  com.mvc.spittr.web.LoginController.logoutPage(148) - After Logout authentication_org.springframework.security.authentication.UsernamePasswordAuthenticationToken@821a3ac0: Principal: org.springframework.security.core.userdetails.User@586034f: Username: admin; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_ADMIN,ROLE_DB,ROLE_USER; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: 418894C5A48EF2A4EB87DC71F65F4216; Granted Authorities: ROLE_ADMIN, ROLE_DB, ROLE_USER 
+2018-03-03 16:43:58 [http-nio-8080-exec-2] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:43:58.415 - called url:/Spring-In-Action_WEBApp/
+2018-03-03 16:44:11 [http-nio-8080-exec-6] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:44:11.046 - called url:/Spring-In-Action_WEBApp/spitter
+2018-03-03 16:44:11 [http-nio-8080-exec-6] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(31) - Auth valaue: anonymous
+2018-03-03 16:44:16 [http-nio-8080-exec-3] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:44:16.399 - called url:/Spring-In-Action_WEBApp/spittle
+2018-03-03 16:44:16 [http-nio-8080-exec-3] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(31) - Auth valaue: anonymous
+2018-03-03 16:44:16 [http-nio-8080-exec-3] INFO  com.mvc.spittr.web.SpittleController.spittles(84) - 2018-03-03T16:44:16.420 /spittle called
+2018-03-03 16:50:08 [http-nio-8080-exec-4] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:50:08.283 - called url:/Spring-In-Action_WEBApp/spittle
+2018-03-03 16:50:10 [http-nio-8080-exec-5] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:50:10.196 - called url:/Spring-In-Action_WEBApp/spittle
+2018-03-03 16:51:15 [http-nio-8080-exec-9] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:51:15.125 - called url:/Spring-In-Action_WEBApp/spittle
+2018-03-03 16:51:17 [http-nio-8080-exec-10] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:51:17.026 - called url:/Spring-In-Action_WEBApp/spittle
+2018-03-03 16:55:30 [http-nio-8080-exec-6] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:55:30.865 - called url:/Spring-In-Action_WEBApp/spittle
+2018-03-03 16:55:34 [http-nio-8080-exec-3] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:55:34.131 - called url:/Spring-In-Action_WEBApp/spittle
+2018-03-03 16:55:39 [http-nio-8080-exec-1] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:55:39.654 - called url:/Spring-In-Action_WEBApp/spittle
+2018-03-03 16:55:49 [http-nio-8080-exec-2] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:55:49.427 - called url:/Spring-In-Action_WEBApp/spitter/registration
+2018-03-03 16:55:49 [http-nio-8080-exec-2] INFO  com.mvc.spittr.web.SpitterController.showRegistration(99) - showRegistration() called view=registerForm
+2018-03-03 16:55:49 [http-nio-8080-exec-2] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(31) - Auth valaue: anonymous
+2018-03-03 16:55:52 [http-nio-8080-exec-7] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:55:52.733 - called url:/Spring-In-Action_WEBApp/spittle
+2018-03-03 16:55:55 [http-nio-8080-exec-2] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:55:55.143 - called url:/Spring-In-Action_WEBApp/
+2018-03-03 16:55:56 [http-nio-8080-exec-2] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:55:56.608 - called url:/Spring-In-Action_WEBApp/login
+2018-03-03 16:55:56 [http-nio-8080-exec-2] INFO  com.mvc.spittr.web.LoginController.isCurrentAuthenticationAnonymous(177) - isCurrentAuthenticationAnonymous() flag value: true and credential_
+2018-03-03 16:55:56 [http-nio-8080-exec-2] INFO  com.mvc.spittr.web.LoginController.isCurrentAuthenticationAnonymous(177) - isCurrentAuthenticationAnonymous() flag value: true and credential_
+2018-03-03 16:55:56 [http-nio-8080-exec-2] INFO  com.mvc.spittr.web.LoginController.loginPage(105) - Is Current Authentication Anonymous? true
+2018-03-03 16:56:44 [localhost-startStop-1] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-03-03 16:56:44 [localhost-startStop-1] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************
+2018-03-03 16:56:48 [localhost-startStop-1] INFO  c.m.s.w.l.HttpRequestLogInterceptor.<clinit>(28) - HttpRequestLogInterceptor initialized
+2018-03-03 16:56:48 [localhost-startStop-1] DEBUG com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-03T16:56:48.806 Constructor call
+2018-03-03 16:56:51 [localhost-startStop-1] DEBUG com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-03T16:56:51.639 Constructor call
+2018-03-03 16:56:51 [localhost-startStop-1] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(29) - ************************Start - GenericServletDemoServlet************************
+2018-03-03 16:56:51 [localhost-startStop-1] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(47) - ************************End - GenericServletDemoServlet************************
+2018-03-03 16:56:55 [http-nio-8080-exec-2] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:56:55.328 - called url:/Spring-In-Action_WEBApp/login
+2018-03-03 16:56:55 [http-nio-8080-exec-2] INFO  com.mvc.spittr.web.LoginController.isCurrentAuthenticationAnonymous(177) - isCurrentAuthenticationAnonymous() flag value: true and credential_
+2018-03-03 16:56:55 [http-nio-8080-exec-2] INFO  com.mvc.spittr.web.LoginController.isCurrentAuthenticationAnonymous(177) - isCurrentAuthenticationAnonymous() flag value: true and credential_
+2018-03-03 16:56:55 [http-nio-8080-exec-2] INFO  com.mvc.spittr.web.LoginController.loginPage(105) - Is Current Authentication Anonymous? true
+2018-03-03 16:57:08 [http-nio-8080-exec-7] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-03T16:57:08.237 - called url:/Spring-In-Action_WEBApp/spitter
+2018-03-03 16:57:08 [http-nio-8080-exec-7] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(28) - Auth valaue: admin

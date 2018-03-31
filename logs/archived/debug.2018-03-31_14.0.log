@@ -1,0 +1,14 @@
+2018-03-31 14:48:31 [localhost-startStop-1] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(27) - ************************Start RoleToUserProfileConverter************************
+2018-03-31 14:48:31 [localhost-startStop-1] INFO  c.m.s.w.c.RoleToUserProfileConverter.<clinit>(42) - ************************End RoleToUserProfileConverter************************
+2018-03-31 14:48:36 [localhost-startStop-1] INFO  c.m.s.w.l.HttpRequestLogInterceptor.<clinit>(28) - HttpRequestLogInterceptor initialized
+2018-03-31 14:48:37 [localhost-startStop-1] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-31T14:48:37.904 Constructor call
+2018-03-31 14:48:41 [localhost-startStop-1] INFO  com.mvc.spittr.web.SpittleController.<init>(55) - 2018-03-31T14:48:41.946 Constructor call
+2018-03-31 14:48:42 [localhost-startStop-1] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(29) - ************************Start - GenericServletDemoServlet************************
+2018-03-31 14:48:42 [localhost-startStop-1] INFO  c.m.s.w.s.GenericServletDemoServlet.<clinit>(47) - ************************End - GenericServletDemoServlet************************
+2018-03-31 14:48:45 [http-nio-8080-exec-2] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-31T14:48:45.565 - called url:/Spring-In-Action_WEBApp/
+2018-03-31 14:50:49 [http-nio-8080-exec-5] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-31T14:50:49.574 - called url:/Spring-In-Action_WEBApp/list
+2018-03-31 14:50:49 [http-nio-8080-exec-5] INFO  com.mvc.spittr.web.LoginController.listUsers(119) - spitterService is null? false
+2018-03-31 14:50:50 [http-nio-8080-exec-5] INFO  c.mvc.spittr.web.util.WebFacilities.getPrincipal(31) - Auth valaue: anonymous
+2018-03-31 14:51:13 [http-nio-8080-exec-8] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-31T14:51:13.205 - called url:/Spring-In-Action_WEBApp/spitter/getrole-Beff
+2018-03-31 14:51:14 [http-nio-8080-exec-8] INFO  com.mvc.spittr.web.SpitterController.lambda$0(169) - Username:Beff role:USER 
+2018-03-31 14:51:38 [http-nio-8080-exec-1] INFO  c.m.s.w.l.HttpRequestLogInterceptor.preHandle(35) - 2018-03-31T14:51:38.439 - called url:/Spring-In-Action_WEBApp/
