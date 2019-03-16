@@ -1,4 +1,4 @@
-package com.mvc.spittr.web.logFiltersInterceptors;
+package com.mvc.spittr.controller.logFiltersInterceptors;
 
 import java.lang.invoke.MethodHandles;
 import java.time.Duration;

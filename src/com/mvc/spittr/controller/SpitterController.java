@@ -1,4 +1,4 @@
-package com.mvc.spittr.web;
+package com.mvc.spittr.controller;
 
 import java.io.File;
 import java.io.IOException;
@@ -35,14 +35,14 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.mvc.spittr.constants.SpitterConsts;
+import com.mvc.spittr.controller.util.RequestUtilFacade;
+import com.mvc.spittr.controller.util.WebFacilities;
 import com.mvc.spittr.entity.Spitter;
 import com.mvc.spittr.entity.SpitterRole;
 import com.mvc.spittr.entity.Spittle;
 import com.mvc.spittr.entity.view.UsernameRole;
 import com.mvc.spittr.service.SpitterService;
 import com.mvc.spittr.service.backup.SpitterRepository;
-import com.mvc.spittr.web.util.RequestUtilFacade;
-import com.mvc.spittr.web.util.WebFacilities;
 
 import ch.qos.logback.core.net.SyslogOutputStream;
 

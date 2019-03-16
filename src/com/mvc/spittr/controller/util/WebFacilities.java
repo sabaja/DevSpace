@@ -1,4 +1,4 @@
-package com.mvc.spittr.web.util;
+package com.mvc.spittr.controller.util;
 
 import java.lang.invoke.MethodHandles;
 

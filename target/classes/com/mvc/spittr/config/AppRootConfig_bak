@@ -1,4 +1,4 @@
-package com.mvc.spittr.web.config;
+package com.mvc.spittr.controller.config;
 
 import java.io.IOException;
 import java.lang.invoke.MethodHandles;
@@ -42,7 +42,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
  *         application with Spring MVC . The big question at this point is what
  *         application you’ll build.
  * 
- *         "com.mvc.spittr.web.config"
+ *         "com.mvc.spittr.controller.config"
  */
 
 @Configuration
@@ -83,7 +83,7 @@ public class AppRootConfig_bak {
 	 * properties to be set. This makes it extremely simple to declare as a bean
 	 * in your Spring configuration, if you need further configurations you must
 	 * adding them in customizeRegistration(ServletRegistration.Dynamic
-	 * registration) method. see {@com.mvc.spittr.web.config.WebAppInitializer}
+	 * registration) method. see {@com.mvc.spittr.controller.config.WebAppInitializer}
 	 */
 
 	@Bean

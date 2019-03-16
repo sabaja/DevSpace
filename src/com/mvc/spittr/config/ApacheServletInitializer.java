@@ -21,7 +21,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.WebApplicationContext;
 
-import com.mvc.spittr.web.servlet.GenericServletDemoServlet;
+import com.mvc.spittr.controller.servlet.GenericServletDemoServlet;
 
 public class ApacheServletInitializer implements WebApplicationInitializer, ServletContextListener{
 	private static final Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());

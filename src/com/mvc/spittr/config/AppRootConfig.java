@@ -26,7 +26,7 @@ import org.springframework.web.multipart.support.StandardServletMultipartResolve
  *         application with Spring MVC . The big question at this point is what
  *         application you’ll build.
  * 
- *         "com.mvc.spittr.web.config"
+ *         "com.mvc.spittr.controller.config"
  */
 
 @Configuration
@@ -56,7 +56,7 @@ public class AppRootConfig {
 	 * properties to be set. This makes it extremely simple to declare as a bean
 	 * in your Spring configuration, if you need further configurations you must
 	 * adding them in customizeRegistration(ServletRegistration.Dynamic
-	 * registration) method. see {@com.mvc.spittr.web.config.WebAppInitializer}
+	 * registration) method. see {@com.mvc.spittr.controller.config.WebAppInitializer}
 	 */
 	@Bean
 	public MultipartResolver multipartResolver() throws IOException {

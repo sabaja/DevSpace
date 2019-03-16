@@ -4,8 +4,8 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import com.mvc.spittr.web.LoginController;
-import com.mvc.spittr.web.SpitterController;
+import com.mvc.spittr.controller.LoginController;
+import com.mvc.spittr.controller.SpitterController;
 
 public class ControllerHomeTest {
 	

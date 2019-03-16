@@ -1,4 +1,4 @@
-package com.mvc.spittr.web.servlet;
+package com.mvc.spittr.controller.servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.lang.invoke.MethodHandles;

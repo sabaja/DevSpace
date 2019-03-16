@@ -1,4 +1,4 @@
-package com.mvc.spittr.web;
+package com.mvc.spittr.controller;
 
 import java.lang.invoke.MethodHandles;
 import java.util.List;
@@ -22,11 +22,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
+import com.mvc.spittr.controller.util.WebFacilities;
 import com.mvc.spittr.entity.Spitter;
 import com.mvc.spittr.service.SpitterService;
 import com.mvc.spittr.service.SpitterServiceImpl;
 import com.mvc.spittr.service.backup.SpittleRepository;
-import com.mvc.spittr.web.util.WebFacilities;
 
 /**
  * 

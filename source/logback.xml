@@ -56,7 +56,7 @@
 	</appender>
 
 	<!-- Send logs to both console and file audit -->
-	<logger name="com.mvc.spittr.web" level="trace"
+	<logger name="com.mvc.spittr.controller" level="trace"
 		additivity="false">
 		<appender-ref ref="FILE-AUDIT" />
 		<appender-ref ref="STDOUT" />

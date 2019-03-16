@@ -1,4 +1,4 @@
-package com.mvc.spittr.web;
+package com.mvc.spittr.controller;
 
 import java.lang.invoke.MethodHandles;
 import java.time.LocalDateTime;
@@ -25,13 +25,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
+import com.mvc.spittr.controller.util.RequestUtilFacade;
+import com.mvc.spittr.controller.util.WebFacilities;
 import com.mvc.spittr.entity.Spittle;
 import com.mvc.spittr.exceptions.SpittleNotFoundException;
 import com.mvc.spittr.service.SpitterService;
 import com.mvc.spittr.service.SpittleService;
 import com.mvc.spittr.service.backup.SpittleRepository;
-import com.mvc.spittr.web.util.RequestUtilFacade;
-import com.mvc.spittr.web.util.WebFacilities;
 
 @Controller
 @RequestMapping({ "/spittle" })

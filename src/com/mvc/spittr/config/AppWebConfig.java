@@ -19,8 +19,8 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
-import com.mvc.spittr.web.converter.RoleToUserProfileConverter;
-import com.mvc.spittr.web.logFiltersInterceptors.HttpRequestLogInterceptor;
+import com.mvc.spittr.controller.converter.RoleToUserProfileConverter;
+import com.mvc.spittr.controller.logFiltersInterceptors.HttpRequestLogInterceptor;
 
 /**
  * For Security and converter
@@ -32,7 +32,8 @@ import com.mvc.spittr.web.logFiltersInterceptors.HttpRequestLogInterceptor;
 @SuppressWarnings("deprecation")
 @Configuration
 @EnableWebMvc // Enable Spring MVC
-@ComponentScan(basePackages = { "com.mvc.spittr.web", "com.mvc.spittr.web.util", "com.mvc.spittr.web.logFiltersInterceptors"})
+//@ComponentScan(basePackages = { "com.mvc.spittr.controller", "com.mvc.spittr.controller.util", "com.mvc.spittr.controller.logFiltersInterceptors"})
+@ComponentScan(basePackages = { "com.mvc"})
 // Packages will be scanned for components, the controllers you write will be
 // annotated with @Controller, which will make them candidates for
 // component-scanning.
@@ -121,7 +122,9 @@ public class AppWebConfig extends WebMvcConfigurerAdapter implements Application
           .addPathPatterns("/*","/**");
         logger.info("Interceptor added urls: /* /**");
     }
-	
+	static{
+		logger.info("************************End AppWebConfig************************");
+	}
 	// -----------------------------------TILES
 	// CONFIG----------------------------------------------------
 	/**
@@ -205,8 +208,6 @@ public class AppWebConfig extends WebMvcConfigurerAdapter implements Application
 	// you’re asking DispatcherServlet to forward requests for static resources
 	// to the servlet container’s default servlet and not to try to handle them
 	// itself.
-	static{
-		logger.info("************************End AppWebConfig************************");
-	}
+
 
 }

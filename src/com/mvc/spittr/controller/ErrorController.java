@@ -1,4 +1,4 @@
-package com.mvc.spittr.web;
+package com.mvc.spittr.controller;
 
 import javax.servlet.http.HttpServletRequest;
 

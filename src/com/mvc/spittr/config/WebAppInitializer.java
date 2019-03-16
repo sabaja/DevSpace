@@ -17,7 +17,7 @@ import org.springframework.core.annotation.Order;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 import com.mvc.spittr.constants.SpitterConsts;
-import com.mvc.spittr.web.logFiltersInterceptors.LoggingUrlRequestFilter;
+import com.mvc.spittr.controller.logFiltersInterceptors.LoggingUrlRequestFilter;
 
 /**
  * DispatcherServlet is the centerpiece of Spring MVC. It’s where the request
@@ -118,7 +118,7 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
 		logger.info("CustomizeRegistration initialized");
 
 		// MultipartConfiguration for uploading file see at
-		// com.mvc.spittr.web.config.AppRootConfig for @Bean
+		// com.mvc.spittr.controller.config.AppRootConfig for @Bean
 		// compatible to The Servlet 3.0 StandardServletMultipartResolver
 		// MultipartConfigElement(java.lang.String location, long maxFileSize,
 		// long maxRequestSize, int fileSizeThreshold)
