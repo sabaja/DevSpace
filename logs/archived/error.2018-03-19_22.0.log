@@ -1,4 +1,0 @@
-2018-03-19 22:18:34 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions(131) - Unknown column 'usernamero0_.ROLE_ID' in 'field list'
-2018-03-19 22:19:47 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions(131) - Unknown column 'usernamero0_.roleId' in 'field list'
-2018-03-19 22:21:00 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions(131) - Unknown column 'usernamero0_.role_ROLE_ID' in 'field list'
-2018-03-19 22:47:23 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions(131) - Unknown column 'usernamero0_.roleID' in 'field list'
